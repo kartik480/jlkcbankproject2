@@ -12,18 +12,18 @@
 <!-- ========== NAVBAR ========== -->
 <header class="navbar">
     <div class="nav-logo">
-        <img src="{{ asset('images/logo.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
         <span class="nav-logo-placeholder"></span>
     </div>
 
     <ul class="menu">
-        <li class="active">Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Our Scheme</li>
-        <li>Careers</li>
-        <li>FAQ</li>
-        <li>Gallery</li>
+        <li class="active"><a href="{{ url('/') }}" class="menu-link">Home</a></li>
+        <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
+        <li><a href="{{ url('/') }}#services" class="menu-link">Services</a></li>
+        <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
+        <li><a href="{{ url('/') }}#careers" class="menu-link">Careers</a></li>
+        <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
+        <li><a href="{{ url('/') }}#gallery" class="menu-link">Gallery</a></li>
     </ul>
 
     <button class="contact-btn">Contact us</button>
@@ -35,7 +35,7 @@
 
         <div class="reg"><span class="reg-dot"></span> REG NO: AMC/VSP/DCO/2013/3010</div>
 
-        <h1>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD</h1>
+        <h1><span class="hero-title-line1">JAYALAKSHMI MUTUALLY <span class="hero-title-keep">AIDED COOPERATIVE</span></span><span class="hero-title-line2">THRIFT AND CREDIT SOCIETY LTD</span></h1>
 
         <p>For the cooperative sector in India to grow and provide a substantial financial alternative to the general public, access to enterprise-class technology is essential.</p>
 
@@ -48,7 +48,7 @@
 
     <div class="about-wrapper">
 
-        <!-- LEFT -->
+        <!-- LEFT: picture first in DOM so it shows on the left -->
         <div class="about-left">
             <span class="about-tag">
                 <span class="dot"></span> About Us
@@ -59,7 +59,7 @@
             </div>
         </div>
 
-        <!-- RIGHT -->
+        <!-- RIGHT: description second so it shows on the right -->
         <div class="about-right">
             <p>
                 <strong>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD</strong>,
@@ -77,7 +77,7 @@
             <p>
                 At <strong>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD</strong>,
                 we employ advanced technology and tools for core financial and mobility solutions.
-                This commitment has made us a leader in reliability and sustainability.
+                This commitment has made us a leader in reliability and sustainability among our members. Since our inception, we have continuously expanded our membership base, ensuring our systems operate around the clock to meet their needs.
             </p>
 
             <div class="about-btn-wrap">
@@ -91,50 +91,82 @@
 
 <!-- ========== SERVICES SECTION ========== -->
 <section class="services-section">
-    <div class="services-container">
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="{{ asset('images/income.png') }}" alt="Fixed Deposit">
-            </div>
-            <h4>Fixed Deposit</h4>
+    <div class="services-header">
+        <div class="services-header-text">
+            <h2 class="services-title">Explore Our Financial Service Offerings</h2>
+            <p class="services-subtitle">Find the right solutions for investments, savings, tax planning, and more — all personalized for you.</p>
         </div>
+        <a href="#" class="services-cta-btn">Explore Services</a>
+    </div>
 
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="{{ asset('images/icons/fixed-deposit.svg') }}" alt="Recurring Deposit">
-            </div>
-            <h4>Recurring Deposit</h4>
+    <div class="services-scroll-wrap">
+        <div class="services-scroll">
+            <article class="service-card-new">
+                <div class="service-card-img">
+                    <img src="{{ asset('images/fd.png') }}" alt="Fixed Deposit">
+                </div>
+                <div class="service-card-body">
+                    <h3>Fixed Deposit</h3>
+                    <p>FD is a type of investment in which an individual invests a lump sum amount for a specific period of time with a bank.</p>
+                    <a href="#" class="service-card-btn">Explore more</a>
+                </div>
+            </article>
+
+            <article class="service-card-new">
+                <div class="service-card-img">
+                    <img src="{{ asset('images/rd.png') }}" alt="Recurring Deposit">
+                </div>
+                <div class="service-card-body">
+                    <h3>Recurring Deposit</h3>
+                    <p>RD is a popular investment option where an investor deposits a fixed sum of money at periodic intervals for a fixed tenure.</p>
+                    <a href="#" class="service-card-btn">Explore more</a>
+                </div>
+            </article>
+
+            <article class="service-card-new">
+                <div class="service-card-img">
+                    <img src="{{ asset('images/mi.png') }}" alt="Monthly Income">
+                </div>
+                <div class="service-card-body">
+                    <h3>Monthly Income</h3>
+                    <p>MIS is designed to offer a guaranteed monthly income as per the interest rate ranging from 3% to 5.60% pa.</p>
+                    <a href="#" class="service-card-btn">Explore more</a>
+                </div>
+            </article>
+
+            <article class="service-card-new">
+                <div class="service-card-img">
+                    <img src="{{ asset('images/dd.jpeg') }}" alt="Daily Deposit">
+                </div>
+                <div class="service-card-body">
+                    <h3>Daily Deposit</h3>
+                    <p>DDS is a scheme to help daily savers build a habit of saving with flexible deposit options and competitive returns.</p>
+                    <a href="#" class="service-card-btn">Explore more</a>
+                </div>
+            </article>
+
+            <article class="service-card-new">
+                <div class="service-card-img">
+                    <img src="{{ asset('images/pf.jpeg') }}" alt="Personal Provident">
+                </div>
+                <div class="service-card-body">
+                    <h3>Personal Provident</h3>
+                    <p>Build long-term savings with our provident fund options, offering tax benefits and steady growth for your future.</p>
+                    <a href="#" class="service-card-btn">Explore more</a>
+                </div>
+            </article>
+
+            <article class="service-card-new">
+                <div class="service-card-img">
+                    <img src="{{ asset('images/sa.jpeg') }}" alt="Saving Account">
+                </div>
+                <div class="service-card-body">
+                    <h3>Saving Account</h3>
+                    <p>Open a savings account with us for secure, accessible funds and interest on your balance with minimal paperwork.</p>
+                    <a href="#" class="service-card-btn">Explore more</a>
+                </div>
+            </article>
         </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="{{ asset('images/income.png') }}" alt="Monthly Income">
-            </div>
-            <h4>Monthly Income</h4>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="{{ asset('images/icons/fixed-deposit.svg') }}" alt="Daily Deposit">
-            </div>
-            <h4>Daily Deposit</h4>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="{{ asset('images/icons/fixed-deposit.svg') }}" alt="Personal Provident">
-            </div>
-            <h4>Personal Provident</h4>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="{{ asset('images/icons/fixed-deposit.svg') }}" alt="Saving Account">
-            </div>
-            <h4>Saving Account</h4>
-        </div>
-
     </div>
 </section>
 
@@ -195,7 +227,7 @@
     <div class="faq-layout">
         <div class="faq-accordion">
             <div class="faq-item">
-                <button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-1" id="faq-q-1">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-1" id="faq-q-1">
                     <span>What types of financial products do you offer?</span>
                     <span class="faq-chevron" aria-hidden="true"></span>
                 </button>
@@ -204,7 +236,7 @@
                 </div>
             </div>
             <div class="faq-item">
-                <button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-2" id="faq-q-2">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-q-2">
                     <span>Is there a minimum balance requirement?</span>
                     <span class="faq-chevron" aria-hidden="true"></span>
                 </button>
@@ -213,7 +245,7 @@
                 </div>
             </div>
             <div class="faq-item">
-                <button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-3" id="faq-q-3">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-3" id="faq-q-3">
                     <span>Can I withdraw my FD before maturity?</span>
                     <span class="faq-chevron" aria-hidden="true"></span>
                 </button>
@@ -226,7 +258,7 @@
                     <span>Who should choose an RD?</span>
                     <span class="faq-chevron" aria-hidden="true"></span>
                 </button>
-                <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q-4" hidden>
+                <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q-4">
                     <p>RDs are ideal for people with regular income who want to save consistently without a large upfront deposit.</p>
                 </div>
             </div>
@@ -235,7 +267,7 @@
                     <span>Who benefits from Daily Deposit Plans?</span>
                     <span class="faq-chevron" aria-hidden="true"></span>
                 </button>
-                <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-q-5" hidden>
+                <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-q-5">
                     <p>Customers with daily or irregular income can benefit, as small daily deposits accumulate into a significant sum over time.</p>
                 </div>
             </div>
@@ -290,10 +322,10 @@
                     </div>
                 </div>
             </div>
-            <div class="support-person">
-                <img src="{{ asset('images/men.png') }}" alt="Expert support">
-            </div>
         </div>
+    </div>
+    <div class="support-person">
+        <img src="{{ asset('images/men.png') }}" alt="Expert support">
     </div>
 </section>
 
@@ -305,7 +337,7 @@
             <div class="footer-col footer-about">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="{{ asset('images/logo.png') }}" alt="Jayalakshmi Cooperative" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
                         <span class="footer-logo-placeholder"></span>
                     </div>
                     <h3 class="footer-company-name">
@@ -367,17 +399,14 @@
 document.querySelectorAll('.faq-question').forEach(function(btn) {
     btn.addEventListener('click', function() {
         var item = this.closest('.faq-item');
-        var answer = item.querySelector('.faq-answer');
-        var isOpen = this.getAttribute('aria-expanded') === 'true';
+        var isOpen = item.classList.contains('is-open');
         document.querySelectorAll('.faq-item').forEach(function(other) {
-            var otherBtn = other.querySelector('.faq-question');
-            var otherAnswer = other.querySelector('.faq-answer');
-            otherBtn.setAttribute('aria-expanded', 'false');
-            otherAnswer.hidden = true;
+            other.classList.remove('is-open');
+            other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
         });
         if (!isOpen) {
+            item.classList.add('is-open');
             this.setAttribute('aria-expanded', 'true');
-            answer.hidden = false;
         }
     });
 });
