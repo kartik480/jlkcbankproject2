@@ -30,68 +30,107 @@
 <!-- ========== ABOUT PAGE CONTENT ========== -->
 <section class="about-page">
     <div class="about-page-hero">
-        <span class="about-page-badge">About Us</span>
-        <h1 class="about-page-title">JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD</h1>
-        <p class="about-page-tagline">Est. 2013 • Visakhapatnam • State Cooperative Society</p>
-    </div>
-
-    <div class="about-panel">
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Company Overview</h2>
-            <p>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD, established in 2013 and headquartered in Visakhapatnam, has diligently worked to reach its current successful position. We utilize advanced technologies to sustain and grow our business. These modern technologies have enabled us to introduce new features and products that support our business development. This commitment to innovation has made JAYALAKSHMI one of the most successful cooperative societies.</p>
-        </section>
-
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Technological Adoption</h2>
-            <p>At JAYALAKSHMI, we have implemented the world's leading technology and tools for core financial and mobility solutions. This strategic adoption has positioned us as a leader in reliability and sustainability among our members. Since our inception, we have expanded our membership base and ensured our systems operate round the clock to meet our members' needs.</p>
-        </section>
-
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Infrastructure Development</h2>
-            <p>Initially, without much strategic planning, we expanded our server capacity significantly. We managed several physical servers at both our primary and secondary data centers. As our list of solutions grew, so did our server platform, leading to increased costs. Operating with very low margins, it was essential to keep expenses as low as possible. By optimizing our infrastructure and technology, we have achieved significant growth and reliability.</p>
-        </section>
-
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Truly a Credit Cooperative Society</h2>
-            <p>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD is a true credit cooperative society in every sense. Our operations began in 2013 in Visakhapatnam, primarily serving the local municipal community, especially those from commercial and micro-finance backgrounds. Our mission is to uplift the weaker sections of society from both rural and urban areas. We have become the only credit and savings cooperative society in Visakhapatnam to launch our own mobile application and website, with over 90% of our business transactions conducted through these platforms.</p>
-        </section>
-
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Recognition and Status</h2>
-            <p>In 2013, we received the status of a State Cooperative Society from the Department of Cooperative, Government of Andhra Pradesh. JAYALAKSHMI operates on a mutual status, meaning we are owned by and run for the benefit of our members.</p>
-        </section>
-
-        <section class="about-page-block about-page-block-leadership">
-            <h2 class="about-page-heading">Leadership</h2>
-            <div class="about-leadership-cards">
-                <div class="about-leadership-card">
-                    <div class="about-leadership-icon">👤</div>
-                    <div class="about-leadership-content">
-                        <strong>Mr. Suresh Kumar Yeedi – Chairman & Founder Member</strong>
-                        <p>Mr. Suresh Kumar Yeedi is credited with the business management and establishment of the cooperative movement in Visakhapatnam. Under his visionary leadership, JAYALAKSHMI earned the status of a recognized cooperative society.</p>
-                    </div>
-                </div>
-                <div class="about-leadership-card">
-                    <div class="about-leadership-icon">👤</div>
-                    <div class="about-leadership-content">
-                        <strong>Mr. Mohan Venkatachalam Naraharisetty – Director & Co-Founder</strong>
-                        <p>Mr. Mohan Venkatachalam Naraharisetty oversees the operations of JAYALAKSHMI along with its strategic initiatives. He has driven the cooperative business on a successful growth path. Mr. Mohan possesses several years of experience in cooperative funding, investment banking, and insurance domains.</p>
-                    </div>
+        <div class="about-hero-inner">
+            <div class="about-hero-left">
+                <div class="about-page-badge"><span class="about-page-badge-dot"></span> About Us</div>
+                <h1 class="about-page-title">
+                    <span class="about-hero-title-line">JAYALAKSHMI MUTUALLY</span>
+                    <span class="about-hero-title-line">AIDED COOPERATIVE THRIFT</span>
+                    <span class="about-hero-title-line">AND CREDIT SOCIETY LTD</span>
+                </h1>
+                <p class="about-page-tagline">Empowering members since 2013 with financial and growth.</p>
+                <div class="about-hero-buttons">
+                    <a href="#" class="about-hero-btn">Join as a member</a>
+                    <a href="#" class="about-hero-btn">Become an Advisor</a>
                 </div>
             </div>
-        </section>
-
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Our Commitment</h2>
-            <p>We place great importance not only on hiring employees or adding members but also on building and nurturing relationships. Everyone who becomes part of our extended family is valued and nurtured equally without bias. We are committed to the following practices and policies, which we hold sacred:</p>
-        </section>
-
-        <section class="about-page-block">
-            <h2 class="about-page-heading">Strengths</h2>
-            <h3 class="about-page-subheading">Technical Strength</h3>
-            <p>For the cooperative sector in India to grow and provide a substantial financial alternative to the general public, access to enterprise-class technology is essential. This technology must support computing demands in the most cost-effective manner possible. With this in mind, we have outsourced our data center hosting and digital services to ensure efficiency and reliability.</p>
-        </section>
+            <div class="about-hero-right">
+                <div class="about-hero-grid">
+                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt1.png') }}" alt="Financial analysis"></div>
+                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt2.png') }}" alt="Savings and credit"></div>
+                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt3.png') }}" alt="Member success"></div>
+                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt4.png') }}" alt="Growth and time"></div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- ========== FOUNDED ON TRUST, DRIVEN BY COMMUNITY ========== -->
+    <section class="about-trust-section">
+        <div class="about-trust-inner">
+            <h2 class="about-trust-title">Founded on Trust, Driven by Community</h2>
+            <p class="about-trust-para">Established in 2013 and headquartered in the vibrant city of Visakhapatnam, Jayalakshmi Mutually Aided Cooperative Thrift and Credit Society LTD. was born with a noble mission: to uplift the weaker sections of society through financial inclusion.</p>
+            <p class="about-trust-para">We utilize advanced technologies to sustain and grow our business. These modern technologies have enabled us to introduce new features and products that support our business development. This commitment to innovation has made JAYALAKSHMI one of the most successful cooperative societies.</p>
+            <div class="about-trust-stats">
+                <div class="about-trust-stat">
+                    <span class="about-trust-stat-value">10+</span>
+                    <span class="about-trust-stat-label">Years of Service</span>
+                </div>
+                <div class="about-trust-stat">
+                    <span class="about-trust-stat-value">Vizag</span>
+                    <span class="about-trust-stat-label">Headquartered in</span>
+                </div>
+            </div>
+            <div class="about-trust-cards">
+                <div class="about-trust-card about-trust-card-community">
+                    <div class="about-trust-card-icon-wrap about-trust-icon-community">
+                        <span class="about-trust-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="about-trust-card-heading">Community Focus</h3>
+                    <p class="about-trust-card-text">Dedicated to supporting local members and fostering economic growth within the community.</p>
+                </div>
+                <div class="about-trust-card about-trust-card-recognized">
+                    <div class="about-trust-card-icon-wrap about-trust-icon-recognized">
+                        <span class="about-trust-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L12 11l-3.5 2.5"/><path d="M12 22v-6"/><path d="M8 16l2 2 2-2 2 2"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="about-trust-card-heading">Recognized Status</h3>
+                    <p class="about-trust-card-text">State Cooperative Society status from Dept. of Cooperative, Govt. of Andhra Pradesh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TECHNOLOGICAL ADOPTION & INFRASTRUCTURE ========== -->
+    <section class="about-tech-section">
+        <div class="about-tech-inner">
+            <h2 class="about-tech-title">Technological Adoption & Infrastructure</h2>
+            <span class="about-tech-line"></span>
+            <p class="about-tech-subtitle">We leverage advanced financial technologies to provide seamless, secure, and 24/7 banking experiences for our members.</p>
+            <div class="about-tech-cards">
+                <div class="about-tech-card about-tech-card-blue">
+                    <div class="about-tech-card-icon-wrap about-tech-card-icon-blue">
+                        <span class="about-tech-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="about-tech-card-heading">Digital Accessibility</h3>
+                    <p class="about-tech-card-text">Our robust mobile app and responsive website ensure members can manage their finances anytime, anywhere, bringing the cooperative to your fingertips.</p>
+                </div>
+                <div class="about-tech-card about-tech-card-purple">
+                    <div class="about-tech-card-icon-wrap about-tech-card-icon-purple">
+                        <span class="about-tech-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/><line x1="18" y1="6" x2="18.01" y2="6"/><line x1="18" y1="18" x2="18.01" y2="18"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="about-tech-card-heading">Enterprise Infrastructure</h3>
+                    <p class="about-tech-card-text">We utilize outsourced data center hosting and enterprise-class technology to guarantee data security, reliability, and high availability.</p>
+                </div>
+                <div class="about-tech-card about-tech-card-yellow">
+                    <div class="about-tech-card-icon-wrap about-tech-card-icon-yellow">
+                        <span class="about-tech-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="about-tech-card-heading">24/7 Operations</h3>
+                    <p class="about-tech-card-text">Our optimized server infrastructure and cost-efficient tech solutions enable continuous operations, supporting member growth without interruption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 
 <!-- ========== FOOTER ========== -->

@@ -37,7 +37,7 @@
 
         <h1><span class="hero-title-line1">JAYALAKSHMI MUTUALLY <span class="hero-title-keep">AIDED COOPERATIVE</span></span><span class="hero-title-line2">THRIFT AND CREDIT SOCIETY LTD</span></h1>
 
-        <p>For the cooperative sector in India to grow and provide a substantial financial alternative to the general public, access to enterprise-class technology is essential.</p>
+        <p><span class="hero-sub-line1">For the cooperative sector in India to grow and provide a substantial financial alternative to the general public,</span><br><span class="hero-sub-line2">access to enterprise-class technology is essential.</span></p>
 
         <button class="hero-btn">Contact us</button>
 
