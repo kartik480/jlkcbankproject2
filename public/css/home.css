@@ -113,7 +113,7 @@
     text-align: center;
     padding: 80px 24px 60px;
     background-color: #eef1f4;
-    background-image:
+    background-image: 
         url("/images/hero-bg.png");
     background-size: cover;
     background-position: center;
@@ -337,6 +337,7 @@
 }
 
 .services-title {
+    font-family: "Nirmala Text", sans-serif;
     font-size: 36px;
     font-weight: 800;
     color: #111;
@@ -445,14 +446,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    min-width: 280px;
+    padding: 14px 40px;
     background: #0d6efd;
     color: #fff;
     font-weight: 600;
     font-size: 14px;
     border-radius: 8px;
     text-decoration: none;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .service-card-btn:hover {
@@ -508,6 +510,7 @@
 }
 
 .cta-container h2 {
+    font-family: "Nirmala Text", sans-serif;
     font-size: 38px;
     font-weight: 800;
     color: #111;
@@ -515,6 +518,7 @@
 }
 
 .cta-subtitle {
+    font-family: "Nirmala Text", sans-serif;
     font-size: 15px;
     color: rgba(17, 17, 17, 0.75);
     margin-bottom: 26px;
@@ -604,6 +608,18 @@
     font-size: 14px;
     line-height: 1;
     filter: grayscale(1);
+}
+
+.cta-panel-image {
+    padding: 0;
+    overflow: hidden;
+}
+
+.cta-panel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 @media (max-width: 900px) {
@@ -934,6 +950,7 @@
 .support-banner-left {
     text-align: left;
     padding-right: 20px;
+    margin-left: 56px;
     justify-self: start;
 }
 
@@ -942,7 +959,8 @@
 }
 
 .support-banner-title {
-    font-size: 30px;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 32px;
     font-weight: 800;
     color: #fff;
     margin: 0 0 12px 0;
@@ -1025,18 +1043,23 @@
 }
 
 .support-feature-text strong {
-    font-size: 18px;
+    color: #FFF;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 700;
-    color: #fff;
+    line-height: 24px;
     text-align: left;
-    line-height: 1.3;
 }
 
 .support-feature-text span {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #FFF;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
     text-align: left;
-    line-height: 1.4;
 }
 
 .support-person {
@@ -1073,6 +1096,7 @@
     .support-banner-left {
         text-align: center;
         padding-right: 0;
+        margin-left: 0;
     }
 
     .support-banner-right {
@@ -1130,19 +1154,22 @@
 .about-page::before {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
     background-image: url("/images/wall.png");
     background-size: cover;
-    background-position: center top;
+    background-position: top center;
     background-repeat: no-repeat;
-    opacity: 0.35;
+    opacity: 0.4;
     pointer-events: none;
 }
 
 .about-page-hero {
     position: relative;
     z-index: 1;
-    padding: 64px 48px 56px;
+    padding: clamp(80px, 18vh, 140px) 48px 56px;
 }
 
 .about-hero-inner {
@@ -1164,7 +1191,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #00A74D;
+    background: #1b5e20;
     color: #fff;
     font-size: 13px;
     font-weight: 700;
@@ -1173,53 +1200,55 @@
     padding: 12px 22px;
     border-radius: 10px;
     margin-bottom: 28px;
-    box-shadow: 0 4px 14px rgba(0, 167, 77, 0.35);
 }
 
 .about-page-badge-dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #00c853;
+    background: #4caf50;
     flex-shrink: 0;
 }
 
 .about-page-title {
-    font-family: Metropolis, sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.15;
     color: #000;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0 0 18px 0;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 0 16px 0;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0;
 }
 
 .about-hero-title-line {
     display: block;
+    text-align: left;
 }
 
 .about-page-tagline {
     font-size: 16px;
     font-weight: 400;
-    color: #000;
-    margin: 0 0 32px 0;
+    color: #444;
+    text-align: left;
+    margin: 0 0 28px 0;
     line-height: 1.5;
 }
 
 .about-hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 12px;
 }
 
+/* Orange-yellow gradient left to right, dark text – match reference image */
 .about-hero-btn {
     display: inline-block;
-    background: linear-gradient(180deg, #FFC107 0%, #e6a800 100%);
-    color: #fff;
+    background: linear-gradient(90deg, #FFE082 0%, #FFC107 50%, #FFB300 100%);
+    color: #1a1a1a;
     font-size: 15px;
     font-weight: 600;
     padding: 14px 26px;
@@ -1227,13 +1256,11 @@
     text-decoration: none;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(230, 168, 0, 0.35);
-    transition: opacity 0.2s ease, box-shadow 0.2s ease;
+    transition: opacity 0.2s ease;
 }
 
 .about-hero-btn:hover {
-    opacity: 0.95;
-    box-shadow: 0 6px 16px rgba(230, 168, 0, 0.4);
+    opacity: 0.92;
 }
 
 .about-hero-right {
@@ -1242,20 +1269,29 @@
     max-width: 500px;
 }
 
+/* Square img box (photoframic container) – same as reference: one square, then 4 images inside */
 .about-hero-grid {
+    width: min(100%, 400px);
+    aspect-ratio: 1;
+    padding: 18px;
+    background: #d4edda;
+    border-radius: 16px;
+    border: 2px solid #b8ddc0;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 14px;
-    aspect-ratio: 1;
-    max-height: 420px;
+    gap: 18px;
 }
 
 .about-hero-grid-item {
-    border-radius: 12px;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    border: 3px solid #fff;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
 
 .about-hero-grid-item img {
@@ -1276,6 +1312,15 @@
 .about-trust-inner {
     max-width: 1100px;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.about-trust-left {
+    flex: 1 1 420px;
+    min-width: 0;
 }
 
 .about-trust-title {
@@ -1302,7 +1347,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    margin-bottom: 36px;
 }
 
 .about-trust-stat {
@@ -1325,18 +1369,35 @@
 }
 
 .about-trust-cards {
+    flex: 1 1 480px;
+    min-width: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
+/* Card design: white, large rounded corners, colored top strip, subtle shadow, generous padding */
 .about-trust-card {
     background: #fff;
-    border-radius: 12px;
-    padding: 28px 24px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    padding: 32px 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     position: relative;
+    overflow: hidden;
 }
+
+.about-trust-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    border-radius: 24px 24px 0 0;
+}
+
+.about-trust-card:first-child::before { background: #7c3aed; }
+.about-trust-card:last-child::before { background: #00A74D; }
 
 .about-trust-card-icon-wrap {
     width: 56px;
@@ -1348,8 +1409,8 @@
     margin-bottom: 20px;
 }
 
-.about-trust-icon-community { background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%); }
-.about-trust-icon-recognized { background: #00A74D; }
+.about-trust-icon-community { background: #a78bfa; }
+.about-trust-icon-recognized { background: #86efac; }
 
 .about-trust-card-icon {
     width: 28px;
@@ -1367,22 +1428,25 @@
     font-size: 18px;
     font-weight: 700;
     color: #1a1a1a;
-    margin: 0 0 10px 0;
+    text-align: left;
+    margin: 0 0 12px 0;
 }
 
 .about-trust-card-text {
     font-size: 14px;
     color: #555;
     line-height: 1.65;
+    text-align: left;
     margin: 0;
 }
 
 @media (max-width: 768px) {
     .about-trust-section { padding: 56px 20px 48px; }
+    .about-trust-inner { flex-direction: column; gap: 32px; }
     .about-trust-title { font-size: 26px; }
-    .about-trust-stats { gap: 28px; margin-bottom: 28px; }
+    .about-trust-stats { gap: 28px; }
     .about-trust-stat-value { font-size: 28px; }
-    .about-trust-cards { grid-template-columns: 1fr; }
+    .about-trust-cards { flex: 1 1 auto; grid-template-columns: 1fr; }
 }
 
 /* ===== ABOUT PAGE: Technological Adoption & Infrastructure ===== */
@@ -1418,7 +1482,7 @@
 
 .about-tech-subtitle {
     font-size: 16px;
-    color: #666;
+    color: #444;
     text-align: center;
     margin: 0 auto 48px;
     max-width: 640px;
@@ -1431,11 +1495,12 @@
     gap: 28px;
 }
 
+/* Same card design as Founded on Trust: white, large rounded corners, colored top strip, subtle shadow */
 .about-tech-card {
     background: #fff;
-    border-radius: 12px;
-    padding: 28px 24px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    padding: 32px 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -1446,12 +1511,13 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 10px;
+    border-radius: 24px 24px 0 0;
 }
 
-.about-tech-card-blue::before { background: #5dade2; }
-.about-tech-card-purple::before { background: #af7ac5; }
-.about-tech-card-yellow::before { background: #f4d03f; }
+.about-tech-card-blue::before { background: #26a69a; }
+.about-tech-card-purple::before { background: #9c27b0; }
+.about-tech-card-yellow::before { background: #ffc107; }
 
 .about-tech-card-icon-wrap {
     width: 56px;
@@ -1461,12 +1527,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    position: relative;
 }
 
-.about-tech-card-icon-blue { background: #5dade2; }
-.about-tech-card-icon-purple { background: #af7ac5; }
-.about-tech-card-icon-yellow { background: #f4d03f; }
+.about-tech-card-icon-blue { background: #4dd0e1; }
+.about-tech-card-icon-purple { background: #ce93d8; }
+.about-tech-card-icon-yellow { background: #ffeb3b; }
 
 .about-tech-card-icon {
     width: 28px;
@@ -1484,13 +1549,15 @@
     font-size: 18px;
     font-weight: 700;
     color: #1a1a1a;
-    margin: 0 0 10px 0;
+    text-align: left;
+    margin: 0 0 12px 0;
 }
 
 .about-tech-card-text {
     font-size: 14px;
     color: #555;
     line-height: 1.65;
+    text-align: left;
     margin: 0;
 }
 
@@ -1510,6 +1577,451 @@
     .about-tech-subtitle {
         margin-bottom: 36px;
     }
+}
+
+/* ===== ABOUT PAGE: Visionary Leadership ===== */
+.about-leadership-section {
+    padding: 72px 24px 56px;
+    background: #f5f5f5;
+    margin-bottom: 0;
+}
+
+.about-leadership-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-leadership-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+.about-leadership-line {
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: #00A74D;
+    margin: 0 auto 40px;
+    border-radius: 2px;
+}
+
+.about-leadership-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.about-leadership-card {
+    display: flex;
+    flex-direction: row;
+    min-height: 340px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.about-leadership-card-img {
+    flex: 0 0 42%;
+    position: relative;
+    min-height: 340px;
+    background: #e5e5e5;
+}
+
+.about-leadership-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    inset: 0;
+}
+
+.about-leadership-card-pic {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    font-family: sans-serif;
+    pointer-events: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.about-leadership-card-content {
+    flex: 1;
+    padding: 28px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.about-leadership-name {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+    line-height: 1.35;
+}
+
+.about-leadership-role {
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 14px 0;
+}
+
+.about-leadership-desc {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.65;
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 640px) {
+    .about-leadership-cards {
+        grid-template-columns: 1fr;
+    }
+    .about-leadership-card {
+        flex-direction: column;
+    }
+    .about-leadership-card-img {
+        flex: none;
+        min-height: 220px;
+    }
+}
+
+/* ===== ABOUT PAGE: Our Core Strengths – standalone section below Visionary Leadership ===== */
+.about-strengths-section {
+    position: relative;
+    display: block;
+    margin-top: 0;
+    padding: 72px 24px 80px;
+    background: #f0f2f5;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.about-strengths-grid-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+}
+
+.about-strengths-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-strengths-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+}
+
+.about-strengths-line {
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: #99cc33;
+    margin: 0 auto 28px;
+    border-radius: 2px;
+}
+
+.about-strengths-intro {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.65;
+    max-width: 860px;
+    margin: 0 auto 48px;
+}
+
+.about-strengths-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 56px;
+}
+
+.about-strengths-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-strengths-feature-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.about-strengths-feature-icon svg {
+    width: 36px;
+    height: 36px;
+    color: #fff;
+}
+
+.about-strengths-icon-reliability {
+    background: linear-gradient(135deg, #1976d2, #42a5f5);
+}
+
+.about-strengths-icon-member {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+}
+
+.about-strengths-icon-future {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+}
+
+.about-strengths-feature-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+}
+
+.about-strengths-feature-desc {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 260px;
+    margin: 0;
+}
+
+.about-strengths-vm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.about-strengths-vm-card {
+    background: linear-gradient(135deg, #007bff 0%, #00c0ff 100%);
+    border-radius: 14px;
+    padding: 36px 32px;
+    box-shadow: 0 8px 24px rgba(0, 123, 255, 0.25);
+    text-align: center;
+}
+
+.about-strengths-vm-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.about-strengths-vm-text {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.75;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .about-strengths-features {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .about-strengths-vm {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-strengths-section {
+        padding: 48px 20px 64px;
+    }
+    .about-strengths-title {
+        font-size: 26px;
+    }
+    .about-strengths-vm-card {
+        padding: 28px 24px;
+    }
+    .about-strengths-vm-title {
+        font-size: 20px;
+    }
+}
+
+/* ===== ABOUT PAGE: Be part of a Growing Financial Family (image scrolls first, then gloss box) ===== */
+.about-family-section {
+    position: relative;
+}
+
+/* Tall block: family.png scrolls with the page; when you scroll down, this moves up first */
+.about-family-img-block {
+    width: 100%;
+    min-height: 78vh;
+    background-color: #c4a35a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* Lower area: gloss box sits here and scrolls into view after the image has scrolled */
+.about-family-lower {
+    background: #f5f0e6;
+    padding: 56px 24px 64px;
+}
+
+/* Gloss box: glass effect, appears after family image has scrolled */
+.about-family-gloss {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 40px 52px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.about-family-inner {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.about-family-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.about-family-desc {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.65;
+    margin: 0 0 32px 0;
+}
+
+.about-family-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.about-family-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ffc107 0%, #ffb300 40%, #ffeb3b 70%, #fff8e1 100%);
+    background-size: 200% 200%;
+    box-shadow:
+        0 4px 14px rgba(255, 193, 7, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-family-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 6px 20px rgba(255, 193, 7, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 640px) {
+    .about-family-img-block {
+        min-height: 60vh;
+    }
+    .about-family-lower {
+        padding: 40px 20px 48px;
+    }
+    .about-family-gloss {
+        padding: 36px 24px 40px;
+    }
+    .about-family-title {
+        font-size: 26px;
+    }
+    .about-family-desc {
+        font-size: 15px;
+    }
+    .about-family-buttons {
+        flex-direction: column;
+    }
+    .about-family-btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
+/* ===== ABOUT PAGE: Our Unwavering Commitment (blue banner) ===== */
+/* Commitment box when standalone (e.g. other pages) */
+.about-commitment-section {
+    padding: 0 24px 72px;
+    background: #f5f5f5;
+}
+
+/* Commitment box inside Visionary Leadership section */
+.about-leadership-commitment-wrap {
+    margin-top: 48px;
+}
+
+.about-commitment-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    background: #1976d2;
+    border-radius: 14px;
+    padding: 48px 56px;
+}
+
+.about-commitment-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 18px 0;
+}
+
+.about-commitment-desc {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+@media (max-width: 768px) {
+    .about-leadership-section { padding: 56px 20px 48px; }
+    .about-leadership-title { font-size: 26px; }
+    .about-commitment-inner { padding: 36px 24px; }
+    .about-commitment-title { font-size: 24px; }
+    .about-commitment-desc { font-size: 15px; }
 }
 
 .about-panel {
@@ -1615,14 +2127,15 @@
     content: none;
 }
 
-.about-leadership-cards {
+/* Scoped to .about-page-block-leadership only (e.g. home page block) – do not affect .about-leadership-section */
+.about-page-block-leadership .about-leadership-cards {
     display: flex;
     flex-direction: column;
     gap: 24px;
     margin-top: 8px;
 }
 
-.about-leadership-card {
+.about-page-block-leadership .about-leadership-card {
     display: flex;
     gap: 20px;
     padding: 24px;
@@ -1631,7 +2144,7 @@
     border: 1px solid rgba(13, 110, 253, 0.12);
 }
 
-.about-leadership-icon {
+.about-page-block-leadership .about-leadership-icon {
     width: 56px;
     height: 56px;
     flex-shrink: 0;
@@ -1643,14 +2156,14 @@
     font-size: 28px;
 }
 
-.about-leadership-content strong {
+.about-page-block-leadership .about-leadership-content strong {
     display: block;
     font-size: 15px;
     color: #0f172a;
     margin-bottom: 8px;
 }
 
-.about-leadership-content p {
+.about-page-block-leadership .about-leadership-content p {
     margin: 0;
     font-size: 14px;
     line-height: 1.7;
@@ -1693,7 +2206,8 @@ a.nav-logo {
         aspect-ratio: 1;
     }
     .about-page-title {
-        font-size: 26px;
+        font-size: 32px;
+        line-height: 48px;
     }
     .about-page-tagline {
         font-size: 14px;
@@ -1711,13 +2225,13 @@ a.nav-logo {
         right: 16px;
     }
     .about-page-heading {
-        font-size: 17px;
+    font-size: 17px;
     }
-    .about-leadership-card {
+    .about-page-block-leadership .about-leadership-card {
         flex-direction: column;
         padding: 20px;
     }
-    .about-leadership-icon {
+    .about-page-block-leadership .about-leadership-icon {
         width: 48px;
         height: 48px;
         font-size: 24px;

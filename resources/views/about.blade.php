@@ -58,17 +58,19 @@
     <!-- ========== FOUNDED ON TRUST, DRIVEN BY COMMUNITY ========== -->
     <section class="about-trust-section">
         <div class="about-trust-inner">
-            <h2 class="about-trust-title">Founded on Trust, Driven by Community</h2>
-            <p class="about-trust-para">Established in 2013 and headquartered in the vibrant city of Visakhapatnam, Jayalakshmi Mutually Aided Cooperative Thrift and Credit Society LTD. was born with a noble mission: to uplift the weaker sections of society through financial inclusion.</p>
-            <p class="about-trust-para">We utilize advanced technologies to sustain and grow our business. These modern technologies have enabled us to introduce new features and products that support our business development. This commitment to innovation has made JAYALAKSHMI one of the most successful cooperative societies.</p>
-            <div class="about-trust-stats">
-                <div class="about-trust-stat">
-                    <span class="about-trust-stat-value">10+</span>
-                    <span class="about-trust-stat-label">Years of Service</span>
-                </div>
-                <div class="about-trust-stat">
-                    <span class="about-trust-stat-value">Vizag</span>
-                    <span class="about-trust-stat-label">Headquartered in</span>
+            <div class="about-trust-left">
+                <h2 class="about-trust-title">Founded on Trust, Driven by Community</h2>
+                <p class="about-trust-para">Established in 2013 and headquartered in the vibrant city of Visakhapatnam, Jayalakshmi Mutually Aided Cooperative Thrift and Credit Society LTD. was born with a noble mission: to uplift the weaker sections of society through financial inclusion.</p>
+                <p class="about-trust-para">We utilize advanced technologies to sustain and grow our business. These modern technologies have enabled us to introduce new features and products that support our business development. This commitment to innovation has made JAYALAKSHMI one of the most successful cooperative societies.</p>
+                <div class="about-trust-stats">
+                    <div class="about-trust-stat">
+                        <span class="about-trust-stat-value">10+</span>
+                        <span class="about-trust-stat-label">Years of Service</span>
+                    </div>
+                    <div class="about-trust-stat">
+                        <span class="about-trust-stat-value">Vizag</span>
+                        <span class="about-trust-stat-label">Headquartered in</span>
+                    </div>
                 </div>
             </div>
             <div class="about-trust-cards">
@@ -127,6 +129,104 @@
                     </div>
                     <h3 class="about-tech-card-heading">24/7 Operations</h3>
                     <p class="about-tech-card-text">Our optimized server infrastructure and cost-efficient tech solutions enable continuous operations, supporting member growth without interruption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VISIONARY LEADERSHIP ========== -->
+    <section class="about-leadership-section">
+        <div class="about-leadership-inner">
+            <h2 class="about-leadership-title">Visionary Leadership</h2>
+            <span class="about-leadership-line"></span>
+            <div class="about-leadership-cards">
+                <div class="about-leadership-card">
+                    <div class="about-leadership-card-img">
+                        <img src="{{ asset('images/lead1.jpg') }}" alt="Mr. Suresh Kumar Yeedi" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                        <span class="about-leadership-card-pic">Pic</span>
+                    </div>
+                    <div class="about-leadership-card-content">
+                        <h3 class="about-leadership-name">Mr. Suresh Kumar Yeedi</h3>
+                        <p class="about-leadership-role">Chairman & Founder Member</p>
+                        <p class="about-leadership-desc">Mr. Suresh Kumar Yeedi is credited with the business management and establishment of the cooperative movement in Visakhapatnam. Under his visionary leadership, JAYALAKSHMI earned the status of a recognized cooperative society.</p>
+                    </div>
+                </div>
+                <div class="about-leadership-card">
+                    <div class="about-leadership-card-img">
+                        <img src="{{ asset('images/lead2.jpg') }}" alt="Mr. Mohan Venkatachalam Naraharisetty" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                        <span class="about-leadership-card-pic">Pic</span>
+                    </div>
+                    <div class="about-leadership-card-content">
+                        <h3 class="about-leadership-name">Mr. Mohan Venkatachalam Naraharisetty</h3>
+                        <p class="about-leadership-role">Director & Co-Founder</p>
+                        <p class="about-leadership-desc">Mr. Mohan Venkatachalam Naraharisetty oversees the operations of JAYALAKSHMI along with its strategic initiatives. He has driven the cooperative business on a successful growth path. Mr. Mohan possesses several years of experience in cooperative funding, investment banking, and insurance domains.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-leadership-commitment-wrap">
+                <div class="about-commitment-inner">
+                    <h2 class="about-commitment-title">Our Unwavering Commitment</h2>
+                    <p class="about-commitment-desc">We place great importance not only on hiring employees or adding members but also on building and nurturing relationships. Everyone who becomes part of our extended family is valued and nurtured equally without bias. We value relationships over transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR CORE STRENGTHS (after Visionary Leadership) ========== -->
+    <section class="about-strengths-section">
+        <div class="about-strengths-inner">
+            <h2 class="about-strengths-title">Our Core Strengths</h2>
+            <span class="about-strengths-line"></span>
+            <p class="about-strengths-intro">For the cooperative sector in India to grow and provide a substantial financial alternative to the general public, access to enterprise-class technology is essential. This technology must support computing demands in the most cost-effective manner possible. With this in mind, we have outsourced our data center hosting and digital services to ensure efficiency and reliability.</p>
+            <div class="about-strengths-features">
+                <div class="about-strengths-feature">
+                    <div class="about-strengths-feature-icon about-strengths-icon-reliability">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="about-strengths-feature-title">Reliability</h3>
+                    <p class="about-strengths-feature-desc">Built on a foundation of trust and regulatory compliance, ensuring your savings are safe</p>
+                </div>
+                <div class="about-strengths-feature">
+                    <div class="about-strengths-feature-icon about-strengths-icon-member">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+                    </div>
+                    <h3 class="about-strengths-feature-title">Member-centric</h3>
+                    <p class="about-strengths-feature-desc">Every decision is made with the best interest of our members in mind</p>
+                </div>
+                <div class="about-strengths-feature">
+                    <div class="about-strengths-feature-icon about-strengths-icon-future">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                    </div>
+                    <h3 class="about-strengths-feature-title">Future-Ready</h3>
+                    <p class="about-strengths-feature-desc">Continuously upgrading our tech stack to offer modern banking conveniences</p>
+                </div>
+            </div>
+            <div class="about-strengths-vm">
+                <div class="about-strengths-vm-card">
+                    <h3 class="about-strengths-vm-title">Our Vision</h3>
+                    <p class="about-strengths-vm-text">To become a leading and most trusted cooperative financial institution that empowers communities through innovative technology, financial inclusion, and sustainable growth while improving the economic well-being of our members.</p>
+                </div>
+                <div class="about-strengths-vm-card">
+                    <h3 class="about-strengths-vm-title">Our Mission</h3>
+                    <p class="about-strengths-vm-text">Uplift the weaker sections of society from both rural and urban areas. We've become the only credit and savings cooperative society in Visakhapatnam to launch our own mobile application and website, with over 90% of our business transactions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-strengths-grid-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========== BE PART OF A GROWING FINANCIAL FAMILY (image scrolls first, then gloss box) ========== -->
+    <section class="about-family-section">
+        <div class="about-family-img-block" role="presentation" aria-hidden="true" style="background-image: url('{{ asset('images/family.png') }}');"></div>
+        <div class="about-family-lower">
+            <div class="about-family-gloss">
+                <div class="about-family-inner">
+                    <h2 class="about-family-title">Be part of a Growing Financial Family</h2>
+                    <p class="about-family-desc">Join Jayalakshmi Mutually Aided Cooperative Thrift And Credit Society LTD. today and take the first step towards a secure financial future. Our operations began in 2013 in Visakhapatnam, primarily serving the local municipal community, especially those from commercial and micro-finance backgrounds.</p>
+                    <div class="about-family-buttons">
+                        <a href="#" class="about-family-btn">Join as a member</a>
+                        <a href="#" class="about-family-btn">Become an Advisor</a>
+                    </div>
                 </div>
             </div>
         </div>
