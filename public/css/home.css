@@ -1166,7 +1166,7 @@
     padding: 0 0 80px 0;
     min-height: calc(100vh - 80px);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .about-page::before {
@@ -2024,69 +2024,120 @@
 /* ===== ABOUT PAGE: Be part of a Growing Financial Family (image scrolls first, then gloss box) ===== */
 .about-family-section {
     position: relative;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
 }
 
-/* Tall block: family.png scrolls with the page; when you scroll down, this moves up first */
+/* Tall block: family.png - sticky when scrolling */
 .about-family-img-block {
     width: 100%;
-    min-height: 78vh;
+    height: 100vh;
+    min-height: 100vh;
     background-color: #c4a35a;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: visible;
+    display: block;
 }
 
-/* Lower area: gloss box sits here and scrolls into view after the image has scrolled */
-.about-family-lower {
-    background: #f5f0e6;
-    padding: 56px 24px 64px;
+/* Foggy overlay effect at the top of the image */
+.about-family-fog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.85) 20%,
+        rgba(255, 255, 255, 0.6) 40%,
+        rgba(255, 255, 255, 0.3) 60%,
+        rgba(255, 255, 255, 0.1) 80%,
+        transparent 100%
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    will-change: opacity;
+    z-index: 2;
 }
 
-/* Gloss box: glass effect, appears after family image has scrolled */
-.about-family-gloss {
+/* Wrapper for glossy box - allows it to scroll normally */
+.about-family-glossy-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: -120px;
+    z-index: 3;
+    pointer-events: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Glossy box at the bottom - scrolls normally with footer */
+.about-family-glossy-box {
+    position: relative;
+    width: 100%;
     max-width: 720px;
     margin: 0 auto;
-    padding: 48px 40px 52px;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     border: 1px solid rgba(255, 255, 255, 0.9);
+    border-bottom: none;
     box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.08),
+        0 -8px 32px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    padding: 48px 40px 52px;
     text-align: center;
+    pointer-events: auto;
 }
 
-.about-family-inner {
+.about-family-glossy-inner {
     max-width: 560px;
     margin: 0 auto;
 }
 
-.about-family-title {
+.about-family-glossy-title {
     font-size: 32px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #fff;
     margin: 0 0 20px 0;
     line-height: 1.25;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.about-family-desc {
+.about-family-glossy-desc {
     font-size: 16px;
-    color: #444;
+    color: #fff;
     line-height: 1.65;
     margin: 0 0 32px 0;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.about-family-buttons {
+.about-family-glossy-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
 }
 
-.about-family-btn {
+.about-family-glossy-btn {
     display: inline-block;
     padding: 14px 28px;
     font-size: 16px;
@@ -2103,7 +2154,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.about-family-btn:hover {
+.about-family-glossy-btn:hover {
     transform: translateY(-2px);
     box-shadow:
         0 6px 20px rgba(255, 193, 7, 0.5),
@@ -2114,22 +2165,23 @@
     .about-family-img-block {
         min-height: 60vh;
     }
-    .about-family-lower {
-        padding: 40px 20px 48px;
+    .about-family-fog-overlay {
+        height: 40%;
     }
-    .about-family-gloss {
+    .about-family-glossy-box {
         padding: 36px 24px 40px;
+        border-radius: 16px 16px 0 0;
     }
-    .about-family-title {
+    .about-family-glossy-title {
         font-size: 26px;
     }
-    .about-family-desc {
+    .about-family-glossy-desc {
         font-size: 15px;
     }
-    .about-family-buttons {
+    .about-family-glossy-buttons {
         flex-direction: column;
     }
-    .about-family-btn {
+    .about-family-glossy-btn {
         width: 100%;
         max-width: 280px;
         margin: 0 auto;
@@ -2392,7 +2444,28 @@ a.nav-logo {
     background: linear-gradient(180deg, #d4e4f2 0%, #e8f0f6 50%, #f5f9fc 100%);
     padding: 60px 60px 32px;
     position: relative;
+    z-index: 1;
+    margin-top: 0;
+    clear: both;
+    transform: translateZ(0);
+    will-change: transform;
+    width: 100%;
+}
+
+/* Footer inside family section - scrolls with glossy box */
+.about-family-section .site-footer {
+    position: relative;
     z-index: 2;
+    margin-top: auto;
+    width: 100vw;
+    min-height: auto;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 32px !important;
+    box-sizing: border-box;
+    margin-bottom: -80px !important;
 }
 
 .footer-inner {
@@ -2534,7 +2607,9 @@ a.nav-logo {
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 24px;
+    padding-bottom: 0;
     border-top: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 0;
 }
 
 .footer-bottom-left {

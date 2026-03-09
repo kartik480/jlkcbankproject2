@@ -225,26 +225,25 @@
         <div class="about-strengths-grid-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- ========== BE PART OF A GROWING FINANCIAL FAMILY (image scrolls first, then gloss box) ========== -->
+    <!-- ========== BE PART OF A GROWING FINANCIAL FAMILY ========== -->
     <section class="about-family-section">
-        <div class="about-family-img-block" role="presentation" aria-hidden="true" style="background-image: url('{{ asset('images/family.png') }}');"></div>
-        <div class="about-family-lower">
-            <div class="about-family-gloss">
-                <div class="about-family-inner">
-                    <h2 class="about-family-title">Be part of a Growing Financial Family</h2>
-                    <p class="about-family-desc">Join Jayalakshmi Mutually Aided Cooperative Thrift And Credit Society LTD. today and take the first step towards a secure financial future. Our operations began in 2013 in Visakhapatnam, primarily serving the local municipal community, especially those from commercial and micro-finance backgrounds.</p>
-                    <div class="about-family-buttons">
-                        <a href="#" class="about-family-btn">Join as a member</a>
-                        <a href="#" class="about-family-btn">Become an Advisor</a>
+        <div class="about-family-img-block" role="presentation" aria-hidden="true" style="background-image: url('{{ asset('images/family.png') }}');">
+            <div class="about-family-fog-overlay"></div>
+        </div>
+        <div class="about-family-glossy-wrapper">
+            <div class="about-family-glossy-box">
+                <div class="about-family-glossy-inner">
+                    <h2 class="about-family-glossy-title">Be part of a Growing Financial Family</h2>
+                    <p class="about-family-glossy-desc">Join Jayalakshmi Mutually Aided Cooperative Thrift And Credit Society LTD. today and take the first step towards a secure financial future. Our operations began in 2013 in Visakhapatnam, primarily serving the local municipal community, especially those from commercial and micro-finance backgrounds.</p>
+                    <div class="about-family-glossy-buttons">
+                        <a href="#" class="about-family-glossy-btn">Join as a member</a>
+                        <a href="#" class="about-family-glossy-btn">Become an Advisor</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer class="site-footer">
+        <!-- ========== FOOTER ========== -->
+        <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-top">
             <div class="footer-col footer-about">
@@ -301,7 +300,57 @@
             </div>
         </div>
     </div>
-</footer>
+        </footer>
+    </section>
+</section>
+
+<script>
+    // Foggy effect fade on scroll for sticky image
+    document.addEventListener('DOMContentLoaded', function() {
+        const familySection = document.querySelector('.about-family-section');
+        const familyImgBlock = document.querySelector('.about-family-img-block');
+        const fogOverlay = document.querySelector('.about-family-fog-overlay');
+        
+        if (!familySection || !familyImgBlock || !fogOverlay) return;
+        
+        let sectionStartScroll = 0;
+        let sectionEndScroll = 0;
+        
+        function calculateSectionBounds() {
+            const rect = familySection.getBoundingClientRect();
+            sectionStartScroll = window.scrollY + rect.top;
+            sectionEndScroll = sectionStartScroll + familySection.offsetHeight;
+        }
+        
+        function updateFogOpacity() {
+            const currentScroll = window.scrollY;
+            const windowHeight = window.innerHeight;
+            
+            // Calculate scroll progress within the section
+            if (currentScroll < sectionStartScroll) {
+                // Before section, full fog
+                fogOverlay.style.opacity = 1;
+            } else if (currentScroll >= sectionStartScroll && currentScroll < sectionEndScroll - windowHeight) {
+                // Within sticky section, fade fog as we scroll
+                const scrollProgress = (currentScroll - sectionStartScroll) / (sectionEndScroll - sectionStartScroll - windowHeight);
+                const opacity = Math.max(0, 1 - scrollProgress * 1.5); // Fade faster
+                fogOverlay.style.opacity = opacity;
+            } else {
+                // Past section, no fog
+                fogOverlay.style.opacity = 0;
+            }
+        }
+        
+        // Calculate bounds on load and resize
+        calculateSectionBounds();
+        window.addEventListener('resize', calculateSectionBounds, { passive: true });
+        
+        // Update on scroll
+        window.addEventListener('scroll', updateFogOpacity, { passive: true });
+        // Initial update
+        updateFogOpacity();
+    });
+</script>
 
 </body>
 </html>
