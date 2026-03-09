@@ -44,12 +44,18 @@
                     <a href="#" class="about-hero-btn">Become an Advisor</a>
                 </div>
             </div>
-            <div class="about-hero-right">
-                <div class="about-hero-grid">
-                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt1.png') }}" alt="Financial analysis"></div>
-                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt2.png') }}" alt="Savings and credit"></div>
-                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt3.png') }}" alt="Member success"></div>
-                    <div class="about-hero-grid-item"><img src="{{ asset('images/abt4.png') }}" alt="Growth and time"></div>
+            <div class="about-hero-images">
+                <div class="about-hero-image-box about-hero-box-top-left-medium">
+                    <img src="{{ asset('images/abt1.png') }}" alt="Financial analysis">
+                </div>
+                <div class="about-hero-image-box about-hero-box-top-right-large-vertical">
+                    <img src="{{ asset('images/abt2.png') }}" alt="Savings and credit">
+                </div>
+                <div class="about-hero-image-box about-hero-box-bottom-left-large">
+                    <img src="{{ asset('images/abt3.png') }}" alt="Member success">
+                </div>
+                <div class="about-hero-image-box about-hero-box-bottom-right-medium-horizontal">
+                    <img src="{{ asset('images/abt4.png') }}" alt="Growth and time">
                 </div>
             </div>
         </div>
@@ -75,22 +81,26 @@
             </div>
             <div class="about-trust-cards">
                 <div class="about-trust-card about-trust-card-community">
-                    <div class="about-trust-card-icon-wrap about-trust-icon-community">
-                        <span class="about-trust-card-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </span>
+                    <div class="about-trust-card-content">
+                        <div class="about-trust-card-icon-wrap about-trust-icon-community">
+                            <span class="about-trust-card-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </span>
+                        </div>
+                        <h3 class="about-trust-card-heading">Community Focus</h3>
+                        <p class="about-trust-card-text">Dedicated to supporting local members and fostering economic growth within the community.</p>
                     </div>
-                    <h3 class="about-trust-card-heading">Community Focus</h3>
-                    <p class="about-trust-card-text">Dedicated to supporting local members and fostering economic growth within the community.</p>
                 </div>
                 <div class="about-trust-card about-trust-card-recognized">
-                    <div class="about-trust-card-icon-wrap about-trust-icon-recognized">
-                        <span class="about-trust-card-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L12 11l-3.5 2.5"/><path d="M12 22v-6"/><path d="M8 16l2 2 2-2 2 2"/></svg>
-                        </span>
+                    <div class="about-trust-card-content">
+                        <div class="about-trust-card-icon-wrap about-trust-icon-recognized">
+                            <span class="about-trust-card-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L12 11l-3.5 2.5"/><path d="M12 22v-6"/><path d="M8 16l2 2 2-2 2 2"/></svg>
+                            </span>
+                        </div>
+                        <h3 class="about-trust-card-heading">Recognized Status</h3>
+                        <p class="about-trust-card-text">State Cooperative Society status from Dept. of Cooperative, Govt. of Andhra Pradesh.</p>
                     </div>
-                    <h3 class="about-trust-card-heading">Recognized Status</h3>
-                    <p class="about-trust-card-text">State Cooperative Society status from Dept. of Cooperative, Govt. of Andhra Pradesh.</p>
                 </div>
             </div>
         </div>
