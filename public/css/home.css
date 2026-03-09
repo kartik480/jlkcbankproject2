@@ -18,6 +18,36 @@
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Navbar scroll behavior - only on home page */
+.home-page .navbar {
+    position: fixed;
+    bottom: -100px !important;
+    top: auto !important;
+    left: 0;
+    right: 0;
+    transition: bottom 0.4s ease, top 0.1s linear, opacity 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.home-page .navbar.navbar-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.home-page .navbar.navbar-visible:not(.navbar-sticky) {
+    bottom: 0 !important;
+    top: auto !important;
+}
+
+.home-page .navbar.navbar-sticky {
+    position: fixed !important;
+    bottom: auto !important;
+    top: 0 !important;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .navbar::after {
     content: "";
     position: absolute;
@@ -105,7 +135,7 @@
 
 /* ===== HERO ===== */
 .hero {
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +148,25 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(90deg, rgba(91, 143, 214, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(91, 143, 214, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(156, 39, 176, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(156, 39, 176, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px, 40px 40px, 80px 80px, 80px 80px;
+    background-position: 0 0, 0 0, 40px 40px, 40px 40px;
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 .hero-content {
@@ -125,6 +174,21 @@
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-logo {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
 .reg {
@@ -150,15 +214,14 @@
 }
 
 .hero h1 {
-    color: #000;
+    color: #16a34a;
     text-align: center;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Metropolis, sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -166,6 +229,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
 .hero h1 .hero-title-line1 {
@@ -190,8 +254,9 @@
     max-width: 920px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     margin-bottom: 32px;
-    color: #000;
+    color: #444;
     text-align: center;
     font-family: "Nirmala Text", sans-serif;
     font-size: 20px;
@@ -219,6 +284,9 @@
 .about-section {
     background: #ffffff;
     padding: 110px 60px;
+    /* Hardware acceleration for smooth scrolling */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .about-wrapper {
@@ -317,6 +385,9 @@
 .services-section {
     background: #d4e8d9;
     padding: 80px 60px 90px;
+    /* Hardware acceleration for smooth scrolling */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .services-header {
@@ -381,6 +452,11 @@
     overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    /* Hardware acceleration for smooth scrolling */
+    will-change: scroll-position;
+    transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 .services-scroll-wrap::-webkit-scrollbar {
@@ -392,6 +468,9 @@
     gap: 24px;
     padding: 0 60px;
     width: max-content;
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .service-card-new {
@@ -500,6 +579,9 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    /* Hardware acceleration for smooth scrolling */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .cta-container {
@@ -657,6 +739,9 @@
     z-index: 2;
     display: flex;
     align-items: center;
+    /* Hardware acceleration for smooth scrolling */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .unlock-wrap {
@@ -1190,6 +1275,11 @@
     padding: clamp(80px, 18vh, 140px) 48px 56px;
 }
 
+/* Services page - move content down a bit */
+.services-page-hero {
+    padding-top: clamp(280px, 38vh, 340px);
+}
+
 .about-hero-inner {
     max-width: 1180px;
     margin: 0 auto;
@@ -1287,6 +1377,469 @@
 
 .about-hero-btn:hover {
     opacity: 0.92;
+}
+
+/* Services page specific styles */
+.services-hero-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.services-hero-btn {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.services-hero-btn-primary {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+}
+
+.services-hero-btn-primary:hover {
+    background: #0b5ed7;
+    color: #fff;
+}
+
+.services-hero-btn-secondary {
+    background: #fff;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+}
+
+.services-hero-btn-secondary:hover {
+    background: #f0f7ff;
+    color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* ===== SERVICES PAGE: Our Services Section ===== */
+.services-our-services-section {
+    background: #E5E5E5;
+    padding: 80px 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.services-our-services-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.services-our-services-title {
+    color: #000;
+    text-align: center;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0 0 60px 0;
+}
+
+.services-our-services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.services-our-services-card {
+    background: linear-gradient(73deg, #06BBFC 0%, #046F96 100%);
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-our-services-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.services-our-services-icon {
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.services-our-services-icon svg {
+    stroke: currentColor;
+    fill: none;
+    flex-shrink: 0;
+}
+
+.services-our-services-icon svg[fill="currentColor"] {
+    fill: currentColor;
+    stroke: none;
+}
+
+.services-our-services-icon img {
+    width: auto;
+    height: 100%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.services-our-services-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 16px 0;
+}
+
+.services-our-services-card-desc {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    flex: 1;
+}
+
+.services-our-services-btn {
+    display: inline-block;
+    background: #FFC107;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+    margin-top: auto;
+}
+
+.services-our-services-btn:hover {
+    background: #FFB300;
+    transform: translateY(-2px);
+    color: #000;
+}
+
+@media (max-width: 900px) {
+    .services-our-services-section {
+        padding: 60px 40px;
+    }
+    
+    .services-our-services-title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+    
+    .services-our-services-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .services-our-services-card {
+        padding: 32px 24px;
+    }
+}
+
+/* ===== SERVICES PAGE: Main Products Section ===== */
+.services-main-products-section {
+    background: #fff;
+    padding: 80px 60px;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+}
+
+.services-main-products-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.services-main-products-title {
+    color: #000;
+    text-align: center;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 16px 0;
+}
+
+.services-main-products-line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #22c55e;
+    margin: 0 auto 32px;
+    border-radius: 2px;
+}
+
+.services-main-products-desc {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 48px;
+}
+
+.services-main-products-scroll-wrap {
+    margin: 0 -60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0;
+    /* Hardware acceleration for smooth scrolling */
+    will-change: scroll-position;
+    transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.services-main-products-scroll-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.services-main-products-scroll {
+    display: flex;
+    gap: 24px;
+    padding: 0 60px;
+    width: max-content;
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.services-main-product-card {
+    flex-shrink: 0;
+    width: 320px;
+    background: #f5f5f5;
+    border: 2px solid #22c55e;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.services-main-product-card:hover {
+    box-shadow: 0 0 6px rgba(34, 197, 94, 0.4), 0 0 12px rgba(34, 197, 94, 0.25), 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-color: #22c55e;
+    transform: translateY(-2px);
+}
+
+.services-main-product-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-main-product-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.services-main-product-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.services-main-product-desc {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .services-main-products-section {
+        padding: 60px 40px;
+    }
+    
+    .services-main-products-title {
+        font-size: 32px;
+    }
+    
+    .services-main-products-scroll-wrap {
+        margin: 0 -40px;
+    }
+    
+    .services-main-products-scroll {
+        padding: 0 40px;
+        gap: 20px;
+    }
+    
+    .services-main-product-card {
+        width: 280px;
+        padding: 28px 20px;
+    }
+}
+
+/* ===== SERVICES PAGE: Loans Section ===== */
+.services-loans-section {
+    background: #fff;
+    padding: 80px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.services-loans-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.services-loans-title {
+    color: #000;
+    text-align: center;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 64px 0 16px 0;
+}
+
+.services-loans-line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #22c55e;
+    margin: 0 auto 32px;
+    border-radius: 2px;
+}
+
+.services-loans-desc {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 48px;
+}
+
+.services-loans-scroll-wrap {
+    margin: 0 -60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0;
+}
+
+.services-loans-scroll-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.services-loans-scroll {
+    display: flex;
+    gap: 24px;
+    padding: 0 60px;
+    width: max-content;
+}
+
+.services-loan-card {
+    flex-shrink: 0;
+    width: 320px;
+    background: #f5f5f5;
+    border: 2px solid #22c55e;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.services-loan-card:hover {
+    box-shadow: 0 0 6px rgba(34, 197, 94, 0.4), 0 0 12px rgba(34, 197, 94, 0.25), 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-color: #22c55e;
+    transform: translateY(-2px);
+}
+
+.services-loan-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-loan-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.services-loan-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.services-loan-desc {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .services-loans-section {
+        padding: 60px 40px;
+    }
+    
+    .services-loans-title {
+        font-size: 32px;
+    }
+    
+    .services-loans-scroll-wrap {
+        margin: 0 -40px;
+    }
+    
+    .services-loans-scroll {
+        padding: 0 40px;
+        gap: 20px;
+    }
+    
+    .services-loan-card {
+        width: 280px;
+        padding: 28px 20px;
+    }
 }
 
 /* Masonry-style image boxes with different sizes using CSS Grid */
@@ -1923,6 +2476,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 32px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-strengths-feature:hover {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.15);
+    transform: translateY(-2px);
 }
 
 .about-strengths-feature-icon {
@@ -2092,17 +2655,18 @@
 .about-family-glossy-box {
     position: relative;
     width: 100%;
-    max-width: 720px;
+    max-width: 100%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-radius: 20px 20px 0 0;
-    border: 1px solid rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: none;
     box-shadow:
-        0 -8px 32px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        0 -8px 32px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.2);
     padding: 48px 40px 52px;
     text-align: center;
     pointer-events: auto;
@@ -2119,7 +2683,7 @@
     color: #fff;
     margin: 0 0 20px 0;
     line-height: 1.25;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .about-family-glossy-desc {
@@ -2127,7 +2691,7 @@
     color: #fff;
     line-height: 1.65;
     margin: 0 0 32px 0;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
 .about-family-glossy-buttons {
@@ -2142,16 +2706,17 @@
     padding: 14px 28px;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 999px;
-    background: linear-gradient(135deg, #ffc107 0%, #ffb300 40%, #ffeb3b 70%, #fff8e1 100%);
+    background: linear-gradient(135deg, #ffc107 0%, #ffb300 40%, #ff9800 70%, #ff6f00 100%);
     background-size: 200% 200%;
     box-shadow:
-        0 4px 14px rgba(255, 193, 7, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        0 4px 14px rgba(255, 193, 7, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .about-family-glossy-btn:hover {
@@ -2170,7 +2735,7 @@
     }
     .about-family-glossy-box {
         padding: 36px 24px 40px;
-        border-radius: 16px 16px 0 0;
+        border-radius: 0;
     }
     .about-family-glossy-title {
         font-size: 26px;

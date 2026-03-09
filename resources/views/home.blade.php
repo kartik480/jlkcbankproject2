@@ -7,7 +7,7 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 </head>
-<body>
+<body class="home-page">
 
 <!-- ========== NAVBAR ========== -->
 <header class="navbar">
@@ -19,7 +19,7 @@
     <ul class="menu">
         <li class="active"><a href="{{ url('/') }}" class="menu-link">Home</a></li>
         <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
-        <li><a href="{{ url('/') }}#services" class="menu-link">Services</a></li>
+        <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
         <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/') }}#careers" class="menu-link">Careers</a></li>
         <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
@@ -32,10 +32,13 @@
 <!-- ========== HERO SECTION ========== -->
 <section class="hero">
     <div class="hero-content">
-
-        <div class="reg"><span class="reg-dot"></span> REG NO: AMC/VSP/DCO/2013/3010</div>
+        <div class="hero-logo">
+            <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="hero-logo-img" onerror="this.style.display='none';">
+        </div>
 
         <h1><span class="hero-title-line1">JAYALAKSHMI MUTUALLY <span class="hero-title-keep">AIDED COOPERATIVE</span></span><span class="hero-title-line2">THRIFT AND CREDIT SOCIETY LTD</span></h1>
+
+        <div class="reg"><span class="reg-dot"></span> REG NO: AMC/VSP/DCO/2013/3010</div>
 
         <p><span class="hero-sub-line1">For the cooperative sector in India to grow and provide a substantial financial alternative to the general public,</span><br><span class="hero-sub-line2">access to enterprise-class technology is essential.</span></p>
 
@@ -394,6 +397,72 @@ document.querySelectorAll('.faq-question').forEach(function(btn) {
             this.setAttribute('aria-expanded', 'true');
         }
     });
+});
+
+// Navbar scroll behavior - only on home page
+document.addEventListener('DOMContentLoaded', function() {
+    // Only apply this behavior on home page
+    if (!document.body.classList.contains('home-page')) return;
+    
+    const navbar = document.querySelector('.navbar');
+    const hero = document.querySelector('.hero');
+    const aboutSection = document.querySelector('.about-section');
+    
+    if (!navbar || !hero || !aboutSection) return;
+    
+    // Explicitly hide navbar on page load
+    navbar.classList.remove('navbar-visible');
+    navbar.classList.remove('navbar-sticky');
+    
+    // Optimize scroll handler with requestAnimationFrame
+    let ticking = false;
+    let lastScrollY = 0;
+    
+    function handleScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                const windowHeight = window.innerHeight;
+                const currentScroll = window.scrollY;
+                
+                // Only recalculate if scroll position changed significantly (performance optimization)
+                if (Math.abs(currentScroll - lastScrollY) > 10) {
+                    const aboutRect = aboutSection.getBoundingClientRect();
+                    const aboutTopViewport = aboutRect.top;
+                    const heroRect = hero.getBoundingClientRect();
+                    const heroBottom = window.scrollY + heroRect.bottom;
+                    
+                    // Hide navbar completely during hero section (until we've scrolled past hero)
+                    // Only show navbar when about section is actually visible in viewport
+                    if (currentScroll < heroBottom || aboutTopViewport > windowHeight - 50) {
+                        // Still in hero section or about section not yet visible - hide navbar completely
+                        if (navbar.classList.contains('navbar-visible')) {
+                            navbar.classList.remove('navbar-visible');
+                            navbar.classList.remove('navbar-sticky');
+                            navbar.style.cssText = 'position: fixed; bottom: -100px !important; top: auto !important; left: 0; right: 0; opacity: 0; pointer-events: none; visibility: hidden; transition: bottom 0.4s ease, opacity 0.4s ease;';
+                        }
+                    }
+                    // When about section is visible in viewport, navbar appears at top
+                    else {
+                        // About section is visible - show navbar at top
+                        if (!navbar.classList.contains('navbar-sticky')) {
+                            navbar.classList.add('navbar-sticky');
+                            navbar.classList.add('navbar-visible');
+                            navbar.style.cssText = 'position: fixed !important; top: 0px !important; bottom: auto !important; left: 0; right: 0; opacity: 1; pointer-events: auto; visibility: visible; transition: top 0.4s ease, opacity 0.4s ease;';
+                        }
+                    }
+                    
+                    lastScrollY = currentScroll;
+                }
+                
+                ticking = false;
+            });
+            
+            ticking = true;
+        }
+    }
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial check - navbar should be hidden at start
 });
 </script>
 
