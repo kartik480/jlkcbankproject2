@@ -185,11 +185,25 @@
         </div>
 
         <div class="cta-panels">
-            <div class="cta-panel cta-panel-image">
-                <img src="{{ asset('images/mb1.png') }}" alt="Member Benefits">
+            <div class="cta-panel">
+                <h3>Member Benefits</h3>
+                <ul>
+                    <li>Invitation to quarterly wealth webinars.</li>
+                    <li>Zero-commission trading on select assets.</li>
+                    <li>Access exclusive market analysis & daily trends.</li>
+                    <li>Priority support from certified financial planners.</li>
+                    <li>Advanced portfolio tracking & optimization tools.</li>
+                </ul>
             </div>
-            <div class="cta-panel cta-panel-image">
-                <img src="{{ asset('images/ap1.png') }}" alt="Advisor Perks">
+            <div class="cta-panel">
+                <h3>Advisor Perks</h3>
+                <ul>
+                    <li>Premium CRM & analytics dashboard suite.</li>
+                    <li>Networking with top-tier industry experts.</li>
+                    <li>Secure, compliant communication channels.</li>
+                    <li>Co-branded marketing materials & support.</li>
+                    <li>Direct access to a pool of high-intent clients.</li>
+                </ul>
             </div>
         </div>
     </div>
