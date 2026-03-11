@@ -350,6 +350,60 @@
         // Initial update
         updateFogOpacity();
     });
+
+    // Scroll-triggered animations for Our Core Strengths section
+    document.addEventListener('DOMContentLoaded', function() {
+        const strengthsSection = document.querySelector('.about-strengths-section');
+        const features = document.querySelectorAll('.about-strengths-feature');
+        const vmCards = document.querySelectorAll('.about-strengths-vm-card');
+        
+        // Reset animations initially
+        features.forEach(feature => {
+            feature.style.opacity = '0';
+            feature.style.transform = 'translateY(30px)';
+        });
+        
+        vmCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+        });
+        
+        // Intersection Observer for scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animate features with stagger
+                    features.forEach((feature, index) => {
+                        setTimeout(() => {
+                            feature.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                            feature.style.opacity = '1';
+                            feature.style.transform = 'translateY(0)';
+                        }, index * 200);
+                    });
+                    
+                    // Animate VM cards with stagger
+                    vmCards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 600 + (index * 200));
+                    });
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        if (strengthsSection) {
+            observer.observe(strengthsSection);
+        }
+    });
 </script>
 
 </body>
