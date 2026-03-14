@@ -1374,6 +1374,20 @@
     text-align: left;
 }
 
+.services-underline-image {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.services-underline-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .about-page-tagline {
     font-size: 16px;
     font-weight: 400;
@@ -1849,6 +1863,57 @@
     margin: 0;
 }
 
+/* ===== SERVICES PAGE: PP Image Section ===== */
+.services-pp-image {
+    margin: 48px 0 0;
+    width: 100vw;              /* stretch full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;        /* break out of centered container */
+    margin-right: -50vw;
+}
+
+.services-pp-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: none;           /* do not cap width so it can fill */
+}
+
+.services-pp-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.services-pp-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+.services-pp-desc {
+    color: #FFF;
+    text-align: center;
+    font-family: "Nirmala Text", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
 @media (max-width: 900px) {
     .services-loans-section {
         padding: 60px 40px;
@@ -1870,6 +1935,23 @@
     .services-loan-card {
         width: 280px;
         padding: 28px 20px;
+    }
+
+    .services-pp-image {
+        margin: 32px auto 0;
+    }
+
+    .services-pp-title {
+        font-size: 32px;
+    }
+
+    .services-pp-desc {
+        font-size: 18px;
+    }
+
+    .services-pp-content {
+        width: 95%;
+        padding: 0 20px;
     }
 }
 

@@ -46,6 +46,9 @@
                 <img src="{{ asset('images/services.png') }}" alt="Financial Services">
             </div>
         </div>
+        <div class="services-underline-image">
+            <img src="{{ asset('images/underline.png') }}" alt="Underline">
+        </div>
     </div>
 
     <!-- ========== OUR SERVICES SECTION ========== -->
@@ -204,6 +207,15 @@
                         <h3 class="services-loan-title">Recurring Deposit Loan</h3>
                         <p class="services-loan-desc">A Recurring Deposit Loan allows you to borrow money against your RD savings without closing the deposit.</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- ========== PP IMAGE SECTION ========== -->
+            <div class="services-pp-image">
+                <img src="{{ asset('images/pp.png') }}" alt="PP Image">
+                <div class="services-pp-content">
+                    <h2 class="services-pp-title">Premium Products</h2>
+                    <p class="services-pp-desc">Flexible loan options designed to support your personal, business, and financial needs. Our loans provide quick access to funds with convenient repayment options to help you achieve your goals.</p>
                 </div>
             </div>
         </div>
