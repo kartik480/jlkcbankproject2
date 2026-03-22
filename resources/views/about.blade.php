@@ -21,10 +21,10 @@
         <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/') }}#careers" class="menu-link">Careers</a></li>
         <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
-        <li><a href="{{ url('/') }}#gallery" class="menu-link">Gallery</a></li>
+        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
-    <a href="#" class="contact-btn">Contact us</a>
+    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
 </header>
 
 <!-- ========== ABOUT PAGE CONTENT ========== -->
@@ -290,7 +290,7 @@
                 <nav class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms and Conditions</a>
-                    <a href="#">Contact Us</a>
+                    <a href="{{ url('/contact') }}">Contact Us</a>
                     <a href="#">Application Status</a>
                 </nav>
             </div>

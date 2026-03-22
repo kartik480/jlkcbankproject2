@@ -23,10 +23,10 @@
         <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/') }}#careers" class="menu-link">Careers</a></li>
         <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
-        <li><a href="{{ url('/') }}#gallery" class="menu-link">Gallery</a></li>
+        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
-    <button class="contact-btn">Contact us</button>
+    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
 </header>
 
 <!-- ========== HERO SECTION ========== -->
@@ -42,7 +42,7 @@
 
         <p><span class="hero-sub-line1">For the cooperative sector in India to grow and provide a substantial financial alternative to the general public,</span><br><span class="hero-sub-line2">access to enterprise-class technology is essential.</span></p>
 
-        <button class="hero-btn">Contact us</button>
+        <a href="{{ url('/contact') }}" class="hero-btn">Contact us</a>
 
     </div>
 </section>
@@ -292,7 +292,7 @@
         <div class="support-banner-left">
             <h2 class="support-banner-title">Expert assistance whenever you need it</h2>
             <p class="support-banner-desc">Quick and easy support for your loan disbursal and repayment.</p>
-            <a href="#" class="support-banner-btn">Contact us</a>
+            <a href="{{ url('/contact') }}" class="support-banner-btn">Contact us</a>
         </div>
         <div class="support-banner-right">
             <div class="support-features">
@@ -385,7 +385,7 @@
                 <nav class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms and Conditions</a>
-                    <a href="#">Contact Us</a>
+                    <a href="{{ url('/contact') }}">Contact Us</a>
                     <a href="#">Application Status</a>
                 </nav>
             </div>

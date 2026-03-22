@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Services - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=services-journey-yay-pos">
 </head>
 <body>
 
@@ -21,10 +21,10 @@
         <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/') }}#careers" class="menu-link">Careers</a></li>
         <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
-        <li><a href="{{ url('/') }}#gallery" class="menu-link">Gallery</a></li>
+        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
-    <a href="#" class="contact-btn">Contact us</a>
+    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
 </header>
 
 <!-- ========== SERVICES PAGE CONTENT ========== -->
@@ -210,14 +210,140 @@
                 </div>
             </div>
 
-            <!-- ========== PP IMAGE SECTION ========== -->
-            <div class="services-pp-image">
-                <img src="{{ asset('images/pp.png') }}" alt="PP Image">
-                <div class="services-pp-content">
+            <!-- ========== PREMIUM PRODUCTS SECTION ========== -->
+            <div class="services-pp-wrap">
+                <div class="services-pp-bg">
+                    <img src="{{ asset('images/pp.png') }}" alt="" aria-hidden="true">
+                </div>
+                <div class="services-pp-inner">
                     <h2 class="services-pp-title">Premium Products</h2>
+                    <span class="services-pp-line"></span>
                     <p class="services-pp-desc">Flexible loan options designed to support your personal, business, and financial needs. Our loans provide quick access to funds with convenient repayment options to help you achieve your goals.</p>
+                    <div class="services-pp-images">
+                        <img src="{{ asset('images/mb.png') }}" alt="Mobile Banking" class="services-pp-img">
+                        <img src="{{ asset('images/sb.png') }}" alt="Surety Bonds" class="services-pp-img">
+                    </div>
                 </div>
             </div>
+            <!-- ========== WHY CHOOSE OUR SERVICES SECTION ========== -->
+            <section class="services-why-section">
+                <div class="services-why-inner">
+                    <h2 class="services-why-title">Why Choose Our Services</h2>
+                    <p class="services-why-subtitle">Reliable financial solutions designed to provide security, convenience, and long-term financial growth</p>
+
+                    <div class="services-why-grid">
+                        <div class="services-why-item">
+                            <div class="services-why-icon">
+                                <img src="{{ asset('images/security.png') }}" alt="" width="72" height="72" decoding="async" loading="lazy">
+                            </div>
+                            <h3 class="services-why-item-title">Security</h3>
+                            <p class="services-why-item-desc">Security – Advanced protection that keeps your financial data and transactions safe and secure.</p>
+                        </div>
+
+                        <div class="services-why-item">
+                            <div class="services-why-icon">
+                                <img src="{{ asset('images/time.png') }}" alt="" width="72" height="72" decoding="async" loading="lazy">
+                            </div>
+                            <h3 class="services-why-item-title">Fast Approval</h3>
+                            <p class="services-why-item-desc">Get your loan approved quickly with minimal paperwork and a simple application process.</p>
+                        </div>
+
+                        <div class="services-why-item">
+                            <div class="services-why-icon">
+                                <img src="{{ asset('images/hands.png') }}" alt="" width="72" height="72" decoding="async" loading="lazy">
+                            </div>
+                            <h3 class="services-why-item-title">Trusted Partner</h3>
+                            <p class="services-why-item-desc">Committed to transparency, integrity, and long-term customer relationships.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== CTA: START YOUR FINANCIAL JOURNEY ========== -->
+            <section class="services-journey-section">
+                <div class="services-journey-inner">
+                    <div class="services-journey-card">
+                        <h2 class="services-journey-title">Start Your Financial Journey Today</h2>
+                        <p class="services-journey-subtitle">Take the first step toward secure savings, smart investments, and reliable financial solutions.</p>
+                        <a href="#" class="services-journey-btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="services-journey-figure" aria-hidden="true">
+                    <img
+                        src="{{ asset('images/yay.png') }}"
+                        alt=""
+                        class="services-journey-figure-img"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+            </section>
+
+            <!-- ========== FOOTER ========== -->
+            <footer class="site-footer">
+                <div class="footer-inner">
+                    <div class="footer-top">
+                        <!-- Left: Logo + Company + About -->
+                        <div class="footer-col footer-about">
+                            <div class="footer-brand">
+                                <div class="footer-logo">
+                                    <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                                    <span class="footer-logo-placeholder"></span>
+                                </div>
+                                <h3 class="footer-company-name">
+                                    JAYALAKSHMI MUTUALLY AIDED<br>
+                                    COOPERATIVE THRIFT AND<br>
+                                    CREDIT SOCIETY LTD
+                                </h3>
+                            </div>
+                            <p class="footer-about-text">In 2013, we received the status of a State Cooperative Society from the Department of Cooperative, Government of Andhra Pradesh. JAYALAKSHMI operates on a mutual status, meaning we are owned by and run for the benefit of our members.</p>
+                        </div>
+
+                        <!-- Middle: Contact us -->
+                        <div class="footer-col footer-contact">
+                            <h4 class="footer-heading">Contact us</h4>
+                            <span class="footer-heading-line"></span>
+                            <div class="footer-contact-list">
+                                <p class="footer-contact-item"><span class="footer-icon">📞</span> +91 9640942443</p>
+                                <p class="footer-contact-item"><span class="footer-icon">📞</span> +91 8142851404</p>
+                                <p class="footer-contact-item"><span class="footer-icon">✉</span> jayalakshmicooperativebankltd@gmail.com</p>
+                                <p class="footer-contact-item"><span class="footer-icon">📍</span> Flat no.101, Madhapur, Ayyappa Society Building (Sahiti Ramkuteer), Hyderabad, Telangana 500081</p>
+                            </div>
+                        </div>
+
+                        <!-- Right: Quick Action -->
+                        <div class="footer-col footer-actions">
+                            <h4 class="footer-heading">Quick Action</h4>
+                            <span class="footer-heading-line"></span>
+                            <div class="footer-buttons">
+                                <a href="#" class="footer-btn">Become a Advisor</a>
+                                <a href="#" class="footer-btn">Become a membership</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-left">
+                            <div class="footer-social">
+                                <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
+                                <a href="#" class="footer-social-link" aria-label="X">X</a>
+                                <a href="#" class="footer-social-link yt" aria-label="YouTube">▶</a>
+                                <a href="#" class="footer-social-link in" aria-label="LinkedIn">in</a>
+                            </div>
+                            <nav class="footer-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms and Conditions</a>
+                                <a href="{{ url('/contact') }}">Contact Us</a>
+                                <a href="#">Application Status</a>
+                            </nav>
+                        </div>
+                        <div class="footer-bottom-right">
+                            <a href="#" class="footer-app-btn play">GET IT ON <span>Google Play</span></a>
+                            <a href="#" class="footer-app-btn appstore">Available on the <span>App Store</span></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </section>
     
