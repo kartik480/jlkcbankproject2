@@ -1950,7 +1950,7 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 720px;
+    min-height: 0;
     overflow: hidden;
 }
 
@@ -1965,6 +1965,26 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Subtle starfield over background (reference: Premium Products header area) */
+.services-pp-stars {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(1px 1px at 10% 18%, rgba(255, 255, 255, 0.85) 0%, transparent 100%),
+        radial-gradient(1px 1px at 22% 42%, rgba(255, 255, 255, 0.55) 0%, transparent 100%),
+        radial-gradient(1px 1px at 35% 12%, rgba(255, 255, 255, 0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 48% 55%, rgba(255, 255, 255, 0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 62% 22%, rgba(255, 255, 255, 0.75) 0%, transparent 100%),
+        radial-gradient(1px 1px at 78% 38%, rgba(255, 255, 255, 0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 88% 15%, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 65%, rgba(255, 255, 255, 0.45) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 72%, rgba(255, 255, 255, 0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 92% 62%, rgba(255, 255, 255, 0.55) 0%, transparent 100%);
+    opacity: 0.65;
 }
 
 .services-pp-inner {
@@ -2005,19 +2025,207 @@
     max-width: 720px;
 }
 
-.services-pp-images {
+/* Premium Products: glassmorphism cards — tall narrow columns (reference) */
+.services-pp-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 300px));
+    gap: 48px;
+    justify-content: center;
+    /* Same row height for both cards (Mobile Banking matches Surety Bonds) */
+    align-items: stretch;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.services-pp-img {
+.services-pp-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: visible;
     width: 100%;
-    height: auto;
+    max-width: 300px;
+    justify-self: center;
+    align-self: stretch;
+    /* Slightly taller cards; content can still grow beyond this */
+    min-height: 468px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        155deg,
+        rgba(88, 48, 160, 0.42) 0%,
+        rgba(30, 18, 72, 0.55) 45%,
+        rgba(20, 35, 90, 0.48) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow:
+        0 24px 56px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.services-pp-card-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* Orange / amber neon — top & left (Mobile Banking) */
+.services-pp-card--mobile .services-pp-card-glow {
+    box-shadow:
+        inset 0 2px 0 rgba(255, 200, 100, 0.85),
+        inset 2px 0 0 rgba(255, 190, 80, 0.75),
+        0 0 32px rgba(255, 170, 60, 0.25),
+        0 0 60px rgba(255, 140, 40, 0.12);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 200, 100, 0.18) 0%,
+        transparent 42%,
+        transparent 100%
+    );
+}
+
+/* Green / cyan neon — top & left (Surety Bonds, reference) */
+.services-pp-card--surety .services-pp-card-glow {
+    box-shadow:
+        inset 0 2px 0 rgba(72, 255, 200, 0.75),
+        inset 2px 0 0 rgba(34, 211, 238, 0.7),
+        0 0 32px rgba(34, 211, 238, 0.2),
+        0 0 56px rgba(16, 185, 129, 0.12);
+    background: linear-gradient(
+        135deg,
+        rgba(45, 212, 191, 0.16) 0%,
+        transparent 42%,
+        transparent 100%
+    );
+}
+
+.services-pp-card-body {
+    position: relative;
+    z-index: 1;
+    padding: 36px 22px 36px;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Extra row height goes below the button — keeps list→button gap tight */
+.services-pp-card-body::after {
+    content: "";
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+}
+
+.services-pp-card-title {
+    margin: 0 0 10px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+
+.services-pp-card-sub {
+    margin: 0 0 22px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.45;
+    max-width: 260px;
+}
+
+.services-pp-card-list {
+    margin: 0 0 16px;
+    padding: 0 4px 0 18px;
+    text-align: left;
+    align-self: stretch;
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.92);
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.services-pp-card-list li {
+    margin-bottom: 6px;
+    padding-left: 4px;
+}
+
+.services-pp-card-list li::marker {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.services-pp-card-btn {
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 36px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1a1208;
+    background: linear-gradient(180deg, #fde68a 0%, #fbbf24 45%, #f59e0b 100%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(251, 191, 36, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services-pp-card-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 14px 36px rgba(0, 0, 0, 0.4),
+        0 0 28px rgba(251, 191, 36, 0.35);
+}
+
+/* Diagonal ribbon — bottom-right corner (reference) */
+.services-pp-ribbon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 3;
+    pointer-events: none;
+    border-bottom-right-radius: 17px;
+}
+
+.services-pp-ribbon span {
+    position: absolute;
     display: block;
-    max-width: 520px;
-    margin: 0 auto;
+    width: 200px;
+    padding: 9px 0;
+    bottom: 22px;
+    right: -58px;
+    transform: rotate(-42deg);
+    transform-origin: center;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(90deg, #ea580c 0%, #fbbf24 50%, #fde047 100%);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 /* ===== SERVICES PAGE: Why Choose Our Services ===== */
@@ -2261,13 +2469,37 @@
         margin-bottom: 32px;
     }
 
-    .services-pp-images {
+    .services-pp-cards {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 28px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .services-pp-img {
-        max-width: 480px;
+    .services-pp-card {
+        min-height: 440px;
+        max-width: 100%;
+    }
+
+    .services-pp-card-body {
+        padding: 32px 20px 34px;
+    }
+
+    .services-pp-card-title {
+        font-size: 19px;
+    }
+
+    .services-pp-ribbon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .services-pp-ribbon span {
+        width: 170px;
+        font-size: 9px;
+        bottom: 18px;
+        right: -52px;
     }
 
     .services-why-section {
@@ -3921,7 +4153,7 @@ a.nav-logo {
 /* ===== INFRASTRUCTURE SECTION (ADVANCED GRID) ===== */
 
 .infrastructure-section {
-    background: #f3f3f3;
+    background: #fff;
     padding: 50px 20px;
     text-align: center;
 }
@@ -4720,5 +4952,803 @@ p.branch-row-value--multiline {
 
     .contact-financial-cta-glass {
         padding: 36px 22px 40px;
+    }
+}
+
+/* ===== MOBILE BANKING PAGE ===== */
+.mb-page {
+    background: #f4f8ff;
+}
+
+.mb-hero {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 74px);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 34px 24px 44px;
+    overflow: hidden;
+}
+
+.mb-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(235, 243, 255, 0.2);
+    pointer-events: none;
+}
+
+.mb-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.mb-back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #0e1630;
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 8px;
+}
+
+.mb-hero-title {
+    margin: 0;
+    text-align: center;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 800;
+    color: #0c1021;
+    letter-spacing: 0.01em;
+}
+
+.mb-hero-line {
+    display: block;
+    width: 72px;
+    height: 3px;
+    border-radius: 2px;
+    background: #00a86b;
+    margin: 8px auto 12px;
+}
+
+.mb-hero-desc {
+    margin: 0 auto 26px;
+    text-align: center;
+    max-width: 720px;
+    color: #1d2438;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 24px;
+    line-height: 1.45;
+}
+
+.mb-grid {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(220px, 300px) minmax(240px, 1fr);
+    grid-template-areas:
+        "left-top . right-top"
+        "left-bottom girl right-bottom";
+    gap: 14px 20px;
+    align-items: start;
+}
+
+.mb-card {
+    background: #fff;
+    border: 1px solid #57d86a;
+    border-radius: 9px;
+    padding: 16px 16px 14px;
+    box-shadow: 0 8px 24px rgba(16, 53, 114, 0.08);
+    width: 100%;
+    max-width: 400px;
+}
+
+.mb-card--normal-savings {
+    grid-area: left-top;
+    justify-self: end;
+}
+
+.mb-card--normal-current {
+    grid-area: left-bottom;
+    justify-self: end;
+}
+
+.mb-card--primary-savings {
+    grid-area: right-top;
+    justify-self: start;
+}
+
+.mb-card--express-current {
+    grid-area: right-bottom;
+    justify-self: start;
+}
+
+.mb-card-title {
+    margin: 0 0 10px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.25;
+}
+
+.mb-card-list {
+    margin: 0;
+    padding-left: 18px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    color: #212121;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.mb-card-list li {
+    margin-bottom: 2px;
+}
+
+.mb-figure-wrap {
+    grid-area: girl;
+    align-self: end;
+    margin-top: -36px;
+    margin-bottom: -120px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.mb-figure-img {
+    width: min(1120px, 94vw);
+    max-height: 680px;
+    object-fit: contain;
+}
+
+@media (max-width: 980px) {
+    .mb-hero {
+        min-height: auto;
+        padding: 28px 16px 34px;
+    }
+
+    .mb-hero-desc {
+        font-size: 16px;
+    }
+
+    .mb-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+        gap: 16px;
+    }
+
+    .mb-card--normal-savings,
+    .mb-card--normal-current,
+    .mb-card--primary-savings,
+    .mb-card--express-current {
+        justify-self: stretch;
+        max-width: 100%;
+    }
+
+    .mb-card-title {
+        font-size: 21px;
+    }
+
+    .mb-card-list {
+        font-size: 14px;
+    }
+
+    .mb-figure-wrap {
+        order: 5;
+        margin: 0 0 -48px;
+    }
+
+    .mb-figure-img {
+        width: min(620px, 99vw);
+        max-height: 520px;
+    }
+}
+
+/* Mobile banking CTA section (reference-based) */
+.mb-activate-section {
+    padding: 0 0 14px;
+    background: #f6f9ff;
+}
+
+.mb-activate-inner {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    min-height: 430px;
+    margin: 0 auto;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: #c9d8e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.mb-activate-glass {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    width: min(980px, calc(100% - 52px));
+    padding: 34px 36px 24px;
+    border-radius: 12px;
+    text-align: center;
+    background: rgba(191, 203, 214, 0.58);
+    border: 1px solid rgba(66, 79, 96, 0.42);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.mb-activate-title {
+    margin: 0 0 16px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(28px, 2.7vw, 46px);
+    font-weight: 800;
+    color: #09111d;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+.mb-activate-desc {
+    margin: 0 auto 20px;
+    max-width: 620px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(16px, 1vw, 22px);
+    line-height: 1.5;
+    color: #151f2d;
+}
+
+.mb-activate-btn {
+    display: inline-block;
+    min-width: 290px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(22px, 1.3vw, 28px);
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(180deg, #2b8ff0 0%, #0f75de 100%);
+    box-shadow: 0 10px 20px rgba(15, 117, 222, 0.34);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mb-activate-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 24px rgba(15, 117, 222, 0.4);
+}
+
+@media (max-width: 980px) {
+    .mb-activate-section {
+        padding: 0 0 12px;
+    }
+
+    .mb-activate-inner {
+        min-height: 300px;
+        border-radius: 0;
+    }
+
+    .mb-activate-glass {
+        top: 56%;
+        width: min(620px, calc(100% - 24px));
+        padding: 20px 14px 16px;
+    }
+
+    .mb-activate-title {
+        white-space: normal;
+    }
+
+    .mb-activate-btn {
+        min-width: 190px;
+        font-size: 18px;
+    }
+}
+
+/* ===== SURETY BONDS PAGE ===== */
+.sb-page {
+    background: #eef4fb;
+}
+
+.sb-hero {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 74px);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 34px 24px 40px;
+    overflow: hidden;
+}
+
+.sb-hero::after {
+    content: "";
+    position: absolute;
+    inset: -14px;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(7px);
+    transform: scale(1.03);
+    z-index: 0;
+}
+
+.sb-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(232, 241, 252, 0.22);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.sb-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.sb-back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #0e1630;
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 8px;
+}
+
+.sb-hero-title {
+    margin: 0;
+    text-align: center;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 800;
+    color: #0c1021;
+    letter-spacing: 0.01em;
+}
+
+.sb-hero-line {
+    display: block;
+    width: 72px;
+    height: 3px;
+    border-radius: 2px;
+    background: #00a86b;
+    margin: 8px auto 12px;
+}
+
+.sb-hero-desc {
+    margin: 0 auto 24px;
+    text-align: center;
+    max-width: 920px;
+    color: #18263f;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 36px;
+    line-height: 1.45;
+}
+
+.sb-grid {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(220px, 300px) minmax(240px, 1fr);
+    grid-template-areas:
+        "left-top . right-top"
+        "left-bottom girl right-bottom";
+    gap: 16px 28px;
+    align-items: start;
+}
+
+.sb-card {
+    background: #fff;
+    border: 1px solid #38dd60;
+    border-radius: 14px;
+    padding: 18px 20px 16px;
+    box-shadow: 0 9px 22px rgba(16, 53, 114, 0.1);
+    width: 100%;
+    max-width: 420px;
+    min-height: 206px;
+}
+
+.sb-card--member-support {
+    grid-area: left-top;
+    justify-self: end;
+}
+
+.sb-card--undertaking {
+    grid-area: left-bottom;
+    justify-self: end;
+}
+
+.sb-card--contract-support {
+    grid-area: right-top;
+    justify-self: start;
+}
+
+.sb-card--coordination {
+    grid-area: right-bottom;
+    justify-self: start;
+}
+
+.sb-card-title {
+    margin: 0 0 12px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.45;
+}
+
+.sb-card-text {
+    margin: 0;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.sb-figure-wrap {
+    grid-area: girl;
+    align-self: end;
+    margin-top: -34px;
+    margin-bottom: -92px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.sb-figure-img {
+    width: min(880px, 78vw);
+    max-height: 620px;
+    object-fit: contain;
+}
+
+@media (max-width: 980px) {
+    .sb-hero {
+        min-height: auto;
+        padding: 28px 16px 34px;
+    }
+
+    .sb-hero-desc {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+
+    .sb-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+        gap: 16px;
+    }
+
+    .sb-card--member-support,
+    .sb-card--undertaking,
+    .sb-card--contract-support,
+    .sb-card--coordination {
+        justify-self: stretch;
+        max-width: 100%;
+        min-height: 0;
+    }
+
+    .sb-card-title {
+        font-size: 18px;
+    }
+
+    .sb-card-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .sb-figure-wrap {
+        order: 5;
+        margin: 0 0 -34px;
+    }
+
+    .sb-figure-img {
+        width: min(560px, 96vw);
+        max-height: 460px;
+    }
+}
+
+.sb-note-section {
+    margin: 0;
+    padding: 0;
+    background: #f4f8ff;
+}
+
+.sb-note-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    background: linear-gradient(90deg, #62e0d6 0%, #6cdf98 52%, #23e623 100%);
+}
+
+.sb-note-icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sb-note-icon-img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.sb-note-content {
+    text-align: center;
+}
+
+.sb-note-title {
+    margin: 0 0 4px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #0a131f;
+}
+
+.sb-note-text {
+    margin: 0;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0c1320;
+}
+
+@media (max-width: 980px) {
+    .sb-note-inner {
+        gap: 12px;
+        padding: 12px 12px;
+    }
+
+    .sb-note-icon {
+        width: 78px;
+    }
+
+    .sb-note-icon-img {
+        width: 78px;
+    }
+
+    .sb-note-title {
+        font-size: 24px;
+    }
+
+    .sb-note-text {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+}
+
+.sb-support-section {
+    background: #eeeeee;
+    padding: 54px 18px 74px;
+}
+
+.sb-support-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sb-support-title {
+    margin: 0 0 14px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #10131a;
+    letter-spacing: 0.01em;
+}
+
+.sb-support-desc {
+    margin: 0 auto 36px;
+    max-width: 980px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1c1f28;
+}
+
+.sb-support-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 54px;
+    justify-content: center;
+}
+
+.sb-support-card {
+    background: #fff;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 420px;
+    min-height: 286px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 28px 24px 22px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+    border-top: 8px solid #6f5c7d;
+}
+
+.sb-support-card--benefits {
+    border-top-color: #2dfd2d;
+}
+
+.sb-support-card--eligibility {
+    border-top-color: #6f5c7d;
+}
+
+.sb-support-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.sb-support-card-title {
+    margin: 0 0 10px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #13161e;
+}
+
+.sb-support-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    color: #21242e;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.sb-support-list li {
+    margin-bottom: 2px;
+}
+
+@media (max-width: 980px) {
+    .sb-support-section {
+        padding: 36px 14px 48px;
+    }
+
+    .sb-support-title {
+        font-size: 28px;
+    }
+
+    .sb-support-desc {
+        font-size: 14px;
+        line-height: 1.65;
+        margin-bottom: 24px;
+    }
+
+    .sb-support-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .sb-support-card {
+        min-height: 0;
+        padding: 22px 18px 18px;
+        border-radius: 14px;
+    }
+
+    .sb-support-card-title {
+        font-size: 18px;
+    }
+
+    .sb-support-list {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+.sb-apply-section {
+    padding: 0;
+    background: #f2f5fc;
+}
+
+.sb-apply-inner {
+    position: relative;
+    width: 100%;
+    min-height: 410px;
+    margin: 0 auto;
+    border-radius: 24px 24px 0 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sb-apply-glass {
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+    width: min(980px, calc(100% - 90px));
+    padding: 42px 36px 26px;
+    border-radius: 14px;
+    text-align: center;
+    background: rgba(192, 214, 214, 0.58);
+    border: 1px solid rgba(74, 88, 105, 0.52);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.sb-apply-title {
+    margin: 0 0 14px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(28px, 2.4vw, 46px);
+    font-weight: 800;
+    color: #09111d;
+    letter-spacing: 0.01em;
+}
+
+.sb-apply-desc {
+    margin: 0 auto 20px;
+    max-width: 860px;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(16px, 1vw, 23px);
+    line-height: 1.55;
+    color: #151f2d;
+}
+
+.sb-apply-btn {
+    display: inline-block;
+    min-width: 280px;
+    padding: 12px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: "Nirmala Text", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(22px, 1.25vw, 30px);
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(180deg, #2b8ff0 0%, #0f75de 100%);
+    box-shadow: 0 10px 20px rgba(15, 117, 222, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sb-apply-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 13px 24px rgba(15, 117, 222, 0.42);
+}
+
+@media (max-width: 980px) {
+    .sb-apply-inner {
+        min-height: 320px;
+        border-radius: 18px 18px 0 0;
+    }
+
+    .sb-apply-glass {
+        width: min(760px, calc(100% - 24px));
+        padding: 24px 14px 16px;
+    }
+
+    .sb-apply-title {
+        font-size: 28px;
+    }
+
+    .sb-apply-desc {
+        font-size: 14px;
+        line-height: 1.45;
+        margin-bottom: 14px;
+    }
+
+    .sb-apply-btn {
+        min-width: 190px;
+        font-size: 18px;
     }
 }

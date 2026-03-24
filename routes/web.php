@@ -14,6 +14,14 @@ Route::get('/services', function () {
     return view('services');
 });
 
+Route::get('/services/mobile-banking', function () {
+    return view('mobile-banking');
+})->name('services.mobile-banking');
+
+Route::get('/services/surety-bonds', function () {
+    return view('surety-bonds');
+})->name('services.surety-bonds');
+
 Route::get('/gallery', function () {
     return view('gallery');
 });

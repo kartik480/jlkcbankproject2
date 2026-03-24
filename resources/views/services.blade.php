@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Services - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=services-journey-yay-pos">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=services-pp-glass-v5">
 </head>
 <body>
 
@@ -97,7 +97,7 @@
                 <div class="services-main-products-scroll">
                     <div class="services-main-product-card">
                         <div class="services-main-product-icon">
-                            <img src="{{ asset('images/sb-icon.png') }}" alt="Saving Account" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/sasb.png') }}" alt="Saving Account" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Saving Account - SB</h3>
                         <p class="services-main-product-desc">Designed to help members save money while earning interest on their deposits. It offers flexibility with easy access to funds.</p>
@@ -105,7 +105,7 @@
 
                     <div class="services-main-product-card">
                         <div class="services-main-product-icon">
-                            <img src="{{ asset('images/ac-icon.png') }}" alt="Current Account" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/ca.png') }}" alt="Current Account" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Current Account - AC</h3>
                         <p class="services-main-product-desc">Designed for businesses and professionals that allows frequent and unlimited transactions for daily financial operations.</p>
@@ -113,7 +113,7 @@
 
                     <div class="services-main-product-card">
                         <div class="services-main-product-icon">
-                            <img src="{{ asset('images/fd-icon.png') }}" alt="Fixed Deposit" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/fxd.png') }}" alt="Fixed Deposit" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Fixed Deposit - FD</h3>
                         <p class="services-main-product-desc">A secure investment where money is deposited for a fixed period at a fixed interest rate, offering guaranteed returns.</p>
@@ -121,7 +121,7 @@
 
                     <div class="services-main-product-card">
                         <div class="services-main-product-icon">
-                            <img src="{{ asset('images/mis-icon.png') }}" alt="Monthly Income Scheme" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/cal.png') }}" alt="Monthly Income Scheme" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Monthly Income Scheme - MIS</h3>
                         <p class="services-main-product-desc">MIS is a deposit plan where you invest a lump sum and receive fixed monthly income through interest.</p>
@@ -129,7 +129,7 @@
 
                     <div class="services-main-product-card">
                         <div class="services-main-product-icon">
-                            <img src="{{ asset('images/dds-icon.png') }}" alt="Daily Deposit Scheme" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/cal2.png') }}" alt="Daily Deposit Scheme" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Daily Deposit Scheme - DDS</h3>
                         <p class="services-main-product-desc">DDS allows customers to deposit small amounts daily and earn interest, helping them build savings gradually.</p>
@@ -137,7 +137,7 @@
 
                     <div class="services-main-product-card">
                         <div class="services-main-product-icon">
-                            <img src="{{ asset('images/rd-icon.png') }}" alt="Recurring Deposit" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/r1.png') }}" alt="Recurring Deposit" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Recurring Deposit - RD</h3>
                         <p class="services-main-product-desc">A Recurring Deposit allows you to save a fixed amount monthly and earn guaranteed interest until maturity.</p>
@@ -154,7 +154,7 @@
                 <div class="services-loans-scroll">
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/personal-loan-icon.png') }}" alt="Personal Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/pl.png') }}" alt="Personal Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Personal Loan</h3>
                         <p class="services-loan-desc">An unsecured loan that helps individuals meet personal financial needs and is repaid in fixed monthly installments.</p>
@@ -162,7 +162,7 @@
 
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/home-loan-icon.png') }}" alt="Home Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/hl.png') }}" alt="Home Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Home Loan</h3>
                         <p class="services-loan-desc">A Home Loan helps individuals finance the purchase or construction of a house and repay the amount in monthly installments.</p>
@@ -170,7 +170,7 @@
 
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/auto-loan-icon.png') }}" alt="Auto Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/al.png') }}" alt="Auto Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Auto Loan</h3>
                         <p class="services-loan-desc">An Auto Loan helps individuals finance the purchase of a vehicle and repay the amount in monthly installments over a fixed period.</p>
@@ -178,7 +178,7 @@
 
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/business-loan-icon.png') }}" alt="Business Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/bl.png') }}" alt="Business Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Business Loan</h3>
                         <p class="services-loan-desc">Money borrowed from a bank or financial institution to start, or expand a business, and it is repaid over time with interest.</p>
@@ -186,7 +186,7 @@
 
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/agricultural-loan-icon.png') }}" alt="Agricultural Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/agri.png') }}" alt="Agricultural Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Agricultural Loan</h3>
                         <p class="services-loan-desc">An Agricultural Loan provides financial support to farmers for cultivation, equipment, and other farming activities.</p>
@@ -194,7 +194,7 @@
 
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/gold-loan-icon.png') }}" alt="Gold Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/gold.png') }}" alt="Gold Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Gold Loan</h3>
                         <p class="services-loan-desc">A Gold Loan allows you to borrow money by pledging your gold as security and repay the amount with interest within a fixed tenure.</p>
@@ -202,7 +202,7 @@
 
                     <div class="services-loan-card">
                         <div class="services-loan-icon">
-                            <img src="{{ asset('images/rd-loan-icon.png') }}" alt="Recurring Deposit Loan" onerror="this.style.display='none';">
+                            <img src="{{ asset('images/cl.png') }}" alt="Recurring Deposit Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Recurring Deposit Loan</h3>
                         <p class="services-loan-desc">A Recurring Deposit Loan allows you to borrow money against your RD savings without closing the deposit.</p>
@@ -215,13 +215,42 @@
                 <div class="services-pp-bg">
                     <img src="{{ asset('images/pp.png') }}" alt="" aria-hidden="true">
                 </div>
+                <div class="services-pp-stars" aria-hidden="true"></div>
                 <div class="services-pp-inner">
                     <h2 class="services-pp-title">Premium Products</h2>
                     <span class="services-pp-line"></span>
                     <p class="services-pp-desc">Flexible loan options designed to support your personal, business, and financial needs. Our loans provide quick access to funds with convenient repayment options to help you achieve your goals.</p>
-                    <div class="services-pp-images">
-                        <img src="{{ asset('images/mb.png') }}" alt="Mobile Banking" class="services-pp-img">
-                        <img src="{{ asset('images/sb.png') }}" alt="Surety Bonds" class="services-pp-img">
+                    <div class="services-pp-cards">
+                        <article class="services-pp-card services-pp-card--mobile">
+                            <div class="services-pp-card-glow" aria-hidden="true"></div>
+                            <div class="services-pp-card-body">
+                                <h3 class="services-pp-card-title">Mobile Banking</h3>
+                                <p class="services-pp-card-sub">Instant NEFT / RTGS Fund Transfers</p>
+                                <ul class="services-pp-card-list">
+                                    <li>Normal Savings Account</li>
+                                    <li>Primary Savings Account</li>
+                                    <li>Normal Current Account</li>
+                                    <li>Express Current Account</li>
+                                    <li>Real-time Account Balance, Mini Statement &amp; 24x7 Banking Access</li>
+                                </ul>
+                                <a href="{{ route('services.mobile-banking') }}" class="services-pp-card-btn">Explore Products</a>
+                            </div>
+                            <div class="services-pp-ribbon" aria-hidden="true"><span>Most Popular</span></div>
+                        </article>
+                        <article class="services-pp-card services-pp-card--surety">
+                            <div class="services-pp-card-glow" aria-hidden="true"></div>
+                            <div class="services-pp-card-body">
+                                <h3 class="services-pp-card-title">Surety Bonds</h3>
+                                <p class="services-pp-card-sub">Financial Guarantee Support Services</p>
+                                <ul class="services-pp-card-list">
+                                    <li>Member Financial Guarantee Support</li>
+                                    <li>Contract Support &amp; Undertaking Letters</li>
+                                    <li>Financial Undertaking Letters</li>
+                                    <li>Coordination with Banks &amp; Insurance Providers</li>
+                                </ul>
+                                <a href="{{ route('services.surety-bonds') }}" class="services-pp-card-btn">Explore Products</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>

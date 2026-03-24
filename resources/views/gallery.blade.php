@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gallery - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=infra-grid-5">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=infra-bg-white">
 </head>
 <body>
 

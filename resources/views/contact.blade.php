@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact us - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=contact-5">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=contact-6">
 </head>
 <body class="contact-page">
 
@@ -235,7 +235,7 @@
 <section
     class="contact-financial-cta"
     aria-labelledby="contact-financial-cta-heading"
-    style="background-image: url('{{ asset('images/wall.png') }}');"
+    style="background-image: url('{{ asset('images/eye.png') }}');"
 >
     <div class="contact-financial-cta-scrim" aria-hidden="true"></div>
     <div class="contact-financial-cta-inner">
