@@ -21,7 +21,7 @@
         <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
         <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
         <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
-        <li><a href="{{ url('/') }}#careers" class="menu-link">Careers</a></li>
+        <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
         <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
         <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>

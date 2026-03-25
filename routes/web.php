@@ -26,6 +26,10 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 
+Route::get('/careers', function () {
+    return view('careers');
+})->name('careers');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
