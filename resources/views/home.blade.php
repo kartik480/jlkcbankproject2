@@ -20,9 +20,7 @@
         <li class="active"><a href="{{ url('/') }}" class="menu-link">Home</a></li>
         <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
         <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
         <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
@@ -93,7 +91,7 @@
 </section>
 
 <!-- ========== SERVICES SECTION ========== -->
-<section class="services-section">
+<section class="services-section" id="financial-offerings">
     <div class="services-header">
         <div class="services-header-text">
             <h2 class="services-title">Explore Our Financial Service Offerings</h2>
@@ -144,7 +142,7 @@
                 <div class="service-card-body">
                     <h3>Daily Deposit</h3>
                     <p>DDS is a scheme to help daily savers build a habit of saving with flexible deposit options and competitive returns.</p>
-                    <a href="#" class="service-card-btn">Explore more</a>
+                    <a href="{{ route('services.daily-deposit-scheme') }}" class="service-card-btn">Explore more</a>
                 </div>
             </article>
 

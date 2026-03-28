@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="services-page-root">
 <head>
     <meta charset="UTF-8">
     <title>Services - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=services-pp-glass-v5">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=services-scroll-v1">
 </head>
 <body>
 
@@ -18,9 +18,7 @@
         <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
         <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
         <li class="active"><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
         <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
@@ -38,7 +36,7 @@
                 </h1>
                 <p class="about-page-tagline">Explore secure savings, flexible loans, and premium financial solutions tailored to individuals and businesses.</p>
                 <div class="about-hero-buttons">
-                    <a href="#" class="services-hero-btn services-hero-btn-primary">Explore Products</a>
+                    <a href="#our-services" class="services-hero-btn services-hero-btn-primary">Explore Products</a>
                     <a href="#" class="services-hero-btn services-hero-btn-secondary">Apply for Loan</a>
                 </div>
             </div>
@@ -52,7 +50,7 @@
     </div>
 
     <!-- ========== OUR SERVICES SECTION ========== -->
-    <section class="services-our-services-section">
+    <section class="services-our-services-section" id="our-services">
         <div class="services-our-services-inner">
             <h2 class="services-our-services-title">Our Services</h2>
             <div class="services-our-services-cards">
@@ -62,7 +60,7 @@
                     </div>
                     <h3 class="services-our-services-card-title">Main Products</h3>
                     <p class="services-our-services-card-desc">Savings & deposit services to grow your money.</p>
-                    <a href="#" class="services-our-services-btn">Explore Products</a>
+                    <a href="#main-products" class="services-our-services-btn">Explore Products</a>
                 </div>
 
                 <div class="services-our-services-card">
@@ -71,7 +69,7 @@
                     </div>
                     <h3 class="services-our-services-card-title">Loans</h3>
                     <p class="services-our-services-card-desc">Flexible loans for personal and business needs.</p>
-                    <a href="#" class="services-our-services-btn">Explore Loans</a>
+                    <a href="#loans" class="services-our-services-btn">Explore Loans</a>
                 </div>
 
                 <div class="services-our-services-card">
@@ -80,14 +78,14 @@
                     </div>
                     <h3 class="services-our-services-card-title">Premium Products</h3>
                     <p class="services-our-services-card-desc">Advanced digital banking and specialized financial solutions.</p>
-                    <a href="#" class="services-our-services-btn">Explore Products</a>
+                    <a href="#premium-products" class="services-our-services-btn">Explore Products</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========== MAIN PRODUCTS SECTION ========== -->
-    <section class="services-main-products-section">
+    <section class="services-main-products-section" id="main-products">
         <div class="services-main-products-inner">
             <h2 class="services-main-products-title">Main Products</h2>
             <span class="services-main-products-line"></span>
@@ -146,7 +144,7 @@
             </div>
 
             <!-- ========== LOANS CONTENT ========== -->
-            <h2 class="services-loans-title">Loans</h2>
+            <h2 class="services-loans-title" id="loans">Loans</h2>
             <span class="services-loans-line"></span>
             <p class="services-loans-desc">Flexible loan options designed to support your personal, business, and financial needs. Our loans provide quick access to funds with convenient repayment options to help you achieve your goals.</p>
             
@@ -211,7 +209,7 @@
             </div>
 
             <!-- ========== PREMIUM PRODUCTS SECTION ========== -->
-            <div class="services-pp-wrap">
+            <div class="services-pp-wrap" id="premium-products">
                 <div class="services-pp-bg">
                     <img src="{{ asset('images/pp.png') }}" alt="" aria-hidden="true">
                 </div>

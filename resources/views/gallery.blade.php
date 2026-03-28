@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gallery - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=infra-bg-white">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=gallery-no-filters">
 </head>
 <body>
 
@@ -18,9 +18,7 @@
         <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
         <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
         <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
         <li class="active"><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
@@ -41,12 +39,6 @@
         </div>
     </div>
 </section>
-<div class="gallery-filters">
-    <button class="filter-btn active">All</button>
-    <button class="filter-btn">Events</button>
-    <button class="filter-btn">Branch Activities</button>
-    <button class="filter-btn">Community Programs</button>
-</div>
 <!-- ========== Our Infrastructure SECTION ========== -->
 <section class ="infrastructure-section">
     <h2 class ="infra-title">Our Infrastructure</h2>
@@ -69,16 +61,6 @@
     <div class="box bottom-tall"><img src="{{ asset('images/img10.png') }}" alt="Infrastructure 10"></div>
     <div class="box bottom-wide"><img src="{{ asset('images/img9.png') }}" alt="Infrastructure 9" class="infra-img9"></div>
 </div>
-
-    <figure class="infra-banner-wrap">
-        <img
-            src="{{ asset('images/banner.png') }}"
-            alt="Jayalakshmi Mutually Aided Cooperative — our services and branch information"
-            class="infra-banner-img"
-            loading="lazy"
-            decoding="async"
-        >
-    </figure>
 </section>
 <!-- ========== FOOTER ========== -->
 <footer class="site-footer">

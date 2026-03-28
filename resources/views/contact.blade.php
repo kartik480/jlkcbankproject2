@@ -18,9 +18,7 @@
         <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
         <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
         <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/') }}#our-scheme" class="menu-link">Our Scheme</a></li>
         <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/') }}#faq" class="menu-link">FAQ</a></li>
         <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
     </ul>
 
@@ -45,6 +43,16 @@
             <p class="contact-flash" role="status">{{ session('contact_status') }}</p>
         @endif
 
+        @if ($errors->any())
+            <div class="contact-flash contact-flash--error" role="alert">
+                <ul class="contact-flash-list">
+                    @foreach ($errors->all() as $message)
+                        <li>{{ $message }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <div class="contact-card contact-form-card">
             <h2 class="contact-card-title">Get in Touch</h2>
             <div class="contact-card-rule" aria-hidden="true"></div>
@@ -53,20 +61,20 @@
                 <div class="contact-form-row contact-form-row--2">
                     <div class="contact-field">
                         <label class="contact-label" for="contact-name">Name</label>
-                        <input class="contact-input" type="text" id="contact-name" name="name" placeholder="Enter Your Name" autocomplete="name">
+                        <input class="contact-input" type="text" id="contact-name" name="name" value="{{ old('name') }}" placeholder="Enter Your Name" autocomplete="name" required>
                     </div>
                     <div class="contact-field">
                         <label class="contact-label" for="contact-phone">Phone Number</label>
-                        <input class="contact-input" type="tel" id="contact-phone" name="phone" placeholder="Enter your number" autocomplete="tel">
+                        <input class="contact-input" type="tel" id="contact-phone" name="phone" value="{{ old('phone') }}" placeholder="Enter your number" autocomplete="tel" required>
                     </div>
                 </div>
                 <div class="contact-field">
                     <label class="contact-label" for="contact-email">Email</label>
-                    <input class="contact-input" type="email" id="contact-email" name="email" placeholder="Enter your email" autocomplete="email">
+                    <input class="contact-input" type="email" id="contact-email" name="email" value="{{ old('email') }}" placeholder="Enter your email" autocomplete="email" required>
                 </div>
                 <div class="contact-field">
                     <label class="contact-label" for="contact-message">Your message</label>
-                    <textarea class="contact-textarea" id="contact-message" name="message" rows="6" placeholder="Type your message here"></textarea>
+                    <textarea class="contact-textarea" id="contact-message" name="message" rows="6" placeholder="Type your message here" required>{{ old('message') }}</textarea>
                 </div>
                 <div class="contact-form-actions">
                     <button type="submit" class="contact-send-btn">Send message</button>
