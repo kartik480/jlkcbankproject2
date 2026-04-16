@@ -2,28 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact us - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=contact-6">
+    <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body class="contact-page">
 
-<!-- ========== NAVBAR ========== -->
-<header class="navbar">
-    <a href="{{ url('/') }}" class="nav-logo">
-        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-        <span class="nav-logo-placeholder"></span>
-    </a>
-
-    <ul class="menu">
-        <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
-        <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
-        <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
-    </ul>
-
-    <a href="{{ url('/contact') }}" class="contact-btn" aria-current="page">Contact us</a>
-</header>
+@include('partials.site-nav', ['navActive' => 'contact'])
 
 <!-- ========== CONTACT — STARTING SECTION (hero) ========== -->
 <section class="contact-hero" aria-labelledby="contact-hero-heading">
@@ -289,8 +275,8 @@
                 <h4 class="footer-heading">Quick Action</h4>
                 <span class="footer-heading-line"></span>
                 <div class="footer-buttons">
-                    <a href="#" class="footer-btn">Become a Advisor</a>
-                    <a href="#" class="footer-btn">Become a membership</a>
+                    <a href="{{ route('advisor.form') }}" class="footer-btn">Become a Advisor</a>
+                    <a href="{{ route('membership.form') }}" class="footer-btn">Become a membership</a>
                 </div>
             </div>
         </div>

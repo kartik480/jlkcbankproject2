@@ -2,28 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body>
 
-<!-- ========== NAVBAR ========== -->
-<header class="navbar">
-    <a href="{{ url('/') }}" class="nav-logo">
-        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-        <span class="nav-logo-placeholder"></span>
-    </a>
-
-    <ul class="menu">
-        <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
-        <li class="active"><a href="{{ url('/about') }}" class="menu-link">About</a></li>
-        <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
-    </ul>
-
-    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
-</header>
+@include('partials.site-nav', ['navActive' => 'about'])
 
 <!-- ========== ABOUT PAGE CONTENT ========== -->
 <section class="about-page">
@@ -38,8 +24,8 @@
                 </h1>
                 <p class="about-page-tagline">Empowering members since 2013 with financial and growth.</p>
                 <div class="about-hero-buttons">
-                    <a href="#" class="about-hero-btn">Join as a member</a>
-                    <a href="#" class="about-hero-btn">Become an Advisor</a>
+                    <a href="{{ route('membership.form') }}" class="about-hero-btn">Join as a member</a>
+                    <a href="{{ route('advisor.form') }}" class="about-hero-btn">Become an Advisor</a>
                 </div>
             </div>
             <div class="about-hero-images">
@@ -68,7 +54,7 @@
                 <p class="about-trust-para">We utilize advanced technologies to sustain and grow our business. These modern technologies have enabled us to introduce new features and products that support our business development. This commitment to innovation has made JAYALAKSHMI one of the most successful cooperative societies.</p>
                 <div class="about-trust-stats">
                     <div class="about-trust-stat">
-                        <span class="about-trust-stat-value">10+</span>
+                        <span class="about-trust-stat-value">13+</span>
                         <span class="about-trust-stat-label">Years of Service</span>
                     </div>
                     <div class="about-trust-stat">
@@ -182,7 +168,7 @@
 
     <!-- ========== OUR CORE STRENGTHS (after Visionary Leadership) ========== -->
     <section class="about-strengths-section">
-        <div class="about-strengths-inner">
+        <div class="about-strengths-inner about-strengths-inner--top">
             <h2 class="about-strengths-title">Our Core Strengths</h2>
             <span class="about-strengths-line"></span>
             <p class="about-strengths-intro">For the cooperative sector in India to grow and provide a substantial financial alternative to the general public, access to enterprise-class technology is essential. This technology must support computing demands in the most cost-effective manner possible. With this in mind, we have outsourced our data center hosting and digital services to ensure efficiency and reliability.</p>
@@ -209,18 +195,21 @@
                     <p class="about-strengths-feature-desc">Continuously upgrading our tech stack to offer modern banking conveniences</p>
                 </div>
             </div>
-            <div class="about-strengths-vm">
-                <div class="about-strengths-vm-card">
-                    <h3 class="about-strengths-vm-title">Our Vision</h3>
-                    <p class="about-strengths-vm-text">To become a leading and most trusted cooperative financial institution that empowers communities through innovative technology, financial inclusion, and sustainable growth while improving the economic well-being of our members.</p>
-                </div>
-                <div class="about-strengths-vm-card">
-                    <h3 class="about-strengths-vm-title">Our Mission</h3>
-                    <p class="about-strengths-vm-text">Uplift the weaker sections of society from both rural and urban areas. We've become the only credit and savings cooperative society in Visakhapatnam to launch our own mobile application and website, with over 90% of our business transactions.</p>
+        </div>
+        <div class="about-strengths-lower">
+            <div class="about-strengths-inner about-strengths-inner--vm">
+                <div class="about-strengths-vm">
+                    <div class="about-strengths-vm-card">
+                        <h3 class="about-strengths-vm-title">Our Vision</h3>
+                        <p class="about-strengths-vm-text">To become a leading and most trusted cooperative financial institution that empowers communities through innovative technology, financial inclusion, and sustainable growth while improving the economic well-being of our members.</p>
+                    </div>
+                    <div class="about-strengths-vm-card">
+                        <h3 class="about-strengths-vm-title">Our Mission</h3>
+                        <p class="about-strengths-vm-text">Uplift the weaker sections of society from both rural and urban areas. We've become the only credit and savings cooperative society in Visakhapatnam to launch our own mobile application and website, with over 90% of our business transactions.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="about-strengths-grid-bg" aria-hidden="true"></div>
     </section>
 
     <!-- ========== BE PART OF A GROWING FINANCIAL FAMILY ========== -->
@@ -234,8 +223,8 @@
                     <h2 class="about-family-glossy-title">Be part of a Growing Financial Family</h2>
                     <p class="about-family-glossy-desc">Join Jayalakshmi Mutually Aided Cooperative Thrift And Credit Society LTD. today and take the first step towards a secure financial future. Our operations began in 2013 in Visakhapatnam, primarily serving the local municipal community, especially those from commercial and micro-finance backgrounds.</p>
                     <div class="about-family-glossy-buttons">
-                        <a href="#" class="about-family-glossy-btn">Join as a member</a>
-                        <a href="#" class="about-family-glossy-btn">Become an Advisor</a>
+                        <a href="{{ route('membership.form') }}" class="about-family-glossy-btn">Join as a member</a>
+                        <a href="{{ route('advisor.form') }}" class="about-family-glossy-btn">Become an Advisor</a>
                     </div>
                 </div>
             </div>
@@ -272,8 +261,8 @@
                 <h4 class="footer-heading">Quick Action</h4>
                 <span class="footer-heading-line"></span>
                 <div class="footer-buttons">
-                    <a href="#" class="footer-btn">Become a Advisor</a>
-                    <a href="#" class="footer-btn">Become a membership</a>
+                    <a href="{{ route('advisor.form') }}" class="footer-btn">Become a Advisor</a>
+                    <a href="{{ route('membership.form') }}" class="footer-btn">Become a membership</a>
                 </div>
             </div>
         </div>
@@ -365,7 +354,7 @@
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
         });
-        
+
         // Intersection Observer for scroll-triggered animations
         const observerOptions = {
             threshold: 0.2,
@@ -392,7 +381,7 @@
                             card.style.transform = 'translateY(0)';
                         }, 600 + (index * 200));
                     });
-                    
+
                     observer.unobserve(entry.target);
                 }
             });

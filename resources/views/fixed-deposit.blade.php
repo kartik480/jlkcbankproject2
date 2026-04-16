@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daily Deposit Scheme (DDS) - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=daily-deposit-scheme-v2">
+    <title>Fixed Deposit - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=fixed-deposit-v1">
     <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body class="dds-page">
@@ -20,40 +20,67 @@
 
         <p class="dds-badge"><span class="dds-badge-dot" aria-hidden="true"></span> Main Products</p>
 
-        <section class="dds-hero" aria-labelledby="dds-hero-heading">
+        <section class="dds-hero" aria-labelledby="fd-hero-heading">
             <div class="dds-hero-text">
-                <h1 id="dds-hero-heading" class="dds-hero-title">Daily Deposit Scheme - DDS</h1>
-                <p class="dds-hero-desc">DDS is a small savings scheme where members deposit small amounts daily, ideal for small traders and individuals with daily income.</p>
+                <h1 id="fd-hero-heading" class="dds-hero-title">Fixed Deposit</h1>
+                <p class="dds-hero-desc">Fixed deposits are term deposits that offer higher interest rates than savings accounts, for a fixed period.</p>
                 <div class="dds-hero-actions">
                     <a href="{{ url('/contact') }}" class="dds-btn dds-btn-primary">Apply Now</a>
                     <a href="{{ url('/contact') }}" class="dds-btn dds-btn-outline">Contact us</a>
                 </div>
             </div>
             <div class="dds-hero-visual">
-                <img src="{{ asset('images/boy.png') }}" alt="Member with savings and daily deposit benefits" class="dds-hero-img" loading="eager" decoding="async" width="520" height="420" onerror="this.src='{{ asset('images/money.jpg') }}';">
+                <img src="{{ asset('images/boy.png') }}" alt="Fixed deposit member" class="dds-hero-img" loading="eager" decoding="async" width="520" height="420" onerror="this.src='{{ asset('images/money.jpg') }}';">
             </div>
         </section>
 
         <hr class="dds-rule" aria-hidden="true">
 
-        <section class="dds-terms" aria-labelledby="dds-terms-heading">
-            <h2 id="dds-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
+        <section class="dds-terms" aria-labelledby="fd-terms-heading">
+            <h2 id="fd-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Interest Rate:</strong> The interest rate offered on DDS accounts is competitive and is determined by the society.</li>
-                <li><strong>Minimum Deposit Amount:</strong> The minimum daily deposit amount is <strong>Rs. 50.</strong></li>
-                <li><strong>Daily Collection:</strong> An agent will collect the deposits daily from the member&apos;s specified location.</li>
-                <li><strong>Premature Withdrawal:</strong> Premature withdrawal of the deposit is subject to a penalty and a lower interest rate, as determined by the society&apos;s policy.</li>
-                <li><strong>Nomination Facility:</strong> A nomination facility is available to ensure the smooth transfer of the account balance in the event of the account holder&apos;s death.</li>
-                <li><strong>Tax Implications:</strong> Interest earned on the DDS account may be subject to tax as per the applicable laws. <strong>Members are advised to consult with a tax advisor for details.</strong></li>
-                <li><strong>Changes in Terms:</strong> The terms and conditions are subject to change at the discretion of the society. Members will be notified of any changes in writing.</li>
-                <li><strong>Contact Information:</strong> For any queries related to the Daily Deposit Scheme, members may contact our customer service department at <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
-                <li><strong>Governing Law:</strong> The terms and conditions of the Daily Deposit Scheme are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in Visakhapatnam.</li>
+                <li><strong>Interest on Premature Withdrawals:</strong> If withdrawn before maturity, the applicable interest will be based on completed tenure and policy norms.</li>
+                <li><strong>Fixed Deposit Maturing After 12 Months:</strong> Withdrawals before 12 months may not earn interest as per product rules.</li>
+                <li><strong>Fixed Deposit Maturing After 12 Months and Above:</strong> If withdrawn after 12 months but before maturity, lower/premature rates may apply.</li>
+                <li><strong>Premature Withdrawal Charges:</strong> A standard penalty (for example, 1.00%) may be deducted from member returns on premature closure.</li>
+                <li><strong>Minimum Deposit Amount:</strong> The minimum opening amount for a Fixed Deposit is Rs. 1,000.</li>
+                <li><strong>Deposit Tenure:</strong> Deposit terms can generally be opened from 1 year and up to 10 years.</li>
+                <li><strong>Renewal of Fixed Deposits:</strong> On maturity, deposits are renewed according to member instruction or prevailing renewal policy.</li>
+                <li><strong>Tax Implications:</strong> Interest earned on fixed deposits may be taxable as per applicable laws.</li>
+                <li><strong>Nomination Facility:</strong> Nomination is available and strongly recommended for settlement convenience.</li>
+                <li><strong>Early Closure:</strong> In case of early closure, reduced interest and/or penalty may be applied as per policy.</li>
+                <li><strong>Contact Information:</strong> For support, contact customer service for FD-related assistance and current rates.</li>
+                <li><strong>Changes in Terms:</strong> Terms and rates can be revised from time to time to stay aligned with regulation and policy.</li>
+                <li><strong>Governing Law:</strong> Fixed Deposit terms are governed by laws of India and applicable cooperative banking regulations.</li>
             </ol>
+
+            <div class="dds-rate-table-wrap" role="region" aria-label="Fixed deposit interest table">
+                <table class="dds-rate-table">
+                    <thead>
+                        <tr>
+                            <th>Deposit Amount</th>
+                            <th>12 Month (9.5%)</th>
+                            <th>24 Month (9.5%)</th>
+                            <th>36 Month (10.0%)</th>
+                            <th>48 Month (12.0%)</th>
+                            <th>60 Month (11.0%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1000</td><td>1095</td><td>1202</td><td>1348</td><td>1518</td><td>1720</td></tr>
+                        <tr><td>3000</td><td>3285</td><td>3606</td><td>4044</td><td>4554</td><td>5160</td></tr>
+                        <tr><td>5000</td><td>5475</td><td>6010</td><td>6740</td><td>7590</td><td>8600</td></tr>
+                        <tr><td>10000</td><td>10950</td><td>12020</td><td>13480</td><td>15180</td><td>17200</td></tr>
+                        <tr><td>50000</td><td>54750</td><td>60100</td><td>67400</td><td>75900</td><td>86000</td></tr>
+                        <tr><td>100000</td><td>109500</td><td>120200</td><td>134800</td><td>151800</td><td>172000</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section class="dds-explore" aria-labelledby="dds-explore-heading">
-            <h2 id="dds-explore-heading" class="dds-explore-title">Explore Our Products</h2>
-            <div class="dds-explore-grid dds-explore-grid--three">
+        <section class="dds-explore" aria-labelledby="fd-explore-heading">
+            <h2 id="fd-explore-heading" class="dds-explore-title">Explore Our Products</h2>
+            <div class="dds-explore-grid">
                 <article class="dds-product-card">
                     <div class="dds-product-icon">
                         <img src="{{ asset('images/sasb.png') }}" alt="" onerror="this.style.display='none';">
@@ -77,6 +104,14 @@
                     <h3 class="dds-product-card-title">Fixed Deposit - FD</h3>
                     <p class="dds-product-card-desc">A secure investment where money is deposited for a fixed period at a fixed interest rate, offering guaranteed returns.</p>
                     <a href="{{ route('services.fixed-deposit') }}" class="dds-product-card-link">Explore</a>
+                </article>
+                <article class="dds-product-card">
+                    <div class="dds-product-icon">
+                        <img src="{{ asset('images/cal2.png') }}" alt="" onerror="this.style.display='none';">
+                    </div>
+                    <h3 class="dds-product-card-title">Daily Deposit Scheme - DDS</h3>
+                    <p class="dds-product-card-desc">DDS allows customers to deposit small amounts daily and earn interest, helping them build savings gradually.</p>
+                    <a href="{{ route('services.daily-deposit-scheme') }}" class="dds-product-card-link">Explore</a>
                 </article>
             </div>
         </section>

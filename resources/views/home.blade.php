@@ -2,33 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body class="home-page">
 
-<!-- ========== NAVBAR ========== -->
-<header class="navbar">
-    <div class="nav-logo">
-        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-        <span class="nav-logo-placeholder"></span>
-    </div>
-
-    <ul class="menu">
-        <li class="active"><a href="{{ url('/') }}" class="menu-link">Home</a></li>
-        <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
-        <li><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
-    </ul>
-
-    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
-</header>
+@include('partials.site-nav', ['navActive' => 'home'])
 
 <!-- ========== HERO SECTION ========== -->
 <section class="hero">
+    <div class="hero-watermark" aria-hidden="true">
+        <img src="{{ asset('images/cow.png') }}" alt="" decoding="async">
+    </div>
     <div class="hero-content">
         <div class="hero-logo">
             <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="hero-logo-img" onerror="this.style.display='none';">
@@ -178,8 +167,8 @@
         <p class="cta-subtitle">Connect with Experts, Grow Your Wealth, and Build Your Future</p>
 
         <div class="cta-actions">
-            <a class="cta-btn primary" href="#">Join as a member</a>
-            <a class="cta-btn secondary" href="#">Become an Advisor</a>
+            <a class="cta-btn primary" href="{{ route('membership.form') }}">Join as a member</a>
+            <a class="cta-btn secondary" href="{{ route('advisor.form') }}">Become an Advisor</a>
         </div>
 
         <div class="cta-panels">
@@ -187,19 +176,17 @@
                 <h3>Member Benefits</h3>
                 <ul>
                     <li>Invitation to quarterly wealth webinars.</li>
-                    <li>Zero-commission trading on select assets.</li>
-                    <li>Access exclusive market analysis & daily trends.</li>
                     <li>Priority support from certified financial planners.</li>
-                    <li>Advanced portfolio tracking & optimization tools.</li>
+                    <li>Advanced portfolio tracking &amp; optimization tools.</li>
                 </ul>
             </div>
             <div class="cta-panel">
                 <h3>Advisor Perks</h3>
                 <ul>
-                    <li>Premium CRM & analytics dashboard suite.</li>
+                    <li>Premium CRM &amp; analytics dashboard suite.</li>
                     <li>Networking with top-tier industry experts.</li>
                     <li>Secure, compliant communication channels.</li>
-                    <li>Co-branded marketing materials & support.</li>
+                    <li>Co-branded marketing materials &amp; support.</li>
                     <li>Direct access to a pool of high-intent clients.</li>
                 </ul>
             </div>
@@ -366,8 +353,8 @@
                 <h4 class="footer-heading">Quick Action</h4>
                 <span class="footer-heading-line"></span>
                 <div class="footer-buttons">
-                    <a href="#" class="footer-btn">Become a Advisor</a>
-                    <a href="#" class="footer-btn">Become a membership</a>
+                    <a href="{{ route('advisor.form') }}" class="footer-btn">Become a Advisor</a>
+                    <a href="{{ route('membership.form') }}" class="footer-btn">Become a membership</a>
                 </div>
             </div>
         </div>

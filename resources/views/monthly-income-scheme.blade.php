@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daily Deposit Scheme (DDS) - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=daily-deposit-scheme-v2">
+    <title>Monthly Income Scheme (MIS) - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=monthly-income-scheme-v1">
     <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body class="dds-page">
@@ -20,40 +20,40 @@
 
         <p class="dds-badge"><span class="dds-badge-dot" aria-hidden="true"></span> Main Products</p>
 
-        <section class="dds-hero" aria-labelledby="dds-hero-heading">
+        <section class="dds-hero" aria-labelledby="mis-hero-heading">
             <div class="dds-hero-text">
-                <h1 id="dds-hero-heading" class="dds-hero-title">Daily Deposit Scheme - DDS</h1>
-                <p class="dds-hero-desc">DDS is a small savings scheme where members deposit small amounts daily, ideal for small traders and individuals with daily income.</p>
+                <h1 id="mis-hero-heading" class="dds-hero-title">Monthly Income Scheme - MIS</h1>
+                <p class="dds-hero-desc">MIS offers regular monthly income to members from their investments, suitable for individuals looking for a steady income stream.</p>
                 <div class="dds-hero-actions">
                     <a href="{{ url('/contact') }}" class="dds-btn dds-btn-primary">Apply Now</a>
                     <a href="{{ url('/contact') }}" class="dds-btn dds-btn-outline">Contact us</a>
                 </div>
             </div>
             <div class="dds-hero-visual">
-                <img src="{{ asset('images/boy.png') }}" alt="Member with savings and daily deposit benefits" class="dds-hero-img" loading="eager" decoding="async" width="520" height="420" onerror="this.src='{{ asset('images/money.jpg') }}';">
+                <img src="{{ asset('images/boy.png') }}" alt="Monthly Income Scheme member" class="dds-hero-img" loading="eager" decoding="async" width="520" height="420" onerror="this.src='{{ asset('images/money.jpg') }}';">
             </div>
         </section>
 
         <hr class="dds-rule" aria-hidden="true">
 
-        <section class="dds-terms" aria-labelledby="dds-terms-heading">
-            <h2 id="dds-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
+        <section class="dds-terms" aria-labelledby="mis-terms-heading">
+            <h2 id="mis-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Interest Rate:</strong> The interest rate offered on DDS accounts is competitive and is determined by the society.</li>
-                <li><strong>Minimum Deposit Amount:</strong> The minimum daily deposit amount is <strong>Rs. 50.</strong></li>
-                <li><strong>Daily Collection:</strong> An agent will collect the deposits daily from the member&apos;s specified location.</li>
+                <li><strong>Interest Rate:</strong> The interest rate for the Monthly Income Scheme is fixed and provides a regular monthly income to the members.</li>
+                <li><strong>Minimum Deposit Amount:</strong> The minimum amount required to open an MIS account is <strong>Rs. 2000–5000.</strong></li>
+                <li><strong>Payout Frequency:</strong> Interest is paid out on a monthly basis or depends on the customer.</li>
                 <li><strong>Premature Withdrawal:</strong> Premature withdrawal of the deposit is subject to a penalty and a lower interest rate, as determined by the society&apos;s policy.</li>
                 <li><strong>Nomination Facility:</strong> A nomination facility is available to ensure the smooth transfer of the account balance in the event of the account holder&apos;s death.</li>
-                <li><strong>Tax Implications:</strong> Interest earned on the DDS account may be subject to tax as per the applicable laws. <strong>Members are advised to consult with a tax advisor for details.</strong></li>
+                <li><strong>Tax Implications:</strong> Interest earned on the MIS account may be subject to tax as per the applicable laws. Members are advised to consult with a tax advisor for details.</li>
                 <li><strong>Changes in Terms:</strong> The terms and conditions are subject to change at the discretion of the society. Members will be notified of any changes in writing.</li>
-                <li><strong>Contact Information:</strong> For any queries related to the Daily Deposit Scheme, members may contact our customer service department at <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
-                <li><strong>Governing Law:</strong> The terms and conditions of the Daily Deposit Scheme are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in Visakhapatnam.</li>
+                <li><strong>Contact Information:</strong> For any queries related to the Monthly Income Scheme, members may contact our customer service department at <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
+                <li><strong>Governing Law:</strong> The terms and conditions of the Monthly Income Scheme are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in <strong>Visakhapatnam.</strong></li>
             </ol>
         </section>
 
-        <section class="dds-explore" aria-labelledby="dds-explore-heading">
-            <h2 id="dds-explore-heading" class="dds-explore-title">Explore Our Products</h2>
-            <div class="dds-explore-grid dds-explore-grid--three">
+        <section class="dds-explore" aria-labelledby="mis-explore-heading">
+            <h2 id="mis-explore-heading" class="dds-explore-title">Explore Our Products</h2>
+            <div class="dds-explore-grid">
                 <article class="dds-product-card">
                     <div class="dds-product-icon">
                         <img src="{{ asset('images/sasb.png') }}" alt="" onerror="this.style.display='none';">
@@ -77,6 +77,14 @@
                     <h3 class="dds-product-card-title">Fixed Deposit - FD</h3>
                     <p class="dds-product-card-desc">A secure investment where money is deposited for a fixed period at a fixed interest rate, offering guaranteed returns.</p>
                     <a href="{{ route('services.fixed-deposit') }}" class="dds-product-card-link">Explore</a>
+                </article>
+                <article class="dds-product-card">
+                    <div class="dds-product-icon">
+                        <img src="{{ asset('images/cal.png') }}" alt="" onerror="this.style.display='none';">
+                    </div>
+                    <h3 class="dds-product-card-title">Monthly Income Scheme - MIS</h3>
+                    <p class="dds-product-card-desc">MIS is a deposit plan where you invest a lump sum and receive fixed monthly income through interest.</p>
+                    <a href="{{ route('services.monthly-income-scheme') }}" class="dds-product-card-link">Explore</a>
                 </article>
             </div>
         </section>

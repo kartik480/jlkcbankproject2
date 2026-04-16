@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daily Deposit Scheme (DDS) - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=daily-deposit-scheme-v2">
+    <title>Savings Account - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=savings-account-v1">
     <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body class="dds-page">
@@ -20,40 +20,42 @@
 
         <p class="dds-badge"><span class="dds-badge-dot" aria-hidden="true"></span> Main Products</p>
 
-        <section class="dds-hero" aria-labelledby="dds-hero-heading">
+        <section class="dds-hero" aria-labelledby="sa-hero-heading">
             <div class="dds-hero-text">
-                <h1 id="dds-hero-heading" class="dds-hero-title">Daily Deposit Scheme - DDS</h1>
-                <p class="dds-hero-desc">DDS is a small savings scheme where members deposit small amounts daily, ideal for small traders and individuals with daily income.</p>
+                <h1 id="sa-hero-heading" class="dds-hero-title">Savings Account</h1>
+                <p class="dds-hero-desc">A Savings Account is an account where you keep money safely and earn interest on it.</p>
                 <div class="dds-hero-actions">
                     <a href="{{ url('/contact') }}" class="dds-btn dds-btn-primary">Apply Now</a>
                     <a href="{{ url('/contact') }}" class="dds-btn dds-btn-outline">Contact us</a>
                 </div>
             </div>
             <div class="dds-hero-visual">
-                <img src="{{ asset('images/boy.png') }}" alt="Member with savings and daily deposit benefits" class="dds-hero-img" loading="eager" decoding="async" width="520" height="420" onerror="this.src='{{ asset('images/money.jpg') }}';">
+                <img src="{{ asset('images/boy.png') }}" alt="Savings account member" class="dds-hero-img" loading="eager" decoding="async" width="520" height="420" onerror="this.src='{{ asset('images/money.jpg') }}';">
             </div>
         </section>
 
         <hr class="dds-rule" aria-hidden="true">
 
-        <section class="dds-terms" aria-labelledby="dds-terms-heading">
-            <h2 id="dds-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
+        <section class="dds-terms" aria-labelledby="sa-terms-heading">
+            <h2 id="sa-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Interest Rate:</strong> The interest rate offered on DDS accounts is competitive and is determined by the society.</li>
-                <li><strong>Minimum Deposit Amount:</strong> The minimum daily deposit amount is <strong>Rs. 50.</strong></li>
-                <li><strong>Daily Collection:</strong> An agent will collect the deposits daily from the member&apos;s specified location.</li>
-                <li><strong>Premature Withdrawal:</strong> Premature withdrawal of the deposit is subject to a penalty and a lower interest rate, as determined by the society&apos;s policy.</li>
-                <li><strong>Nomination Facility:</strong> A nomination facility is available to ensure the smooth transfer of the account balance in the event of the account holder&apos;s death.</li>
-                <li><strong>Tax Implications:</strong> Interest earned on the DDS account may be subject to tax as per the applicable laws. <strong>Members are advised to consult with a tax advisor for details.</strong></li>
-                <li><strong>Changes in Terms:</strong> The terms and conditions are subject to change at the discretion of the society. Members will be notified of any changes in writing.</li>
-                <li><strong>Contact Information:</strong> For any queries related to the Daily Deposit Scheme, members may contact our customer service department at <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
-                <li><strong>Governing Law:</strong> The terms and conditions of the Daily Deposit Scheme are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in Visakhapatnam.</li>
+                <li><strong>Account Opening &amp; Eligibility:</strong> Savings accounts can be opened by individuals, jointly by multiple individuals, or by a guardian on behalf of a minor.</li>
+                <li><strong>Nature &amp; Usage of Account:</strong> A Savings Account is intended for personal savings purposes only and not for business or commercial transactions.</li>
+                <li><strong>Minimum Balance Requirement:</strong> Customers must maintain a minimum average balance as prescribed by the institution.</li>
+                <li><strong>Deposits &amp; Withdrawals:</strong> Deposits can be made by cash, cheque, transfer, or digital channels. Withdrawals may be carried out through branch transactions and approved digital modes.</li>
+                <li><strong>Interest on Savings:</strong> Interest is paid at rates determined by the institution and is subject to change as per policy and regulations.</li>
+                <li><strong>Charges &amp; Fees:</strong> Non-maintenance charges, cheque book charges, statement charges, and other service charges may apply.</li>
+                <li><strong>Joint / Operational Accounts:</strong> Joint operation instructions (Either/Survivor, Joint, etc.) are followed exactly as registered and approved.</li>
+                <li><strong>Dormant / Inactive Accounts:</strong> Accounts with no customer-initiated transaction for the applicable period may be classified as dormant and reactivation may require verification.</li>
+                <li><strong>Nomination Facility:</strong> Account holders are encouraged to register a nominee for smooth settlement in unforeseen events.</li>
+                <li><strong>Account Closure:</strong> Accounts may be closed by written request or by the institution in case of misuse, non-compliance, or regulatory requirements.</li>
+                <li><strong>Regulatory Compliance:</strong> All accounts are governed by RBI guidelines and applicable laws, and terms may be revised to remain compliant.</li>
             </ol>
         </section>
 
-        <section class="dds-explore" aria-labelledby="dds-explore-heading">
-            <h2 id="dds-explore-heading" class="dds-explore-title">Explore Our Products</h2>
-            <div class="dds-explore-grid dds-explore-grid--three">
+        <section class="dds-explore" aria-labelledby="sa-explore-heading">
+            <h2 id="sa-explore-heading" class="dds-explore-title">Explore Our Products</h2>
+            <div class="dds-explore-grid">
                 <article class="dds-product-card">
                     <div class="dds-product-icon">
                         <img src="{{ asset('images/sasb.png') }}" alt="" onerror="this.style.display='none';">
@@ -68,7 +70,7 @@
                     </div>
                     <h3 class="dds-product-card-title">Current Account - CA</h3>
                     <p class="dds-product-card-desc">Designed for businesses and professionals that allows frequent and unlimited transactions for daily financial operations.</p>
-                    <a href="{{ route('services.current-account') }}" class="dds-product-card-link">Explore</a>
+                    <a href="{{ url('/services') }}#main-products" class="dds-product-card-link">Explore</a>
                 </article>
                 <article class="dds-product-card">
                     <div class="dds-product-icon">
@@ -76,7 +78,15 @@
                     </div>
                     <h3 class="dds-product-card-title">Fixed Deposit - FD</h3>
                     <p class="dds-product-card-desc">A secure investment where money is deposited for a fixed period at a fixed interest rate, offering guaranteed returns.</p>
-                    <a href="{{ route('services.fixed-deposit') }}" class="dds-product-card-link">Explore</a>
+                    <a href="{{ url('/services') }}#main-products" class="dds-product-card-link">Explore</a>
+                </article>
+                <article class="dds-product-card">
+                    <div class="dds-product-icon">
+                        <img src="{{ asset('images/cal2.png') }}" alt="" onerror="this.style.display='none';">
+                    </div>
+                    <h3 class="dds-product-card-title">Daily Deposit Scheme - DDS</h3>
+                    <p class="dds-product-card-desc">DDS allows customers to deposit small amounts daily and earn interest, helping them build savings gradually.</p>
+                    <a href="{{ route('services.daily-deposit-scheme') }}" class="dds-product-card-link">Explore</a>
                 </article>
             </div>
         </section>

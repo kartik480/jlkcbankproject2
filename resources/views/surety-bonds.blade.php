@@ -2,27 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surety Bonds - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=surety-bonds-v11">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=surety-bonds-v16">
+    <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body>
 
-<header class="navbar">
-    <a href="{{ url('/') }}" class="nav-logo">
-        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-        <span class="nav-logo-placeholder"></span>
-    </a>
-
-    <ul class="menu">
-        <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
-        <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
-        <li class="active"><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
-    </ul>
-
-    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
-</header>
+@include('partials.site-nav', ['navActive' => 'services'])
 
 <main class="sb-page">
     <section class="sb-hero" style="background-image: url('{{ asset('images/teamup.jpg') }}');">

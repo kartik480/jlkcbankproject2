@@ -2,28 +2,14 @@
 <html lang="en" class="services-page-root">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Services - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=services-scroll-v1">
+    <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body>
 
-<!-- ========== NAVBAR ========== -->
-<header class="navbar">
-    <a href="{{ url('/') }}" class="nav-logo">
-        <img src="{{ asset('images/jk.png') }}" alt="Jayalakshmi Cooperative" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-        <span class="nav-logo-placeholder"></span>
-    </a>
-
-    <ul class="menu">
-        <li><a href="{{ url('/') }}" class="menu-link">Home</a></li>
-        <li><a href="{{ url('/about') }}" class="menu-link">About</a></li>
-        <li class="active"><a href="{{ url('/services') }}" class="menu-link">Services</a></li>
-        <li><a href="{{ url('/careers') }}" class="menu-link">Careers</a></li>
-        <li><a href="{{ url('/gallery') }}" class="menu-link">Gallery</a></li>
-    </ul>
-
-    <a href="{{ url('/contact') }}" class="contact-btn">Contact us</a>
-</header>
+@include('partials.site-nav', ['navActive' => 'services'])
 
 <!-- ========== SERVICES PAGE CONTENT ========== -->
 <section class="about-page services-page">
@@ -93,53 +79,53 @@
             
             <div class="services-main-products-scroll-wrap">
                 <div class="services-main-products-scroll">
-                    <div class="services-main-product-card">
+                    <a href="{{ route('services.savings-account') }}" class="services-main-product-card services-main-product-card-link" aria-label="Open Saving Account details">
                         <div class="services-main-product-icon">
                             <img src="{{ asset('images/sasb.png') }}" alt="Saving Account" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Saving Account - SB</h3>
                         <p class="services-main-product-desc">Designed to help members save money while earning interest on their deposits. It offers flexibility with easy access to funds.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-main-product-card">
+                    <a href="{{ route('services.current-account') }}" class="services-main-product-card services-main-product-card-link" aria-label="Open Current Account details">
                         <div class="services-main-product-icon">
                             <img src="{{ asset('images/ca.png') }}" alt="Current Account" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Current Account - AC</h3>
                         <p class="services-main-product-desc">Designed for businesses and professionals that allows frequent and unlimited transactions for daily financial operations.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-main-product-card">
+                    <a href="{{ route('services.fixed-deposit') }}" class="services-main-product-card services-main-product-card-link" aria-label="Open Fixed Deposit details">
                         <div class="services-main-product-icon">
                             <img src="{{ asset('images/fxd.png') }}" alt="Fixed Deposit" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Fixed Deposit - FD</h3>
                         <p class="services-main-product-desc">A secure investment where money is deposited for a fixed period at a fixed interest rate, offering guaranteed returns.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-main-product-card">
+                    <a href="{{ route('services.monthly-income-scheme') }}" class="services-main-product-card services-main-product-card-link" aria-label="Open Monthly Income Scheme details">
                         <div class="services-main-product-icon">
                             <img src="{{ asset('images/cal.png') }}" alt="Monthly Income Scheme" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Monthly Income Scheme - MIS</h3>
                         <p class="services-main-product-desc">MIS is a deposit plan where you invest a lump sum and receive fixed monthly income through interest.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-main-product-card">
+                    <a href="{{ route('services.daily-deposit-scheme') }}" class="services-main-product-card services-main-product-card-link" aria-label="Open Daily Deposit Scheme details">
                         <div class="services-main-product-icon">
                             <img src="{{ asset('images/cal2.png') }}" alt="Daily Deposit Scheme" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Daily Deposit Scheme - DDS</h3>
                         <p class="services-main-product-desc">DDS allows customers to deposit small amounts daily and earn interest, helping them build savings gradually.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-main-product-card">
+                    <a href="{{ route('services.recurring-deposit') }}" class="services-main-product-card services-main-product-card-link" aria-label="Open Recurring Deposit details">
                         <div class="services-main-product-icon">
                             <img src="{{ asset('images/r1.png') }}" alt="Recurring Deposit" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-main-product-title">Recurring Deposit - RD</h3>
                         <p class="services-main-product-desc">A Recurring Deposit allows you to save a fixed amount monthly and earn guaranteed interest until maturity.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -150,61 +136,61 @@
             
             <div class="services-loans-scroll-wrap">
                 <div class="services-loans-scroll">
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.personal-loan') }}" class="services-loan-card services-loan-card-link" aria-label="Open Personal Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/pl.png') }}" alt="Personal Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Personal Loan</h3>
                         <p class="services-loan-desc">An unsecured loan that helps individuals meet personal financial needs and is repaid in fixed monthly installments.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.home-loan') }}" class="services-loan-card services-loan-card-link" aria-label="Open Home Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/hl.png') }}" alt="Home Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Home Loan</h3>
                         <p class="services-loan-desc">A Home Loan helps individuals finance the purchase or construction of a house and repay the amount in monthly installments.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.auto-loan') }}" class="services-loan-card services-loan-card-link" aria-label="Open Auto Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/al.png') }}" alt="Auto Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Auto Loan</h3>
                         <p class="services-loan-desc">An Auto Loan helps individuals finance the purchase of a vehicle and repay the amount in monthly installments over a fixed period.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.business-loan') }}" class="services-loan-card services-loan-card-link" aria-label="Open Business Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/bl.png') }}" alt="Business Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Business Loan</h3>
                         <p class="services-loan-desc">Money borrowed from a bank or financial institution to start, or expand a business, and it is repaid over time with interest.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.agricultural-loan') }}" class="services-loan-card services-loan-card-link" aria-label="Open Agricultural Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/agri.png') }}" alt="Agricultural Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Agricultural Loan</h3>
                         <p class="services-loan-desc">An Agricultural Loan provides financial support to farmers for cultivation, equipment, and other farming activities.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.gold-loan') }}" class="services-loan-card services-loan-card-link" aria-label="Open Gold Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/gold.png') }}" alt="Gold Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Gold Loan</h3>
                         <p class="services-loan-desc">A Gold Loan allows you to borrow money by pledging your gold as security and repay the amount with interest within a fixed tenure.</p>
-                    </div>
+                    </a>
 
-                    <div class="services-loan-card">
+                    <a href="{{ route('services.loan-against-recurring-deposit') }}" class="services-loan-card services-loan-card-link" aria-label="Open Recurring Deposit Loan details">
                         <div class="services-loan-icon">
                             <img src="{{ asset('images/cl.png') }}" alt="Recurring Deposit Loan" onerror="this.style.display='none';">
                         </div>
                         <h3 class="services-loan-title">Recurring Deposit Loan</h3>
                         <p class="services-loan-desc">A Recurring Deposit Loan allows you to borrow money against your RD savings without closing the deposit.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -343,8 +329,8 @@
                             <h4 class="footer-heading">Quick Action</h4>
                             <span class="footer-heading-line"></span>
                             <div class="footer-buttons">
-                                <a href="#" class="footer-btn">Become a Advisor</a>
-                                <a href="#" class="footer-btn">Become a membership</a>
+                                <a href="{{ route('advisor.form') }}" class="footer-btn">Become a Advisor</a>
+                                <a href="{{ route('membership.form') }}" class="footer-btn">Become a membership</a>
                             </div>
                         </div>
                     </div>

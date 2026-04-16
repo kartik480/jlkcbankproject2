@@ -1,54 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=gallery-no-filters">
-    <script src="{{ asset('js/site-nav.js') }}" defer></script>
-</head>
-<body>
-
-@include('partials.site-nav', ['navActive' => 'gallery'])
-
-<!-- ========== GALLERY PAGE CONTENT ========== -->
-<section class="gallery-page">
-    <div class="gallery-hero">
-        <div class="gallery-hero-inner">
-            <div class="gallery-hero-left">
-                <h1 class="gallery-hero-title">Gallery</h1>
-                <p class="gallery-hero-subtitle">A glimpse into our people, milestones, and moments.</p>
-            </div>
-            <div class="gallery-hero-right">
-                <img src="{{ asset('images/emp.png') }}" alt="Our Team" class="gallery-hero-image">
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ========== Our Infrastructure SECTION ========== -->
-<section class ="infrastructure-section">
-    <h2 class ="infra-title">Our Infrastructure</h2>
-    <div class="infra-line"></div>
-    <p class="infra-subtitle">
-    Built on strong foundations with modern facilities and secure systems to deliver reliable financial services
-</p>
-
-<div class="infra-grid">
-    <div class="box small"><img src="{{ asset('images/img1.png') }}" alt="Infrastructure 1"></div>
-    <div class="box small"><img src="{{ asset('images/img2.png') }}" alt="Infrastructure 2"></div>
-    <div class="box small"><img src="{{ asset('images/img3.png') }}" alt="Infrastructure 3"></div>
-    <div class="box tall"><img src="{{ asset('images/img4.png') }}" alt="Infrastructure 4"></div>
-
-    <div class="box small"><img src="{{ asset('images/img5.png') }}" alt="Infrastructure 5"></div>
-    <div class="box small"><img src="{{ asset('images/img6.png') }}" alt="Infrastructure 6"></div>
-    <div class="box small"><img src="{{ asset('images/img7.png') }}" alt="Infrastructure 7"></div>
-
-    <div class="box bottom-wide"><img src="{{ asset('images/img8.png') }}" alt="Infrastructure 8"></div>
-    <div class="box bottom-tall"><img src="{{ asset('images/img10.png') }}" alt="Infrastructure 10"></div>
-    <div class="box bottom-wide"><img src="{{ asset('images/img9.png') }}" alt="Infrastructure 9" class="infra-img9"></div>
-</div>
-</section>
-<!-- ========== FOOTER ========== -->
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-top">
@@ -110,7 +59,3 @@
         </div>
     </div>
 </footer>
-
-</body>
-</html>
-
