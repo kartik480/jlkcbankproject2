@@ -46,7 +46,7 @@
                 <li><strong>Nomination Facility:</strong> A nomination facility is available to ensure the smooth transfer of the account balance in the event of the account holder&apos;s death.</li>
                 <li><strong>Tax Implications:</strong> Interest earned on the DDS account may be subject to tax as per the applicable laws. <strong>Members are advised to consult with a tax advisor for details.</strong></li>
                 <li><strong>Changes in Terms:</strong> The terms and conditions are subject to change at the discretion of the society. Members will be notified of any changes in writing.</li>
-                <li><strong>Contact Information:</strong> For any queries related to the Daily Deposit Scheme, members may contact our customer service department at <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
+                <li><strong>Contact Information:</strong> For any queries related to the Daily Deposit Scheme, members may contact our customer service department at [contact information].</li>
                 <li><strong>Governing Law:</strong> The terms and conditions of the Daily Deposit Scheme are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in Visakhapatnam.</li>
             </ol>
         </section>

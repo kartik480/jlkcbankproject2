@@ -39,16 +39,159 @@
         <section class="dds-terms" aria-labelledby="agl-terms-heading">
             <h2 id="agl-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Eligibility &amp; Purpose:</strong> Loans are offered to farmers and agri-allied borrowers for crop production, farm development, equipment, and allied activities as per policy.</li>
-                <li><strong>Documentation:</strong> Valid KYC, land/cultivation records (where applicable), income proof, and other documents as required for assessment.</li>
-                <li><strong>Loan Amount &amp; Tenure:</strong> Sanctioned based on scale of finance, repayment capacity, and collateral/security as per norms.</li>
-                <li><strong>Interest &amp; Charges:</strong> Rates and charges are disclosed upfront and governed by applicable policy and regulatory guidance.</li>
-                <li><strong>Repayment:</strong> Structured as per crop cycle or agreed schedule; timely repayment is required to avoid penal interest.</li>
-                <li><strong>Security:</strong> May include hypothecation of crops, mortgage/charge on land, or other collateral as per sanction terms.</li>
-                <li><strong>Insurance:</strong> Where applicable, borrowers may be required to comply with crop/asset insurance norms as per policy.</li>
-                <li><strong>Default &amp; Recovery:</strong> Non-payment may attract penal charges and recovery action as per applicable law and policy.</li>
-                <li><strong>Contact:</strong> For queries, contact <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
-                <li><strong>Governing Law:</strong> Subject to applicable laws in India and RBI/cooperative guidelines where relevant.</li>
+                <li>
+                    <strong>Loan Nature &amp; Eligibility:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Agricultural Loans are offered to farmers, agriculturists, and allied activity workers for farming and related purposes.</li>
+                        <li>Eligibility depends on:
+                            <ul class="dds-terms-sublist">
+                                <li>Ownership or lease of agricultural land</li>
+                                <li>Farming experience and activity type</li>
+                                <li>Credit history and repayment capacity</li>
+                            </ul>
+                        </li>
+                        <li>Loans may also be extended to Joint Liability Groups (JLGs) or Self-Help Groups (SHGs).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Purpose of Loan:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Loans are granted for agriculture and allied activities such as:
+                            <ul class="dds-terms-sublist">
+                                <li>Crop cultivation and seasonal expenses</li>
+                                <li>Purchase of seeds, fertilizers, and equipment</li>
+                                <li>Farm mechanization (tractors, irrigation systems)</li>
+                                <li>Post-harvest and storage activities</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Types of Agricultural Loans:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Crop Loan (Kisan Credit Card - KCC)</li>
+                        <li>Term Loan (long-term investment)</li>
+                        <li>Working Capital Loan</li>
+                        <li>Farm Equipment / Machinery Loan</li>
+                        <li>Horticulture / Allied Activities Loan</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Loan Amount &amp; Margin:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Loan amount depends on:
+                            <ul class="dds-terms-sublist">
+                                <li>Land holding</li>
+                                <li>Crop type and scale of operations</li>
+                                <li>Repayment capacity</li>
+                            </ul>
+                        </li>
+                        <li>Margin requirements may apply based on loan size (e.g., nil for small loans, increasing for higher amounts)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Interest Rate:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Interest rates are determined as per:
+                            <ul class="dds-terms-sublist">
+                                <li>RBI priority sector lending norms</li>
+                                <li>Government subsidy schemes (if applicable)</li>
+                            </ul>
+                        </li>
+                        <li>Rates may vary depending on loan type and borrower category.</li>
+                        <li>Interest is calculated on the outstanding loan amount.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Documentation &amp; Verification:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Applicants must submit:
+                            <ul class="dds-terms-sublist">
+                                <li>KYC documents (Aadhaar, PAN)</li>
+                                <li>Land ownership or lease documents</li>
+                                <li>Crop details / farming proof</li>
+                                <li>Income or bank statements</li>
+                            </ul>
+                        </li>
+                        <li>Applications are subject to verification and field inspection.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Charges &amp; Fees:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Applicabe charges may include:
+                            <ul class="dds-terms-sublist">
+                                <li>Processing fees</li>
+                                <li>Documentation charges</li>
+                                <li>Inspection charges</li>
+                                <li>Penal charges for delayed payment</li>
+                            </ul>
+                        </li>
+                        <li>Some schemes may offer zero or subsidized charges for small farmers.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Subsidies &amp; Government Schemes:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Agricultural Loans may be eligible for:
+                            <ul class="dds-terms-sublist">
+                                <li>Interest subvention schemes</li>
+                                <li>Government subsidies for specific activities</li>
+                            </ul>
+                        </li>
+                        <li>Benefits depend on applicable central/state schemes.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Security &amp; Collateral:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Loans may be:
+                            <ul class="dds-terms-sublist">
+                                <li>Secured (against land, crops, or assets)</li>
+                                <li>Unsecured (for small-value loans under specific schemes)</li>
+                            </ul>
+                        </li>
+                        <li>Land records may be hypothecated or mortgaged as security.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Default &amp; Recovery:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Delay or non-payment may result in:
+                            <ul class="dds-terms-sublist">
+                                <li>Penal intrest</li>
+                                <li>Impact on credit score</li>
+                                <li>Legal recovery proceedings</li>
+                            </ul>
+                        </li>
+                        <li>Accounts may be clasified as NPA (Non-Performing Asset) as per RBI norms.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Transparency &amp; Fair Practices:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>The lender shall provide:
+                            <ul class="dds-terms-sublist">
+                                <li>Sanction letter with loan details</li>
+                                <li>Repayment schedule</li>
+                                <li>Complete disclosure of charges and terms</li>
+                            </ul>
+                        </li>
+                        <li>Borrowers must accept terms before loan disbursement.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Amendments &amp; Regulatory Compliance:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Agricultural Loans are governed by:
+                            <ul class="dds-terms-sublist">
+                                <li>RBI priority sector lending guidelines</li>
+                                <li>Government agricultural finance policies</li>
+                            </ul>
+                        </li>
+                        <li>Terms may be revised from to time as per regulatory updates.</li>
+                    </ul>
+                </li>
             </ol>
         </section>
 

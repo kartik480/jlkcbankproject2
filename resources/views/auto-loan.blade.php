@@ -44,7 +44,13 @@
                     <ul class="dds-terms-sublist">
                         <li>An Auto Loan is a secured loan provided for the purchase of new or used vehicles.</li>
                         <li>The vehicle financed will act as security (hypothecation) to the lender until full repayment.</li>
-                        <li>Eligibility depends on: income and repayment capacity; credit score and financial history; employment or business stability.</li>
+                        <li>Eligibility depends on:
+                            <ul class="dds-terms-sublist">
+                                <li>Income and repayment capacity</li>
+                                <li>Credit score and financial history</li>
+                                <li>Employment or business stability</li>
+                            </ul>
+                        </li>
                         <li>The institution reserves the right to approve or reject applications as per internal credit policies.</li>
                     </ul>
                 </li>
@@ -52,13 +58,19 @@
                     <strong>Loan Amount &amp; Margin:</strong>
                     <ul class="dds-terms-sublist">
                         <li>The loan amount is sanctioned based on the on-road price of the vehicle and borrower eligibility.</li>
-                        <li>Typically, a high percentage of the vehicle cost is financed, and the borrower pays the remainder as margin/down payment.</li>
+                        <li>Typically, banks finance 80%-90% of the vehicle cost, and the remaining amount is paid by the borrower as margin/down payment.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Documentation &amp; Verification:</strong>
                     <ul class="dds-terms-sublist">
-                        <li>Applicants must submit: KYC documents (Aadhaar, PAN, etc.); income proof (salary slips / bank statements / ITR); vehicle quotation/invoice.</li>
+                        <li>Applicants must submit:
+                            <ul class="dds-terms-sublist">
+                                <li>KYC documents (Aadhaar, PAN, etc.)</li>
+                                <li>Income proof (salary slips / bank statements / ITR)</li>
+                                <li>Vehicle quotation/invoice</li>
+                            </ul>
+                        </li>
                         <li>The vehicle must be registered with the appropriate authority, and the lender&apos;s hypothecation charge must be endorsed in the RC (Registration Certificate).</li>
                     </ul>
                 </li>
@@ -74,12 +86,23 @@
                     <strong>Loan Tenure &amp; Repayment:</strong>
                     <ul class="dds-terms-sublist">
                         <li>Loan tenure generally ranges from 1 to 7 years, depending on eligibility.</li>
-                        <li>Repayment is through Equated Monthly Instalments (EMIs) consisting of principal and interest.</li>
+                        <li>Repayment is done through Equated Monthly Instalments (EMIs) consisting of principal and interest.</li>
                         <li>Borrowers must ensure timely payment; repayment obligation continues irrespective of vehicle condition or delivery issues.</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Charges &amp; Fees:</strong> Applicable charges may include: processing fees; documentation charges; late payment / penal charges; prepayment / foreclosure charges. All charges must be disclosed in the Key Facts Statement (KFS) before loan sanction.
+                    <strong>Charges &amp; Fees:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Applicable charges may include:
+                            <ul class="dds-terms-sublist">
+                                <li>Processing fees</li>
+                                <li>Documentation charges</li>
+                                <li>Late payment / penal charges</li>
+                                <li>Prepayment / foreclosure charges</li>
+                            </ul>
+                        </li>
+                        <li>All charges must be disclosed in the Key Facts Statement (KFS) before loan sanction.</li>
+                    </ul>
                 </li>
                 <li>
                     <strong>Prepayment &amp; Foreclosure:</strong>
@@ -105,12 +128,36 @@
                 <li>
                     <strong>Default &amp; Recovery:</strong>
                     <ul class="dds-terms-sublist">
-                        <li>Delay or non-payment of EMIs may result in: penal charges; negative impact on credit score; repossession of the vehicle (as per legal procedures).</li>
+                        <li>Delay or non-payment of EMIs may result in:
+                            <ul class="dds-terms-sublist">
+                                <li>Penal charges</li>
+                                <li>Negative impact on credit score</li>
+                                <li>Repossession of the vehicle (as per legal procedures)</li>
+                            </ul>
+                        </li>
                         <li>Continued default may lead to classification as Non-Performing Asset (NPA) and recovery proceedings.</li>
                     </ul>
                 </li>
-                <li><strong>Transparency &amp; Borrower Rights:</strong> The lender must provide: loan agreement; EMI schedule; and Key Facts Statement (KFS) with all charges and terms. All terms must be communicated clearly before loan acceptance.</li>
-                <li><strong>Amendments &amp; Regulatory Compliance:</strong> Auto Loans are governed by RBI guidelines and applicable laws in India. Terms and conditions may be revised from time to time as per regulatory changes.</li>
+                <li>
+                    <strong>Transparency &amp; Borrower Rights:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>The lender must provide:
+                            <ul class="dds-terms-sublist">
+                                <li>Loan agreement</li>
+                                <li>EMI schedule</li>
+                                <li>Key Facts Statement (KFS) with all charges and terms</li>
+                            </ul>
+                        </li>
+                        <li>All terms must be communicated clearly before loan acceptance.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Amendments &amp; Regulatory Compliance:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Auto Loans are governed by RBI guidelines and applicable laws in India.</li>
+                        <li>Terms and conditions may be revised from time to time as per regulatory changes.</li>
+                    </ul>
+                </li>
             </ol>
         </section>
 

@@ -39,18 +39,112 @@
         <section class="dds-terms" aria-labelledby="ca-terms-heading">
             <h2 id="ca-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Account Opening &amp; Eligibility:</strong> Current Accounts may be opened by individuals, proprietorships, partnerships, companies, and other eligible business entities. KYC norms are mandatory.</li>
-                <li><strong>Nature &amp; Purpose of Account:</strong> A Current Account is intended for high-volume business transactions and not for personal savings.</li>
-                <li><strong>Minimum Balance Requirement:</strong> Customers are required to maintain the prescribed minimum average balance and non-maintenance may attract applicable penalties.</li>
-                <li><strong>Deposits &amp; Withdrawals:</strong> Deposits can be made via cash, cheque, NEFT/RTGS, or digital modes. Withdrawals are allowed through cheque, withdrawal slips, ATM (if enabled), and digital channels.</li>
-                <li><strong>Interest on Current Account:</strong> No interest is paid on Current Account balances as per standard banking practice.</li>
-                <li><strong>Charges &amp; Fees:</strong> Charges may apply for non-maintenance of balance, cash handling beyond limits, cheque book issuance, and value-added services.</li>
-                <li><strong>Account Operations:</strong> Accounts may be operated individually or jointly and by authorized signatories in firms/companies based on submitted mandate.</li>
-                <li><strong>Regulatory Guidelines (RBI Compliance):</strong> Opening and operation are subject to RBI directions, periodic KYC updates, and compliance with anti-money laundering norms.</li>
-                <li><strong>Transaction Monitoring &amp; Governance:</strong> Transactions are monitored as per regulatory norms to prevent misuse and ensure lawful operation.</li>
-                <li><strong>Dormant / Inactive Accounts:</strong> Accounts with no transaction for the prescribed period may be treated as inactive or dormant and reactivation may require verification.</li>
-                <li><strong>Account Closure:</strong> The account holder may close the account by written request. The institution reserves the right to close accounts in case of policy violations, suspicious transactions, or legal non-compliance.</li>
-                <li><strong>Amendments &amp; Governing Law:</strong> Terms are governed by applicable banking laws and may be revised from time to time.</li>
+                <li>
+                    <strong>Account Opening &amp; Eligibility:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Current Accounts may be opened by individuals, proprietorships, partnerships, companies, and other business entities.</li>
+                        <li>The account shall be opened only after completion of KYC (Know Your Customer) verification and submission of required documents.</li>
+                        <li>The institution reserves the right to accept or reject any application based on internal policies and due diligence.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Nature &amp; Purpose of Account:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>A Current Account is a non-interest-bearing demand deposit account primarily designed for business transactions and high-volume fund flows.</li>
+                        <li>It allows unlimited deposits and withdrawals, subject to available balance.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Minimum Balance Requirement:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Customers are required to maintain a Minimum Average Balance (MAB) or Quarterly Average Balance (QAB) as specified by the institution.</li>
+                        <li>Non-maintenance of the required balance may attract applicable penalties or service charges.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Deposits &amp; Withdrawals:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Deposits can be made through cash, cheque, NEFT/RTGS, or other approved channels.</li>
+                        <li>Withdrawals can be made via cheque, withdrawal slip, ATM, or digital banking.</li>
+                        <li>There is generally no restriction on the number of transactions, making it suitable for business operations.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Interest on Current Account:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>No interest is payable on Current Account balances, as per standard banking practice.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Charges &amp; Fees:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>The institution may levy charges for:</li>
+                        <li>
+                            <ul class="dds-terms-sublist">
+                                <li>Non-maintenance of minimum balance</li>
+                                <li>Cash handling beyond limits</li>
+                                <li>Cheque book issuance</li>
+                                <li>Transaction services</li>
+                            </ul>
+                        </li>
+                        <li>Charges are subject to revision and will be communicated as per policy.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Account Operations:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Accounts may be operated:</li>
+                        <li>
+                            <ul class="dds-terms-sublist">
+                                <li>Individually or jointly</li>
+                                <li>By authorized signatories in case of firms/companies</li>
+                            </ul>
+                        </li>
+                        <li>Mode of operation (e.g., Jointly, Either/Survivor) must be specified at the time of account opening.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Regulatory Guidelines (RBI Compliance):</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Opening and operation of Current Accounts are subject to RBI guidelines on credit exposure and account monitoring.</li>
+                        <li>Banks may restrict opening of current accounts for customers having existing Cash Credit (CC) or Overdraft (OD) facilities with other banks.</li>
+                        <li>For large borrowers, accounts may be operated under escrow or monitoring mechanisms to ensure financial discipline.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Transaction Monitoring &amp; Compliance:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>All transactions are subject to monitoring as per regulatory norms to prevent misuse and ensure compliance with applicable laws (e.g., AML, FEMA).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Dormant / Inactive Accounts:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Accounts with no transactions for a specified period may be classified as inactive or dormant.</li>
+                        <li>Reactivation requires proper verification and customer request.</li>
+                    </ul>
+                </li>
+                <li value="10">
+                    <strong>Account Closure:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>The account holder may close the account by submitting a written request.</li>
+                        <li>The institution reserves the right to close accounts in case of:</li>
+                        <li>
+                            <ul class="dds-terms-sublist">
+                                <li>Policy violations</li>
+                                <li>Suspicious transactions</li>
+                                <li>Regulatory non-compliance</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Amendments &amp; Governing Law:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>These terms are governed by applicable banking laws and RBI regulations.</li>
+                        <li>The institution reserves the right to modify terms and conditions from time to time.</li>
+                    </ul>
+                </li>
             </ol>
         </section>
 

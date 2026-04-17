@@ -40,13 +40,13 @@
             <h2 id="mis-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
                 <li><strong>Interest Rate:</strong> The interest rate for the Monthly Income Scheme is fixed and provides a regular monthly income to the members.</li>
-                <li><strong>Minimum Deposit Amount:</strong> The minimum amount required to open an MIS account is <strong>Rs. 2000–5000.</strong></li>
+                <li><strong>Minimum Deposit Amount:</strong> The minimum amount required to open an MIS account is <strong>Rs. 2000-5000.</strong></li>
                 <li><strong>Payout Frequency:</strong> Interest is paid out on a monthly basis or depends on the customer.</li>
                 <li><strong>Premature Withdrawal:</strong> Premature withdrawal of the deposit is subject to a penalty and a lower interest rate, as determined by the society&apos;s policy.</li>
                 <li><strong>Nomination Facility:</strong> A nomination facility is available to ensure the smooth transfer of the account balance in the event of the account holder&apos;s death.</li>
                 <li><strong>Tax Implications:</strong> Interest earned on the MIS account may be subject to tax as per the applicable laws. Members are advised to consult with a tax advisor for details.</li>
                 <li><strong>Changes in Terms:</strong> The terms and conditions are subject to change at the discretion of the society. Members will be notified of any changes in writing.</li>
-                <li><strong>Contact Information:</strong> For any queries related to the Monthly Income Scheme, members may contact our customer service department at <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, or <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
+                <li><strong>Contact Information:</strong> For any queries related to the Monthly Income Scheme, members may contact our customer service department at [contact information].</li>
                 <li><strong>Governing Law:</strong> The terms and conditions of the Monthly Income Scheme are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in <strong>Visakhapatnam.</strong></li>
             </ol>
         </section>

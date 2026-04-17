@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fixed Deposit - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=fixed-deposit-v1">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=fixed-deposit-v2">
     <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body class="dds-page">
@@ -37,42 +37,58 @@
         <hr class="dds-rule" aria-hidden="true">
 
         <section class="dds-terms" aria-labelledby="fd-terms-heading">
-            <h2 id="fd-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
+            <h2 id="fd-terms-heading" class="dds-terms-title dds-terms-title--with-rule">Terms and Conditions:</h2>
+            <hr class="dds-rule dds-terms-title-rule" aria-hidden="true">
             <ol class="dds-terms-list">
-                <li><strong>Interest on Premature Withdrawals:</strong> If withdrawn before maturity, the applicable interest will be based on completed tenure and policy norms.</li>
-                <li><strong>Fixed Deposit Maturing After 12 Months:</strong> Withdrawals before 12 months may not earn interest as per product rules.</li>
-                <li><strong>Fixed Deposit Maturing After 12 Months and Above:</strong> If withdrawn after 12 months but before maturity, lower/premature rates may apply.</li>
-                <li><strong>Premature Withdrawal Charges:</strong> A standard penalty (for example, 1.00%) may be deducted from member returns on premature closure.</li>
-                <li><strong>Minimum Deposit Amount:</strong> The minimum opening amount for a Fixed Deposit is Rs. 1,000.</li>
-                <li><strong>Deposit Tenure:</strong> Deposit terms can generally be opened from 1 year and up to 10 years.</li>
-                <li><strong>Renewal of Fixed Deposits:</strong> On maturity, deposits are renewed according to member instruction or prevailing renewal policy.</li>
-                <li><strong>Tax Implications:</strong> Interest earned on fixed deposits may be taxable as per applicable laws.</li>
-                <li><strong>Nomination Facility:</strong> Nomination is available and strongly recommended for settlement convenience.</li>
-                <li><strong>Early Closure:</strong> In case of early closure, reduced interest and/or penalty may be applied as per policy.</li>
-                <li><strong>Contact Information:</strong> For support, contact customer service for FD-related assistance and current rates.</li>
-                <li><strong>Changes in Terms:</strong> Terms and rates can be revised from time to time to stay aligned with regulation and policy.</li>
-                <li><strong>Governing Law:</strong> Fixed Deposit terms are governed by laws of India and applicable cooperative banking regulations.</li>
+                <li>
+                    <strong>Interest on Premature Withdrawals:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li><strong>Before Maturity:</strong> If withdrawals are made before the fixed deposit&apos;s maturity date, the interest payable on the amount withdrawn will be equivalent to the interest rate of a savings account.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Fixed Deposits Maturing After 12 Months:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li><strong>Withdrawals Before 12 Months:</strong> If withdrawals are made before 12 months, no interest will be payable on the amount withdrawn.</li>
+                        <li><strong>Withdrawals After 12 Months but Before Maturity:</strong> If withdrawals are made after 12 months but before the fixed deposit matures, the interest payable will be equivalent to the interest rate of a savings account.</li>
+                    </ul>
+                </li>
+                <li><strong>Premature Withdrawal Charges:</strong> A stationary charge of Rs. 100 will be deducted from the member&apos;s account for any premature withdrawal.</li>
+                <li><strong>Minimum Deposit Amount:</strong> The minimum amount required to open a fixed deposit account is 1000.</li>
+                <li><strong>Deposit Tenure:</strong> Fixed deposits can be opened for a minimum period of 1 year and a maximum period of 10 years.</li>
+                <li><strong>Renewal of Fixed Deposits:</strong> Fixed deposits will be automatically renewed at maturity unless instructions are given to the contrary. The renewal will be at the prevailing interest rates.</li>
+                <li><strong>Tax Implications:</strong> Interest earned on fixed deposits may be subject to tax as per the applicable laws. Members are advised to consult with a tax advisor for details.</li>
+                <li><strong>Nomination Facility:</strong> A nomination facility is available for fixed deposit accounts. Members are encouraged to appoint a nominee to ensure smooth transfer of the deposit in the event of the account holder&apos;s death.</li>
+                <li><strong>Early Closure:</strong> In case of early closure of the fixed deposit, apart from the applicable interest changes, an additional penalty may be applied as per the society&apos;s policy.</li>
+                <li><strong>Interest Payment:</strong> Interest on fixed deposits will be paid on maturity or as per the chosen payout frequency (monthly, quarterly, or annually).</li>
+                <li><strong>Contact Information:</strong> For any queries related to fixed deposits, members may contact our customer service department at [contact information].</li>
+                <li><strong>Changes in Terms:</strong> The terms and conditions related to fixed deposits are subject to change at the discretion of <strong>JAYALAKSHMI MUTUALLY AIDED COOPERATIVE THRIFT AND CREDIT SOCIETY LTD.</strong> Members will be notified of any changes in writing.</li>
+                <li><strong>Governing Law:</strong> The terms and conditions of the fixed deposit account are governed by the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in <strong>Visakhapatnam.</strong></li>
             </ol>
 
-            <div class="dds-rate-table-wrap" role="region" aria-label="Fixed deposit interest table">
-                <table class="dds-rate-table">
+            <div class="dds-rate-table-wrap dds-rate-table-wrap--fd" role="region" aria-label="Fixed deposit interest table">
+                <table class="dds-rate-table dds-rate-table--fd">
                     <thead>
                         <tr>
-                            <th>Deposit Amount</th>
-                            <th>12 Month (9.5%)</th>
-                            <th>24 Month (9.5%)</th>
-                            <th>36 Month (10.0%)</th>
-                            <th>48 Month (12.0%)</th>
-                            <th>60 Month (11.0%)</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Deposit amount</th>
+                            <th scope="col">12 month (09.50%)</th>
+                            <th scope="col">24 month (09.50%)</th>
+                            <th scope="col">36 month (10.00%)</th>
+                            <th scope="col">36 month (10.50%)</th>
+                            <th scope="col">60 month (11.00%)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>1000</td><td>1095</td><td>1202</td><td>1348</td><td>1518</td><td>1720</td></tr>
-                        <tr><td>3000</td><td>3285</td><td>3606</td><td>4044</td><td>4554</td><td>5160</td></tr>
-                        <tr><td>5000</td><td>5475</td><td>6010</td><td>6740</td><td>7590</td><td>8600</td></tr>
-                        <tr><td>10000</td><td>10950</td><td>12020</td><td>13480</td><td>15180</td><td>17200</td></tr>
-                        <tr><td>50000</td><td>54750</td><td>60100</td><td>67400</td><td>75900</td><td>86000</td></tr>
-                        <tr><td>100000</td><td>109500</td><td>120200</td><td>134800</td><td>151800</td><td>172000</td></tr>
+                        <tr><td>1</td><td>1000</td><td>1093</td><td>1206</td><td>1344</td><td>1513</td><td>1720</td></tr>
+                        <tr><td>2</td><td>5000</td><td>5465</td><td>6032</td><td>6724</td><td>7568</td><td>8602</td></tr>
+                        <tr><td>3</td><td>10000</td><td>10930</td><td>12065</td><td>13448</td><td>15137</td><td>17204</td></tr>
+                        <tr><td>4</td><td>20000</td><td>21861</td><td>24131</td><td>26897</td><td>30274</td><td>34408</td></tr>
+                        <tr><td>5</td><td>30000</td><td>32792</td><td>36197</td><td>40346</td><td>45412</td><td>57612</td></tr>
+                        <tr><td>6</td><td>50000</td><td>54654</td><td>60328</td><td>67244</td><td>75686</td><td>86021</td></tr>
+                        <tr><td>7</td><td>100000</td><td>109308</td><td>120656</td><td>134488</td><td>151373</td><td>172042</td></tr>
+                        <tr><td>8</td><td>500000</td><td>546541</td><td>603283</td><td>672444</td><td>756869</td><td>860214</td></tr>
+                        <tr><td>9</td><td>1000000</td><td>1093083</td><td>1206566</td><td>1344888</td><td>1513738</td><td>1720428</td></tr>
                     </tbody>
                 </table>
             </div>

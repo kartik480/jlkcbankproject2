@@ -98,7 +98,7 @@
                 <div class="service-card-body">
                     <h3>Fixed Deposit</h3>
                     <p>FD is a type of investment in which an individual invests a lump sum amount for a specific period of time with a bank.</p>
-                    <a href="#" class="service-card-btn">Explore more</a>
+                    <a href="{{ route('services.fixed-deposit') }}" class="service-card-btn">Explore more</a>
                 </div>
             </article>
 
@@ -109,7 +109,7 @@
                 <div class="service-card-body">
                     <h3>Recurring Deposit</h3>
                     <p>RD is a popular investment option where an investor deposits a fixed sum of money at periodic intervals for a fixed tenure.</p>
-                    <a href="#" class="service-card-btn">Explore more</a>
+                    <a href="{{ route('services.recurring-deposit') }}" class="service-card-btn">Explore more</a>
                 </div>
             </article>
 
@@ -120,7 +120,7 @@
                 <div class="service-card-body">
                     <h3>Monthly Income</h3>
                     <p>MIS is designed to offer a guaranteed monthly income as per the interest rate ranging from 3% to 5.60% pa.</p>
-                    <a href="#" class="service-card-btn">Explore more</a>
+                    <a href="{{ route('services.monthly-income-scheme') }}" class="service-card-btn">Explore more</a>
                 </div>
             </article>
 
@@ -142,7 +142,7 @@
                 <div class="service-card-body">
                     <h3>Personal Provident</h3>
                     <p>Build long-term savings with our provident fund options, offering tax benefits and steady growth for your future.</p>
-                    <a href="#" class="service-card-btn">Explore more</a>
+                    <a href="{{ url('/services#main-products') }}" class="service-card-btn">Explore more</a>
                 </div>
             </article>
 
@@ -153,7 +153,7 @@
                 <div class="service-card-body">
                     <h3>Saving Account</h3>
                     <p>Open a savings account with us for secure, accessible funds and interest on your balance with minimal paperwork.</p>
-                    <a href="#" class="service-card-btn">Explore more</a>
+                    <a href="{{ route('services.savings-account') }}" class="service-card-btn">Explore more</a>
                 </div>
             </article>
         </div>

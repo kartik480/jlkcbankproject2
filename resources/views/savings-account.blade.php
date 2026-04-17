@@ -39,17 +39,97 @@
         <section class="dds-terms" aria-labelledby="sa-terms-heading">
             <h2 id="sa-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Account Opening &amp; Eligibility:</strong> Savings accounts can be opened by individuals, jointly by multiple individuals, or by a guardian on behalf of a minor.</li>
-                <li><strong>Nature &amp; Usage of Account:</strong> A Savings Account is intended for personal savings purposes only and not for business or commercial transactions.</li>
-                <li><strong>Minimum Balance Requirement:</strong> Customers must maintain a minimum average balance as prescribed by the institution.</li>
-                <li><strong>Deposits &amp; Withdrawals:</strong> Deposits can be made by cash, cheque, transfer, or digital channels. Withdrawals may be carried out through branch transactions and approved digital modes.</li>
-                <li><strong>Interest on Savings:</strong> Interest is paid at rates determined by the institution and is subject to change as per policy and regulations.</li>
-                <li><strong>Charges &amp; Fees:</strong> Non-maintenance charges, cheque book charges, statement charges, and other service charges may apply.</li>
-                <li><strong>Joint / Operational Accounts:</strong> Joint operation instructions (Either/Survivor, Joint, etc.) are followed exactly as registered and approved.</li>
-                <li><strong>Dormant / Inactive Accounts:</strong> Accounts with no customer-initiated transaction for the applicable period may be classified as dormant and reactivation may require verification.</li>
-                <li><strong>Nomination Facility:</strong> Account holders are encouraged to register a nominee for smooth settlement in unforeseen events.</li>
-                <li><strong>Account Closure:</strong> Accounts may be closed by written request or by the institution in case of misuse, non-compliance, or regulatory requirements.</li>
-                <li><strong>Regulatory Compliance:</strong> All accounts are governed by RBI guidelines and applicable laws, and terms may be revised to remain compliant.</li>
+                <li>
+                    <strong>Account Opening &amp; Eligibility:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Savings Accounts may be opened by individuals, jointly by multiple individuals, or by a guardian on behalf of a minor.</li>
+                        <li>The account shall be opened only after completion of KYC (Know Your Customer) verification as per regulatory guidelines.</li>
+                        <li>The institution reserves the right to accept or reject any application based on internal policies.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Nature &amp; Usage of Account:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>A Savings Account is intended for personal savings purposes only and not for business or commercial transactions</li>
+                        <li>Misuse of the account for business activities may result in restrictions or closure of the account.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Minimum Balance Requirement:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Customers must maintain a Minimum Average Balance (MAB) as specified by the institution.</li>
+                        <li>The minimum balance may vary depending on account type, location, or services offered.</li>
+                        <li>Non-maintenance may attract applicable charges as per the schedule of fees.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Deposits &amp; Withdrawals:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Deposits can be made through cash, cheque, electronic transfer, or other approved modes.</li>
+                        <li>Withdrawals may be carried out via cheque, withdrawal slip, ATM, or digital banking.</li>
+                        <li>The bank may impose limits on the number or value of withdrawals within a specified period.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Interest on Savings Account:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Interest shall be paid at rates determined by the institution, in line with regulatory guidelines.</li>
+                        <li>Interest is typically calculated on daily closing balance and credited periodically.</li>
+                        <li>Interest rates are subject to change from time to time.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Charges &amp; Fees:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Non-maintenance of minimum balance</li>
+                        <li>Excess transactions</li>
+                        <li>Issuance of cheque books, cards, or statements</li>
+                    </ul>
+                    All applicable charges will be communicated transparently and may be revised periodically.
+                </li>
+                <li>
+                    <strong>Account Operations:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li><strong>Accounts may be operated:</strong> Singly or jointly (as per mandate such as Either/Survivor, Joint, etc.)</li>
+                        <li>Customers may authorize a third party via Power of Attorney, subject to approval.</li>
+                        <li>The institution may provide debit cards, cheque books, and digital banking facilities.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Dormant / Inoperative Accounts:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Accounts with no customer-initiated transactions for a specified period (generally 12-24 months) may be classified as inactive or dormant.</li>
+                        <li>Reactivation requires customer request and verification as per bank policy.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Nomination Facility:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Account holders are encouraged to register a nominee for settlement of funds in case of unforeseen events.</li>
+                        <li>Nomination can be added, modified, or cancelled as per applicable procedures.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Account Closure:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>The account holder may close the account by submitting a written request.</li>
+                        <li>The institution reserves the right to close accounts in case of:</li>
+                        <li>
+                            <ul class="dds-terms-sublist">
+                                <li>Misuse</li>
+                                <li>Non-compliance with regulations</li>
+                                <li>Unsatisfactory account conduct</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Regulatory Compliance:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>All Savings Accounts are governed by rules, circulars, and directions issued by the Reserve Bank of India and applicable laws.</li>
+                        <li>The institution may amend these terms from time to time to comply with regulatory changes.</li>
+                    </ul>
+                </li>
             </ol>
         </section>
 

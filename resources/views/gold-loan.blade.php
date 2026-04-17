@@ -39,16 +39,186 @@
         <section class="dds-terms" aria-labelledby="gl-terms-heading">
             <h2 id="gl-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
             <ol class="dds-terms-list">
-                <li><strong>Nature of Loan:</strong> A secured loan against pledge of gold jewellery/ornaments; gold remains in custody of the institution as per policy.</li>
-                <li><strong>Valuation:</strong> Loan amount is based on purity and weight assessed at approved rates; valuation norms may be revised periodically.</li>
-                <li><strong>Nomination &amp; KYC:</strong> Borrowers must complete KYC and may register nomination as per rules.</li>
-                <li><strong>Tenure &amp; Interest:</strong> Tenure and interest rate are fixed as per product; interest is payable as per agreed frequency.</li>
-                <li><strong>Repayment &amp; Closure:</strong> Loan may be closed on repayment of principal and interest; gold is released upon full settlement.</li>
-                <li><strong>Charges:</strong> Processing, appraisal, and other charges (if any) are disclosed before sanction.</li>
-                <li><strong>NPA &amp; Auction:</strong> In case of default, pledged gold may be liquidated as per policy and applicable law after due notice.</li>
-                <li><strong>Transparency:</strong> Key terms, charges, and repayment obligations are communicated in writing.</li>
-                <li><strong>Contact:</strong> <a href="tel:+919640942443">+91 9640942443</a>, <a href="tel:+918142851404">+91 8142851404</a>, <a href="mailto:jayalakshmicooperativebankltd@gmail.com">jayalakshmicooperativebankltd@gmail.com</a>.</li>
-                <li><strong>Governing Law:</strong> Governed by India laws and applicable RBI/cooperative norms.</li>
+                <li>
+                    <strong>Loan Nature &amp; Eligibility:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>A Gold Loan is a secured loan where gold jewellery or approved gold coins are pledged as collateral.</li>
+                        <li>Eligble applicants include individuals with:
+                            <ul class="dds-terms-sublist">
+                                <li>Ownership of gold ornaments</li>
+                                <li>Valid KYC documents</li>
+                            </ul>
+                        </li>
+                        <li>Loans are granted based on gold purity, weight, and market value.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Acceptable Collateral:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Only gold jewellery and approved coins are accepted as collateral.</li>
+                        <li>Loans are not permitted against:
+                            <ul class="dds-terms-sublist">
+                                <li>Gold bars/bullion</li>
+                                <li>Digital gold, ETFs, or mutual funds</li>
+                            </ul>
+                        </li>
+                        <li>The value is calculated based on pure gold content only (stones/gems excluded)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Loan Amount &amp; LTV Ratio:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Loan amount is determined by the Loan-to-Value (LTV) ratio:
+                            <ul class="dds-terms-sublist">
+                                <li>Up to 75% of gold value (standard loans)</li>
+                                <li>Up to 85% for small-ticket loans (as per RBI norms)</li>
+                            </ul>
+                        </li>
+                        <li>Final sanctioned amount depends on:
+                            <ul class="dds-terms-sublist">
+                                <li>Gold valuation</li>
+                                <li>Borrower profile</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Interest Rate:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Interest rates may be fixed or floating, depending on lender policy.</li>
+                        <li>Rates vary based on:
+                            <ul class="dds-terms-sublist">
+                                <li>Loan tenure</li>
+                                <li>LTV ratio</li>
+                                <li>Market conditions</li>
+                            </ul>
+                        </li>
+                        <li>Interest is charged on the outstanding loan amount.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Loan Tenure &amp; Repayment:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Loan tenure typically ranges from 3 months to 24 months.</li>
+                        <li>Repayment options include:
+                            <ul class="dds-terms-sublist">
+                                <li>Bullet repayment (principal + interest at end)</li>
+                                <li>EMI-based repayment</li>
+                                <li>Interest-only payments with principal at maturity</li>
+                            </ul>
+                        </li>
+                        <li>Borrowers must repay on time to avoid penalties.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Valuation &amp; Transparency:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Gold valuation is done using:
+                            <ul class="dds-terms-sublist">
+                                <li>Standardized purity testing</li>
+                                <li>Market-linked pricing (based on recent gold rates)</li>
+                            </ul>
+                        </li>
+                        <li>Loan agreements must clearly mention:
+                            <ul class="dds-terms-sublist">
+                                <li>Valuation method</li>
+                                <li>Loan amount</li>
+                                <li>Charges and repayment terms</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Charges &amp; Fees:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Applicabe charges may include:
+                            <ul class="dds-terms-sublist">
+                                <li>Processing fees</li>
+                                <li>Valuation charges</li>
+                                <li>Late payment penal charges</li>
+                                <li>Auction charges (in case of default)</li>
+                            </ul>
+                        </li>
+                        <li>All charges must be clearly disclosed upfront.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Prepayment &amp; Foreclosure:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Borrowers can prepay or foreclose the loan anytime.</li>
+                        <li>Prepayment terms depend on:
+                            <ul class="dds-terms-sublist">
+                                <li>Loan type (fixed/floating)</li>
+                                <li>Lender policies</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Safety &amp; Custody of Gold:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Pledged gold is stored securely by the lender.</li>
+                        <li>Proper documentation and acknowledgment are provided.</li>
+                        <li>The lender is responsible for safe custody and insurance of pledged gold.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Loan Closure &amp; Release of Gold:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>On full repayment:
+                            <ul class="dds-terms-sublist">
+                                <li>Gold must be returned within 7 working days (or earlier)</li>
+                            </ul>
+                        </li>
+                        <li>Delay in release may attract penalties on the lender as per RBI rules.</li>
+                    </ul>
+                </li>
+                <li value="10">
+                    <strong>Default &amp; Auction:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>In case of non-payment:
+                            <ul class="dds-terms-sublist">
+                                <li>The lender may auction the pledged gold</li>
+                            </ul>
+                        </li>
+                        <li>Before auction:
+                            <ul class="dds-terms-sublist">
+                                <li>Borrower must receive prior notice</li>
+                            </ul>
+                        </li>
+                        <li>Any surplus amount after recovery must be returned to the borrower</li>
+                    </ul>
+                </li>
+                <li value="11">
+                    <strong>Transparency &amp; Borrower Rights:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Borrowers are entitled to:
+                            <ul class="dds-terms-sublist">
+                                <li>Clear loan agreement</li>
+                                <li>Fair valuation process</li>
+                                <li>Transparent charges and repayment terms</li>
+                            </ul>
+                        </li>
+                        <li>Terms must be explained in a language understod by the borrower.</li>
+                    </ul>
+                </li>
+                <li value="12">
+                    <strong>Regulatory Compliance:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Gold Loans are governed by:
+                            <ul class="dds-terms-sublist">
+                                <li>RBI lending guidelines (2025-2026 updates)</li>
+                            </ul>
+                        </li>
+                        <li>Rules ensure:
+                            <ul class="dds-terms-sublist">
+                                <li>Borrower protection</li>
+                                <li>Standardized valuation</li>
+                                <li>Fair recovery practices</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ol>
         </section>
 

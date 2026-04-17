@@ -37,7 +37,8 @@
         <hr class="dds-rule" aria-hidden="true">
 
         <section class="dds-terms" aria-labelledby="pl-terms-heading">
-            <h2 id="pl-terms-heading" class="dds-terms-title">Terms and Conditions:</h2>
+            <h2 id="pl-terms-heading" class="dds-terms-title dds-terms-title--with-rule">Terms and Conditions:</h2>
+            <hr class="dds-rule dds-terms-title-rule" aria-hidden="true">
             <ol class="dds-terms-list">
                 <li>
                     <strong>Loan Nature &amp; Eligibility:</strong>
@@ -73,20 +74,24 @@
                 <li>
                     <strong>Repayment (EMI):</strong>
                     <ul class="dds-terms-sublist">
-                        <li>The loan shall be repaid in Equated Monthly Installments (EMIs), including principal and interest.</li>
+                        <li>The loan shall be repaid in Equated Monthly Instalments (EMIs), including principal and interest.</li>
                         <li>The repayment schedule will be shared in advance in the loan agreement.</li>
                         <li>Timely payment is mandatory to maintain a good credit record.</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Charges &amp; Fees:</strong> The borrower shall pay applicable charges, including:
+                    <strong>Charges &amp; Fees:</strong>
                     <ul class="dds-terms-sublist">
-                        <li>Processing fees</li>
-                        <li>Documentation charges</li>
-                        <li>Late payment / penal charges</li>
-                        <li>Prepayment / foreclosure charges (if applicable)</li>
+                        <li>The borrower shall pay applicable charges, including:
+                            <ul class="dds-terms-sublist">
+                                <li>Processing fees</li>
+                                <li>Documentation charges</li>
+                                <li>Late payment / penal charges</li>
+                                <li>Prepayment / foreclosure charges (if applicable)</li>
+                            </ul>
+                        </li>
+                        <li>All charges must be clearly disclosed upfront as per RBI transparency norms.</li>
                     </ul>
-                    All charges must be clearly disclosed upfront as per RBI transparency norms.
                 </li>
                 <li>
                     <strong>Prepayment &amp; Foreclosure:</strong>
@@ -98,7 +103,13 @@
                 <li>
                     <strong>Credit Assessment:</strong>
                     <ul class="dds-terms-sublist">
-                        <li>Loan approval depends on: income stability; employment/business profile; credit score/history.</li>
+                        <li>Loan approval depends on:
+                            <ul class="dds-terms-sublist">
+                                <li>Income stability</li>
+                                <li>Employment/business profile</li>
+                                <li>Credit score/history</li>
+                            </ul>
+                        </li>
                         <li>A strong credit profile improves approval chances and may result in better interest rates.</li>
                     </ul>
                 </li>
@@ -106,12 +117,36 @@
                     <strong>Default &amp; Penalties:</strong>
                     <ul class="dds-terms-sublist">
                         <li>Delay or non-payment of EMI may attract penal charges and additional interest.</li>
-                        <li>Continuous default may lead to: negative credit score impact; legal recovery proceedings; classification as Non-Performing Asset (NPA) as per RBI norms.</li>
+                        <li>Continuous default may lead to:
+                            <ul class="dds-terms-sublist">
+                                <li>Negative credit score impact</li>
+                                <li>Legal recovery proceedings</li>
+                                <li>Classification as Non-Performing Asset (NPA) as per RBI norms</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li><strong>Transparency &amp; Fair Practices:</strong> The lender shall provide a Key Facts Statement (KFS) with complete loan details, including interest, charges, and repayment schedule. All terms must be clearly communicated, ensuring fair and transparent lending practices.</li>
-                <li><strong>Data Privacy &amp; Consent:</strong> Customer information shall be used only for loan processing and compliance purposes. Data will be handled in accordance with applicable privacy and regulatory guidelines.</li>
-                <li><strong>Amendments &amp; Regulatory Compliance:</strong> All Personal Loans are governed by RBI guidelines and applicable laws. Terms and conditions may be revised from time to time as per regulatory updates.</li>
+                <li>
+                    <strong>Transparency &amp; Fair Practices:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>The lender shall provide a Key Facts Statement (KFS) with complete loan details, including interest, charges, and repayment schedule.</li>
+                        <li>All terms must be clearly communicated, ensuring fair and transparent lending practices.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Data Privacy &amp; Consent:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>Customer information shall be used only for loan processing and compliance purposes.</li>
+                        <li>Data will be handled in accordance with applicable privacy and regulatory guidelines.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Amendments &amp; Regulatory Compliance:</strong>
+                    <ul class="dds-terms-sublist">
+                        <li>All Personal Loans are governed by RBI guidelines and applicable laws.</li>
+                        <li>Terms and conditions may be revised from time to time as per regulatory updates.</li>
+                    </ul>
+                </li>
             </ol>
         </section>
 
