@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Archives too large for GitHub (>100MB) or unnecessary in repo
+/routes.zip

@@ -193,14 +193,21 @@ video {
 
 .menu li {
     cursor: pointer;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 20px;
     color: #111;
+    line-height: 24px;
+    font-family: Metropolis, "Nirmala Text", "Segoe UI", system-ui, sans-serif;
 }
 
 .menu .menu-link {
-    color: inherit;
+    color: #000;
     text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 .menu .menu-link:hover {
@@ -1662,9 +1669,12 @@ html.services-page-root {
 
 .careers-hero-lead {
     margin: 0 0 28px 0;
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(15, 61, 38, 0.78);
+    color: #000;
+    font-family: "Nirmala Text", "Nirmala UI", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     max-width: 34em;
 }
 
@@ -1743,14 +1753,6 @@ html.services-page-root {
         order: 1;
     }
 
-    .careers-hero-lead {
-        font-size: 15px;
-    }
-
-    .careers-hero-title {
-        font-size: clamp(26px, 7vw, 40px);
-        line-height: 1.5;
-    }
 }
 
 /* Careers — shared section headings */
@@ -4087,13 +4089,12 @@ html.services-page-root {
 
 /* Modern Fintech Card Design */
 .about-trust-card {
-    background: #fff;
+    background: transparent;
     border-radius: 18px !important;
-    padding: 28px 24px 22px;
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+    padding: 0;
+    box-shadow: none;
     position: relative;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
@@ -4103,8 +4104,7 @@ html.services-page-root {
 }
 
 .about-trust-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    transform: none;
 }
 
 /* Colored top border bar */
@@ -4140,7 +4140,18 @@ html.services-page-root {
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 8px);
+    margin-top: 8px;
+    background: #fff;
+    border-radius: 0 0 18px 18px;
+    padding: 28px 24px 22px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+    transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-trust-card:hover .about-trust-card-content {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 34px rgba(0, 0, 0, 0.16);
 }
 
 /* Circular icon container */
@@ -5625,12 +5636,9 @@ a.nav-logo {
 .infra-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Lock row heights so tall images / flex hacks can't collapse rows and overlap */
-    grid-template-rows: 160px 160px 200px 200px;
+    grid-auto-flow: dense;
     grid-auto-rows: 160px;
-    /* Separate row/column gaps so stacked full-width images get a clear gutter */
-    column-gap: 16px;
-    row-gap: 28px;
+    gap: 16px;
     max-width: 1100px;
     margin: 0 auto;
     align-items: stretch;
@@ -5653,7 +5661,7 @@ a.nav-logo {
 }
 
 /* img9: keep image inside cell (no % height overflow) — use object-position for framing */
-.infra-grid .box:nth-child(10) img.infra-img9 {
+.infra-grid img.infra-img9 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -5667,6 +5675,7 @@ a.nav-logo {
 
 .box.tall {
     grid-row: span 2;
+    height: auto;
 }
 
 .box.wide {
@@ -5675,39 +5684,18 @@ a.nav-logo {
 }
 /* Special placements */
 .box.bottom-wide {
-    grid-column: span 3;
+    grid-column: span 2;
     height: 200px;
 }
 
 .box.bottom-tall {
     grid-row: span 2;
-}
-
-/* Fixed placement to match the reference layout exactly */
-.infra-grid .box:nth-child(4) {
-    grid-column: 4;
-    grid-row: 1 / span 2;
-}
-
-.infra-grid .box:nth-child(8) {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-}
-
-.infra-grid .box:nth-child(9) {
-    grid-column: 4;
-    grid-row: 3 / span 2;
-}
-
-.infra-grid .box:nth-child(10) {
-    grid-column: 1 / span 3;
-    grid-row: 4;
+    height: auto;
 }
 @media (max-width: 900px) {
     .infra-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: none;
-        grid-auto-rows: auto;
+        grid-auto-rows: 180px;
     }
 
     .box.bottom-wide,
@@ -5715,19 +5703,7 @@ a.nav-logo {
     .box.tall {
         grid-column: auto;
         grid-row: auto;
-        height: 200px;
-    }
-
-    .infra-grid .box:nth-child(4),
-    .infra-grid .box:nth-child(8),
-    .infra-grid .box:nth-child(9),
-    .infra-grid .box:nth-child(10) {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .infra-grid .box:nth-child(10) img.infra-img9 {
-        object-position: center center;
+        height: 180px;
     }
 }
 
@@ -8161,7 +8137,6 @@ p.branch-row-value--multiline {
     }
 
     .navbar-end .menu .menu-link {
-        font-size: 13px;
         padding: 6px 4px;
     }
 

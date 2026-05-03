@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Careers - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-    <script src="{{ asset('js/site-nav.js') }}" defer></script>
+    <script src="{{ asset('js/site-nav.js') }}?v=site-nav-2" defer></script>
 </head>
 <body class="careers-page">
 
@@ -25,7 +25,7 @@
             </h1>
             <p class="careers-hero-lead">Explore secure savings, flexible loans, and premium financial solutions tailored to individuals and businesses.</p>
             <div class="careers-hero-actions">
-                <a href="{{ url('/careers') }}#apply-now" class="careers-btn careers-btn-primary">Apply Now</a>
+                <a href="#apply-now" class="careers-btn careers-btn-primary">Apply Now</a>
                 <a href="{{ url('/services') }}" class="careers-btn careers-btn-outline">Explore Opportunity</a>
             </div>
         </div>
@@ -372,6 +372,57 @@
     input.addEventListener('change', function () {
         var text = this.closest('.careers-apply-file') && this.closest('.careers-apply-file').querySelector('.careers-apply-file-text');
         if (text && this.files && this.files.length) text.textContent = this.files[0].name;
+    });
+})();
+
+(function () {
+    var trigger = document.querySelector('.careers-hero-actions a[href="#apply-now"]');
+    var target = document.getElementById('apply-now');
+    if (!trigger || !target) return;
+
+    function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function getOffset() {
+        var nav = document.querySelector('.site-nav');
+        if (!nav) return 16;
+        var styles = window.getComputedStyle(nav);
+        var isFixed = styles.position === 'fixed' || styles.position === 'sticky';
+        return (isFixed ? nav.offsetHeight : 0) + 16;
+    }
+
+    function animateScrollTo(element, duration) {
+        var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var offset = getOffset();
+        var startY = window.pageYOffset;
+        var endY = Math.max(0, element.getBoundingClientRect().top + startY - offset);
+
+        if (prefersReducedMotion) {
+            window.scrollTo(0, endY);
+            return;
+        }
+
+        var distance = endY - startY;
+        var start = null;
+
+        function frame(timestamp) {
+            if (!start) start = timestamp;
+            var progress = Math.min((timestamp - start) / duration, 1);
+            var eased = easeInOutCubic(progress);
+            window.scrollTo(0, startY + distance * eased);
+            if (progress < 1) window.requestAnimationFrame(frame);
+        }
+
+        window.requestAnimationFrame(frame);
+    }
+
+    trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        animateScrollTo(target, 800);
+        if (window.history && typeof window.history.replaceState === 'function') {
+            window.history.replaceState(null, '', '#apply-now');
+        }
     });
 })();
 </script>

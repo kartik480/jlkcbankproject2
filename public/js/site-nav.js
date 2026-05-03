@@ -76,7 +76,9 @@
 
     function setupOutboundTrigger() {
         document.addEventListener('click', function (e) {
-            var link = e.target && e.target.closest ? e.target.closest('a.service-card-btn') : null;
+            var link = e.target && e.target.closest
+                ? e.target.closest('a.service-card-btn, a.careers-job-apply')
+                : null;
             if (!link) return;
 
             var rawHref = link.getAttribute('href');
@@ -123,7 +125,32 @@
 (function () {
     'use strict';
 
-    var backLinks = document.querySelectorAll('a.dds-back');
+    var jobDetailBackLinks = document.querySelectorAll('a.job-detail-back, a.job-detail-close');
+    var backLinks = document.querySelectorAll('a.dds-back, a.mb-back-btn, a.sb-back-btn');
+    if (jobDetailBackLinks.length) {
+        jobDetailBackLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var href = link.getAttribute('href');
+                if (!href) return;
+
+                try {
+                    var nextUrl = new URL(href, window.location.href);
+                    if (nextUrl.origin === window.location.origin && window.sessionStorage) {
+                        sessionStorage.setItem('jlkc_page_enter_from_bottom', JSON.stringify({
+                            path: nextUrl.pathname,
+                            direction: 'top',
+                            ts: Date.now()
+                        }));
+                    }
+                } catch (_e) {
+                    /* ignore invalid URL */
+                }
+
+                e.preventDefault();
+                window.location.href = href;
+            });
+        });
+    }
     if (!backLinks.length) return;
 
     function hasSameOriginReferrer() {

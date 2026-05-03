@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $job['hero_title'] }} — Careers | JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=careers-jobs-1">
-    <script src="{{ asset('js/site-nav.js') }}" defer></script>
+    <script src="{{ asset('js/site-nav.js') }}?v=site-nav-2" defer></script>
 </head>
 <body class="careers-page job-detail-page">
 

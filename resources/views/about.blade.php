@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us - JAYALAKSHMI MUTUALLY AIDED COOPERATIVE</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=about-v7">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v=about-v9">
     <script src="{{ asset('js/site-nav.js') }}" defer></script>
 </head>
 <body>
@@ -136,8 +136,8 @@
             <div class="about-leadership-cards">
                 <div class="about-leadership-card">
                     <div class="about-leadership-card-img">
-                        <img src="{{ asset('images/lead1.jpg') }}" alt="Mr. Suresh Kumar Yeedi" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-                        <span class="about-leadership-card-pic">Pic</span>
+                        <img src="{{ asset('images/kumarsir.png') }}" alt="Mr. Suresh Kumar Yeedi" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+                        <span class="about-leadership-card-pic"></span>
                     </div>
                     <div class="about-leadership-card-content">
                         <h3 class="about-leadership-name">Mr. Suresh Kumar Yeedi</h3>
