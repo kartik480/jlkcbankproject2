@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'instamojo' => [
+        'api_key'      => env('INSTAMOJO_API_KEY'),
+        'auth_token'   => env('INSTAMOJO_AUTH_TOKEN'),
+        'endpoint'     => env('INSTAMOJO_ENDPOINT', 'https://www.instamojo.com/api/1.1/'),
+        'payment_link' => env('INSTAMOJO_PAYMENT_LINK', 'https://imjo.in/ZaXqyz'),
+    ],
+
 ];

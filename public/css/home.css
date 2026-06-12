@@ -444,11 +444,18 @@ body.site-nav-open .nav-toggle-bar:nth-child(3) {
     white-space: nowrap;
 }
 
+.hero-btn-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
 .hero-btn {
     background: #0d6efd;
     color: #fff;
     border: none;
-    padding: 14px 160px;
+    padding: 14px 60px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
@@ -457,8 +464,21 @@ body.site-nav-open .nav-toggle-bar:nth-child(3) {
     text-decoration: none;
     text-align: center;
     box-sizing: border-box;
-    min-width: 520px;
-    margin-top: 28px;
+    flex: 1;
+    min-width: 220px;
+    transition: background 0.2s ease;
+}
+
+.hero-btn:hover {
+    background: #0b5ed7;
+}
+
+.hero-btn--pay {
+    background: #16a34a;
+}
+
+.hero-btn--pay:hover {
+    background: #15803d;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -4446,6 +4466,13 @@ html.services-page-root {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
+}
+
+.about-leadership-cards--single {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-leadership-card {

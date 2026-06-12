@@ -29,7 +29,10 @@
 
         <p><span class="hero-sub-line1">For the cooperative sector in India to grow and provide a substantial financial alternative to the general public,</span><br><span class="hero-sub-line2">access to enterprise-class technology is essential.</span></p>
 
-        <a href="{{ url('/contact') }}" class="hero-btn">Contact us</a>
+        <div class="hero-btn-group">
+            <a href="{{ url('/contact') }}" class="hero-btn">Contact us</a>
+            <a href="{{ env('INSTAMOJO_PAYMENT_LINK') }}" target="_blank" class="hero-btn hero-btn--pay">Pay Now</a>
+        </div>
 
     </div>
 </section>

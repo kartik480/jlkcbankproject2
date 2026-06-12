@@ -133,7 +133,7 @@
         <div class="about-leadership-inner">
             <h2 class="about-leadership-title">Visionary Leadership</h2>
             <span class="about-leadership-line"></span>
-            <div class="about-leadership-cards">
+            <div class="about-leadership-cards about-leadership-cards--single">
                 <div class="about-leadership-card">
                     <div class="about-leadership-card-img">
                         <img src="{{ asset('images/kumarsir.png') }}" alt="Mr. Suresh Kumar Yeedi" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
@@ -143,17 +143,6 @@
                         <h3 class="about-leadership-name">Mr. Suresh Kumar Yeedi</h3>
                         <p class="about-leadership-role">Chairman & Founder Member</p>
                         <p class="about-leadership-desc">Mr. Suresh Kumar Yeedi is credited with the business management and establishment of the cooperative movement in Visakhapatnam. Under his visionary leadership, JAYALAKSHMI earned the status of a recognized cooperative society.</p>
-                    </div>
-                </div>
-                <div class="about-leadership-card">
-                    <div class="about-leadership-card-img">
-                        <img src="{{ asset('images/lead2.jpg') }}" alt="Mr. Mohan Venkatachalam Naraharisetty" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
-                        <span class="about-leadership-card-pic">Pic</span>
-                    </div>
-                    <div class="about-leadership-card-content">
-                        <h3 class="about-leadership-name">Mr. Mohan Venkatachalam Naraharisetty</h3>
-                        <p class="about-leadership-role">Director & Co-Founder</p>
-                        <p class="about-leadership-desc">Mr. Mohan Venkatachalam Naraharisetty oversees the operations of JAYALAKSHMI along with its strategic initiatives. He has driven the cooperative business on a successful growth path. Mr. Mohan possesses several years of experience in cooperative funding, investment banking, and insurance domains.</p>
                     </div>
                 </div>
             </div>

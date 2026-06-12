@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MembershipAdvisorFormController;
+use App\Http\Controllers\PaymentController;
 use App\Models\CareerApplication;
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
@@ -150,6 +151,10 @@ Route::post('/careers/apply', function (Request $request) {
         ->withFragment('apply-now')
         ->with('careers_apply_status', 'Thank you — we have received your application.');
 })->name('careers.apply');
+
+Route::get('/pay', [PaymentController::class, 'showForm'])->name('payment.form');
+Route::post('/pay/initiate', [PaymentController::class, 'initiate'])->name('payment.initiate');
+Route::get('/pay/callback', [PaymentController::class, 'callback'])->name('payment.callback');
 
 Route::get('/contact', function () {
     return view('contact');
